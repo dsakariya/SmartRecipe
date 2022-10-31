@@ -17,6 +17,9 @@ import UIKit
     var ofsetShadowOpacity:Float=5
     @IBInspectable var mycolor:UIColor=UIColor.systemGray4
     
+    
+    
+    
     override func layoutSubviews() {
         layer.cornerRadius=self.cornerRadius
         layer.shadowColor=self.mycolor.cgColor
