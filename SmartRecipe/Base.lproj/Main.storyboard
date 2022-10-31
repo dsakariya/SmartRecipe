@@ -214,108 +214,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dV6-tB-6xR" customClass="cardView" customModule="SmartRecipe" customModuleProvider="target">
-                                <rect key="frame" x="25" y="121" width="364" height="199"/>
+                                <rect key="frame" x="25" y="102" width="364" height="221"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="tkF-VG-CAn">
-                                        <rect key="frame" x="0.0" y="0.0" width="175" height="195"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="195" id="bJA-DP-tPE"/>
-                                            <constraint firstAttribute="width" constant="175" id="w27-jj-0I3"/>
-                                        </constraints>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="tkF-VG-CAn">
+                                        <rect key="frame" x="2" y="0.0" width="184" height="221"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Chicken Curry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdB-Nh-RXb">
-                                        <rect key="frame" x="183" y="14" width="127" height="23"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUA-ot-iIJ">
+                                        <rect key="frame" x="194" y="158" width="134" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Show Receipe" cornerStyle="large"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flF-8a-Esz">
+                                        <rect key="frame" x="325" y="10" width="31" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="bookmark.fill" catalog="system" cornerStyle="medium"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chicken Curry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdB-Nh-RXb">
+                                        <rect key="frame" x="194" y="14" width="127" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUA-ot-iIJ">
-                                        <rect key="frame" x="185" y="130" width="134" height="35"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Show Receipe" cornerStyle="large"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flF-8a-Esz">
-                                        <rect key="frame" x="318" y="14" width="31" height="39"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" image="bookmark.fill" catalog="system" cornerStyle="medium"/>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="flF-8a-Esz" firstAttribute="leading" secondItem="fdB-Nh-RXb" secondAttribute="trailing" constant="8" id="3C1-xE-dwf"/>
-                                    <constraint firstItem="fdB-Nh-RXb" firstAttribute="leading" secondItem="tkF-VG-CAn" secondAttribute="trailing" constant="8" id="3rP-th-bMs"/>
-                                    <constraint firstItem="tkF-VG-CAn" firstAttribute="top" secondItem="dV6-tB-6xR" secondAttribute="top" id="6QE-GA-qSe"/>
-                                    <constraint firstAttribute="bottom" secondItem="qUA-ot-iIJ" secondAttribute="bottom" constant="30" id="856-w5-Sge"/>
-                                    <constraint firstItem="qUA-ot-iIJ" firstAttribute="top" secondItem="fdB-Nh-RXb" secondAttribute="bottom" constant="93" id="Dln-rc-b3U"/>
-                                    <constraint firstAttribute="trailing" secondItem="qUA-ot-iIJ" secondAttribute="trailing" constant="48" id="EVJ-f4-mil"/>
-                                    <constraint firstItem="flF-8a-Esz" firstAttribute="leading" secondItem="fdB-Nh-RXb" secondAttribute="trailing" constant="8" id="FS4-OV-UZi"/>
-                                    <constraint firstItem="qUA-ot-iIJ" firstAttribute="top" secondItem="fdB-Nh-RXb" secondAttribute="bottom" constant="90" id="JaQ-HP-J9m"/>
-                                    <constraint firstItem="qUA-ot-iIJ" firstAttribute="top" secondItem="fdB-Nh-RXb" secondAttribute="bottom" constant="90" id="a4a-wL-mbt"/>
-                                    <constraint firstAttribute="trailing" secondItem="flF-8a-Esz" secondAttribute="trailing" constant="15" id="bKI-pE-O3p"/>
-                                    <constraint firstAttribute="bottom" secondItem="flF-8a-Esz" secondAttribute="bottom" constant="146" id="bSc-zY-dJu"/>
-                                    <constraint firstItem="qUA-ot-iIJ" firstAttribute="leading" secondItem="tkF-VG-CAn" secondAttribute="trailing" constant="10" id="hWk-Uw-IZs"/>
-                                    <constraint firstItem="fdB-Nh-RXb" firstAttribute="leading" secondItem="tkF-VG-CAn" secondAttribute="trailing" constant="8" id="jW3-7J-2VF"/>
-                                    <constraint firstAttribute="bottom" secondItem="qUA-ot-iIJ" secondAttribute="bottom" constant="30" id="kTT-Bq-xId"/>
-                                    <constraint firstAttribute="trailing" secondItem="qUA-ot-iIJ" secondAttribute="trailing" constant="45" id="ly4-r6-5oz"/>
-                                    <constraint firstAttribute="bottom" secondItem="qUA-ot-iIJ" secondAttribute="bottom" constant="34" id="mfM-X4-X2K"/>
-                                    <constraint firstItem="tkF-VG-CAn" firstAttribute="leading" secondItem="dV6-tB-6xR" secondAttribute="leading" id="mxJ-zQ-spl"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="mycolor">
-                                        <color key="value" systemColor="labelColor"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JaF-kE-1mC" customClass="cardView" customModule="SmartRecipe" customModuleProvider="target">
-                                <rect key="frame" x="25" y="349" width="364" height="199"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="dTw-Nv-cyt">
-                                        <rect key="frame" x="0.0" y="0.0" width="175" height="195"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="175" id="JTW-0q-BYY"/>
-                                            <constraint firstAttribute="height" constant="195" id="hvR-jm-bAB"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Chicken Curry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elW-7h-bYu">
-                                        <rect key="frame" x="183" y="14" width="127" height="23"/>
-                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBH-jx-aqN">
-                                        <rect key="frame" x="185" y="130" width="149.5" height="35"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Show Receipe" cornerStyle="large"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5R-gd-H8b">
-                                        <rect key="frame" x="318" y="14" width="46.5" height="39"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" image="bookmark.fill" catalog="system" cornerStyle="medium"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="qBH-jx-aqN" firstAttribute="top" secondItem="elW-7h-bYu" secondAttribute="bottom" constant="90" id="0DH-5N-plI"/>
-                                    <constraint firstItem="elW-7h-bYu" firstAttribute="leading" secondItem="dTw-Nv-cyt" secondAttribute="trailing" constant="8" id="0mC-4e-Chl"/>
-                                    <constraint firstAttribute="trailing" secondItem="S5R-gd-H8b" secondAttribute="trailing" constant="15" id="I7U-z2-OIM"/>
-                                    <constraint firstItem="qBH-jx-aqN" firstAttribute="leading" secondItem="dTw-Nv-cyt" secondAttribute="trailing" constant="10" id="L18-ZM-r3c"/>
-                                    <constraint firstItem="elW-7h-bYu" firstAttribute="leading" secondItem="dTw-Nv-cyt" secondAttribute="trailing" constant="8" id="N76-fK-bEn"/>
-                                    <constraint firstAttribute="bottom" secondItem="qBH-jx-aqN" secondAttribute="bottom" constant="34" id="RsD-Vo-eKJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="qBH-jx-aqN" secondAttribute="bottom" constant="30" id="b9p-K4-2Hs"/>
-                                    <constraint firstItem="dTw-Nv-cyt" firstAttribute="leading" secondItem="JaF-kE-1mC" secondAttribute="leading" id="btH-KC-oMp"/>
-                                    <constraint firstItem="qBH-jx-aqN" firstAttribute="top" secondItem="elW-7h-bYu" secondAttribute="bottom" constant="93" id="fVT-m8-ibQ"/>
-                                    <constraint firstItem="S5R-gd-H8b" firstAttribute="leading" secondItem="elW-7h-bYu" secondAttribute="trailing" constant="8" id="faC-0z-yG7"/>
-                                    <constraint firstItem="qBH-jx-aqN" firstAttribute="top" secondItem="elW-7h-bYu" secondAttribute="bottom" constant="90" id="kFG-LS-vYL"/>
-                                    <constraint firstAttribute="trailing" secondItem="qBH-jx-aqN" secondAttribute="trailing" constant="45" id="kpP-cb-h32"/>
-                                    <constraint firstAttribute="bottom" secondItem="qBH-jx-aqN" secondAttribute="bottom" constant="30" id="lDt-7e-aOZ"/>
-                                    <constraint firstItem="S5R-gd-H8b" firstAttribute="leading" secondItem="elW-7h-bYu" secondAttribute="trailing" constant="8" id="lHp-JF-jWe"/>
-                                    <constraint firstAttribute="trailing" secondItem="qBH-jx-aqN" secondAttribute="trailing" constant="48" id="nDs-wR-EjC"/>
-                                    <constraint firstItem="dTw-Nv-cyt" firstAttribute="top" secondItem="JaF-kE-1mC" secondAttribute="top" id="xfq-o1-Eaa"/>
-                                    <constraint firstAttribute="bottom" secondItem="S5R-gd-H8b" secondAttribute="bottom" constant="146" id="z3A-rK-xFV"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="mycolor">
                                         <color key="value" systemColor="labelColor"/>
@@ -329,10 +254,9 @@
                         <viewLayoutGuide key="safeArea" id="T62-5y-Iwg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="T62-5y-Iwg" firstAttribute="trailing" secondItem="dV6-tB-6xR" secondAttribute="trailing" constant="25" id="P1k-au-yRv"/>
-                            <constraint firstItem="dV6-tB-6xR" firstAttribute="top" secondItem="T62-5y-Iwg" secondAttribute="top" constant="10" id="Pnt-By-Fvt"/>
-                            <constraint firstItem="dV6-tB-6xR" firstAttribute="leading" secondItem="T62-5y-Iwg" secondAttribute="leading" constant="25" id="nYu-Mf-ijy"/>
-                            <constraint firstItem="JaF-kE-1mC" firstAttribute="top" secondItem="dV6-tB-6xR" secondAttribute="bottom" constant="30" id="uxv-Vc-Zp5"/>
+                            <constraint firstItem="T62-5y-Iwg" firstAttribute="trailing" secondItem="dV6-tB-6xR" secondAttribute="trailing" constant="25" id="AMS-fn-UrB"/>
+                            <constraint firstItem="dV6-tB-6xR" firstAttribute="leading" secondItem="T62-5y-Iwg" secondAttribute="leading" constant="25" id="PkL-7Q-AJ0"/>
+                            <constraint firstItem="dV6-tB-6xR" firstAttribute="top" secondItem="T62-5y-Iwg" secondAttribute="top" constant="10" id="aRD-w5-Ic6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Recepies" id="w5I-ts-iYF"/>
