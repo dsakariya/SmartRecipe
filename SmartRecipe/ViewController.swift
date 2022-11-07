@@ -145,9 +145,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var ingredients57: UIButton!
     @IBOutlet weak var ingredients58: UIButton!
     @IBOutlet weak var ingredients59: UIButton!
-    @IBOutlet weak var ingredients60: UIButton!
-    @IBOutlet weak var ingredients61: UIButton!
-    @IBOutlet weak var ingredients62: UIButton!
     
     @IBOutlet weak var Submit: UIButton!
     
@@ -158,7 +155,7 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let passData=segue.destination as! SecondViewController
-        var query = queryList.joined(separator: "%20")
+        var query = queryList.joined(separator: " ")
         passData.text="https://api.edamam.com/api/recipes/v2?type=public&q=\(query)&app_id=907d2b4b&app_key=db6697b492e4a4b02a8f3ea2b44abb79"
     }
     @IBAction func ingredients1Tapped(_ sender: Any) {

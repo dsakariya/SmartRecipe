@@ -62,7 +62,9 @@ class SecondViewController: UIViewController {
             //        struct Ingredients: Decodable{
             //            let ingredient: String
             //        }
-        let url = URL(string: text ?? "https://api.edamam.com/api/recipes/v2?type=public&q=avocado&app_id=907d2b4b&app_key=db6697b492e4a4b02a8f3ea2b44abb79")
+        var urlString = text?.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        print(urlString)
+        let url = URL(string: urlString ?? "https://api.edamam.com/api/recipes/v2?type=public&q=avocado&app_id=907d2b4b&app_key=db6697b492e4a4b02a8f3ea2b44abb79")
 //        "https://api.edamam.com/api/recipes/v2?type=public&q=avocado&app_id=907d2b4b&app_key=db6697b492e4a4b02a8f3ea2b44abb79")
             let task = URLSession.shared.dataTask(with: url!) { [self] (data, response, error) in
                         if error != nil {

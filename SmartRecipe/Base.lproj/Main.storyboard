@@ -184,21 +184,33 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="58.5" height="34.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="corn"/>
+                                                        <connections>
+                                                            <action selector="ingredients8Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="hwb-Fl-mwS"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwx-7R-Bug">
                                                         <rect key="frame" x="62.5" y="0.0" width="90.5" height="34.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="cabbage"/>
+                                                        <connections>
+                                                            <action selector="ingredients9Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="RaH-ql-nYT"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BkO-Bc-14x">
                                                         <rect key="frame" x="157" y="0.0" width="106" height="34.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="cauliflower"/>
+                                                        <connections>
+                                                            <action selector="ingredients10Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="d8m-mC-O3e"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJW-fm-vEa">
                                                         <rect key="frame" x="267" y="0.0" width="55" height="34.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="kale"/>
+                                                        <connections>
+                                                            <action selector="ingredients11Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="QDd-hP-xjB"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -211,16 +223,25 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="91.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="eggplant"/>
+                                                <connections>
+                                                    <action selector="ingredients12Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="OWy-GN-eaX"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twh-tm-Ob1">
                                                 <rect key="frame" x="95.5" y="0.0" width="126.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="mixed greens"/>
+                                                <connections>
+                                                    <action selector="ingredients13Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="QMy-DR-LoF"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8t-jo-uUE">
                                                 <rect key="frame" x="226" y="0.0" width="78" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="tomato"/>
+                                                <connections>
+                                                    <action selector="ingredients14Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="u0q-QE-Cck"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -231,21 +252,33 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="69.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="carrot"/>
+                                                <connections>
+                                                    <action selector="ingredients15Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="RAm-eg-oUr"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDE-hY-dvw">
                                                 <rect key="frame" x="74.5" y="0.0" width="57.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="okra"/>
+                                                <connections>
+                                                    <action selector="ingredients16Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="21B-cV-in4"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuP-KY-5ua">
                                                 <rect key="frame" x="137" y="0.0" width="76.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="lettuce"/>
+                                                <connections>
+                                                    <action selector="ingredients17Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="Xwz-cR-wnv"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33p-eb-83d">
                                                 <rect key="frame" x="218.5" y="0.0" width="116" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="green olives"/>
+                                                <connections>
+                                                    <action selector="ingredients18Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="HvY-iO-ycx"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -256,16 +289,25 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="157.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="mixed vegetables"/>
+                                                <connections>
+                                                    <action selector="ingredients19Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="Jc5-mB-Cvh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3G-bl-MSb">
                                                 <rect key="frame" x="161.5" y="0.0" width="113" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="black olives"/>
+                                                <connections>
+                                                    <action selector="ingredients20Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="tR4-p4-0MO"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Yv-t7-NTW">
                                                 <rect key="frame" x="278.5" y="0.0" width="73.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="potato"/>
+                                                <connections>
+                                                    <action selector="ingredients21Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="9Ss-iK-35S"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -282,26 +324,41 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="70.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="butter"/>
+                                                <connections>
+                                                    <action selector="ingredients22Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="k1O-ra-6en"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Jr-c1-bv9">
                                                 <rect key="frame" x="75.5" y="0.0" width="53.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="egg"/>
+                                                <connections>
+                                                    <action selector="ingredients23Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="thv-y4-Pqd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfA-Qt-whI">
                                                 <rect key="frame" x="134" y="0.0" width="55" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="milk"/>
+                                                <connections>
+                                                    <action selector="ingredients24Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="iOM-lL-BTz"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYc-ux-IjY">
                                                 <rect key="frame" x="194" y="0.0" width="67" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="sugar"/>
+                                                <connections>
+                                                    <action selector="ingredients25Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="fDk-Pz-VeG"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngi-gS-ZxA">
                                                 <rect key="frame" x="266" y="0.0" width="71" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="honey"/>
+                                                <connections>
+                                                    <action selector="ingredients26Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="bUb-LD-CNm"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -312,21 +369,33 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="95.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="egg plant"/>
+                                                <connections>
+                                                    <action selector="ingredients27Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="2GF-5r-Zm9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjh-7o-l97">
                                                 <rect key="frame" x="100.5" y="0.0" width="66" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="onion"/>
+                                                <connections>
+                                                    <action selector="ingredients28Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="eYa-07-siG"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vef-sY-fjX">
                                                 <rect key="frame" x="171.5" y="0.0" width="98.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="cinnamon"/>
+                                                <connections>
+                                                    <action selector="ingredients29Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="FEA-t7-LSO"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9g-hf-Yzy">
                                                 <rect key="frame" x="275" y="0.0" width="73.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="potato"/>
+                                                <connections>
+                                                    <action selector="ingredients30Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="BDQ-sz-M8c"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -337,21 +406,33 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="52.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="rice"/>
+                                                <connections>
+                                                    <action selector="ingredients31Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="gw6-ik-9NJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZL-At-EcF">
                                                 <rect key="frame" x="57.5" y="0.0" width="87" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="mustard"/>
+                                                <connections>
+                                                    <action selector="ingredients32Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="NcC-ZD-DiU"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6B-sP-yJ9">
                                                 <rect key="frame" x="149.5" y="0.0" width="116.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="baking soda"/>
+                                                <connections>
+                                                    <action selector="ingredients33Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="f3G-Wp-2rC"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGW-cj-m67">
                                                 <rect key="frame" x="271" y="0.0" width="68.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="bread"/>
+                                                <connections>
+                                                    <action selector="ingredients34Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="OqX-QA-MRo"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -362,21 +443,33 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="70.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="cumin"/>
+                                                <connections>
+                                                    <action selector="ingredients35Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="WGe-CH-GOJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qm-pv-6qU">
                                                 <rect key="frame" x="75.5" y="0.0" width="87" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="cheddar"/>
+                                                <connections>
+                                                    <action selector="ingredients36Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="h4s-px-gi6"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1j-Fq-b4e">
                                                 <rect key="frame" x="167.5" y="0.0" width="115.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="chili powder"/>
+                                                <connections>
+                                                    <action selector="ingredients37Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="RZp-gL-06l"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clq-fV-cSs">
                                                 <rect key="frame" x="288" y="0.0" width="69.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="carrot"/>
+                                                <connections>
+                                                    <action selector="ingredients38Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="chf-i4-QHb"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -387,21 +480,33 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="78" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="tomato"/>
+                                                <connections>
+                                                    <action selector="ingredients39Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="E8V-qG-suB"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJO-hg-Sb2">
                                                 <rect key="frame" x="83" y="0.0" width="87" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="oregano"/>
+                                                <connections>
+                                                    <action selector="ingredients40Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="Fev-7X-WbS"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyd-fb-fcc">
                                                 <rect key="frame" x="175" y="0.0" width="100" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="bell paper"/>
+                                                <connections>
+                                                    <action selector="ingredients41Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="3wN-bt-G8d"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9v-Gh-VoG">
                                                 <rect key="frame" x="280" y="0.0" width="81" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="olive oil"/>
+                                                <connections>
+                                                    <action selector="ingredients42Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="IiE-7B-kOt"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -418,26 +523,41 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="66" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="apple"/>
+                                                <connections>
+                                                    <action selector="ingredients43Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="fwD-Nf-0t5"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sab-jt-5Qk">
                                                 <rect key="frame" x="70" y="0.0" width="77.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="orange"/>
+                                                <connections>
+                                                    <action selector="ingredients45Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="hzL-uP-3Yg"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1a-We-SX7">
                                                 <rect key="frame" x="151.5" y="0.0" width="80" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="banana"/>
+                                                <connections>
+                                                    <action selector="ingredients46Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="1z5-uA-Acu"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1n2-5f-Bb6">
                                                 <rect key="frame" x="235.5" y="0.0" width="53.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="kiwi"/>
+                                                <connections>
+                                                    <action selector="ingredients47Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="1Pu-7B-YOp"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUt-Dr-XK1">
                                                 <rect key="frame" x="293" y="0.0" width="62" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="plum"/>
+                                                <connections>
+                                                    <action selector="ingredients48Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="1MR-ip-Ayx"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -451,21 +571,33 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="98.5" height="34.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="pineapple"/>
+                                                        <connections>
+                                                            <action selector="ingredients49Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="AjK-MQ-oOM"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xtu-Gf-LKK">
                                                         <rect key="frame" x="103.5" y="0.0" width="79" height="34.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="papaya"/>
+                                                        <connections>
+                                                            <action selector="ingredients50Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="km4-GA-Net"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jer-OB-y1x">
                                                         <rect key="frame" x="187.5" y="0.0" width="103.5" height="34.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="grape fruit"/>
+                                                        <connections>
+                                                            <action selector="ingredients51Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="aPD-eU-6sJ"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0q-35-RTq">
                                                         <rect key="frame" x="296" y="0.0" width="43.5" height="34.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="fig"/>
+                                                        <connections>
+                                                            <action selector="ingredients52Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="ImG-z8-C60"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -478,21 +610,33 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="113.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="watermelon"/>
+                                                <connections>
+                                                    <action selector="ingredients53Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="xUR-zw-Eb9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLb-zJ-26a">
                                                 <rect key="frame" x="118.5" y="0.0" width="71" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="peach"/>
+                                                <connections>
+                                                    <action selector="ingredients54Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="M34-Kl-vpn"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMM-Ad-G70">
                                                 <rect key="frame" x="194.5" y="0.0" width="58" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="date"/>
+                                                <connections>
+                                                    <action selector="ingredients55Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="lcv-VF-V9y"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMD-a4-iPe">
                                                 <rect key="frame" x="257.5" y="0.0" width="58.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="pear"/>
+                                                <connections>
+                                                    <action selector="ingredients56Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="KIx-xD-d0G"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -509,16 +653,25 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="86.5" height="34.5"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="coconut"/>
+                                                                <connections>
+                                                                    <action selector="ingredients57Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="dKH-8W-zeO"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiV-yz-3D7">
                                                                 <rect key="frame" x="91.5" y="0.0" width="98.5" height="34.5"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="dried fruit"/>
+                                                                <connections>
+                                                                    <action selector="ingredients58Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="TOq-ab-1Ff"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xrq-Tu-YTE">
                                                                 <rect key="frame" x="195" y="0.0" width="69.5" height="34.5"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="guava"/>
+                                                                <connections>
+                                                                    <action selector="ingredients59Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="cg7-Av-06p"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hh-tL-Evh">
                                                                 <rect key="frame" x="269.5" y="0.0" width="95.5" height="34.5"/>
@@ -559,12 +712,64 @@
                     <connections>
                         <outlet property="Submit" destination="v3l-A3-IHi" id="Eax-rq-Pkb"/>
                         <outlet property="ingredients1" destination="9cN-hw-TDJ" id="AUG-at-8uV"/>
+                        <outlet property="ingredients10" destination="BkO-Bc-14x" id="Wk7-gz-tTW"/>
+                        <outlet property="ingredients11" destination="NJW-fm-vEa" id="cl2-hg-hda"/>
+                        <outlet property="ingredients12" destination="XZu-72-k9W" id="lZf-1Q-4ax"/>
+                        <outlet property="ingredients13" destination="twh-tm-Ob1" id="Lci-Ed-HKe"/>
+                        <outlet property="ingredients14" destination="S8t-jo-uUE" id="tt1-2h-z3H"/>
+                        <outlet property="ingredients15" destination="c1O-Sw-lgm" id="FZx-QP-jhf"/>
+                        <outlet property="ingredients16" destination="RDE-hY-dvw" id="XBc-ZU-YZT"/>
+                        <outlet property="ingredients17" destination="PuP-KY-5ua" id="meP-me-NGZ"/>
+                        <outlet property="ingredients18" destination="33p-eb-83d" id="T0l-Fh-Jo2"/>
+                        <outlet property="ingredients19" destination="wkb-6R-tTR" id="Jf6-V4-TP0"/>
                         <outlet property="ingredients2" destination="8aD-eA-lT5" id="Kj5-Fv-kZu"/>
+                        <outlet property="ingredients20" destination="V3G-bl-MSb" id="wO9-XC-nb8"/>
+                        <outlet property="ingredients21" destination="9Yv-t7-NTW" id="Aet-Tq-cd7"/>
+                        <outlet property="ingredients22" destination="ebG-0y-Sb9" id="wyz-Mw-adP"/>
+                        <outlet property="ingredients23" destination="0Jr-c1-bv9" id="QER-R0-a0g"/>
+                        <outlet property="ingredients24" destination="sfA-Qt-whI" id="fq0-LE-0e5"/>
+                        <outlet property="ingredients25" destination="dYc-ux-IjY" id="mqj-aO-kcX"/>
+                        <outlet property="ingredients26" destination="Ngi-gS-ZxA" id="CUL-o4-NoK"/>
+                        <outlet property="ingredients27" destination="5cw-aN-2Gj" id="PUr-gr-fyc"/>
+                        <outlet property="ingredients28" destination="Wjh-7o-l97" id="tIQ-TU-m5U"/>
+                        <outlet property="ingredients29" destination="Vef-sY-fjX" id="pfF-3w-kJ1"/>
                         <outlet property="ingredients3" destination="LNV-99-sWD" id="EmP-gK-2f1"/>
+                        <outlet property="ingredients30" destination="y9g-hf-Yzy" id="JLK-Qb-wn8"/>
+                        <outlet property="ingredients31" destination="nBY-Aj-j3H" id="0Ho-oF-u9s"/>
+                        <outlet property="ingredients32" destination="JZL-At-EcF" id="wQv-Od-yUT"/>
+                        <outlet property="ingredients33" destination="E6B-sP-yJ9" id="nir-Kg-Qdw"/>
+                        <outlet property="ingredients34" destination="WGW-cj-m67" id="CPL-Wa-pH3"/>
+                        <outlet property="ingredients35" destination="F3Q-1p-RlC" id="qkQ-Mq-dCj"/>
+                        <outlet property="ingredients36" destination="5qm-pv-6qU" id="gB4-1t-kBv"/>
+                        <outlet property="ingredients37" destination="i1j-Fq-b4e" id="75D-sk-KhA"/>
+                        <outlet property="ingredients38" destination="clq-fV-cSs" id="6AC-Gf-bhq"/>
+                        <outlet property="ingredients39" destination="MOj-YM-QxO" id="PHj-QX-7KF"/>
                         <outlet property="ingredients4" destination="YSn-Ot-a05" id="91w-Q8-JUO"/>
+                        <outlet property="ingredients40" destination="RJO-hg-Sb2" id="R0T-lR-Ph1"/>
+                        <outlet property="ingredients41" destination="oyd-fb-fcc" id="jBc-er-bXg"/>
+                        <outlet property="ingredients42" destination="L9v-Gh-VoG" id="xWl-IL-kQ2"/>
+                        <outlet property="ingredients43" destination="Xup-xo-e9A" id="Imo-on-Qet"/>
+                        <outlet property="ingredients44" destination="Sab-jt-5Qk" id="VP5-HP-V6B"/>
+                        <outlet property="ingredients45" destination="h1a-We-SX7" id="1Ma-R6-jAQ"/>
+                        <outlet property="ingredients46" destination="1n2-5f-Bb6" id="ZKc-UM-aKY"/>
+                        <outlet property="ingredients47" destination="rUt-Dr-XK1" id="A9J-jH-LJc"/>
+                        <outlet property="ingredients48" destination="hPR-hr-2DI" id="pAy-0g-bSR"/>
+                        <outlet property="ingredients49" destination="Xtu-Gf-LKK" id="BvV-YK-PLn"/>
                         <outlet property="ingredients5" destination="N0d-Kw-hiA" id="cXn-OD-CSk"/>
+                        <outlet property="ingredients50" destination="Jer-OB-y1x" id="3O6-Ci-Z4m"/>
+                        <outlet property="ingredients51" destination="C0q-35-RTq" id="Ksn-ni-7Re"/>
+                        <outlet property="ingredients52" destination="37B-C0-djh" id="Xzd-Xe-JLZ"/>
+                        <outlet property="ingredients53" destination="wLb-zJ-26a" id="Kfx-a7-cgU"/>
+                        <outlet property="ingredients54" destination="aMM-Ad-G70" id="H30-rR-sjT"/>
+                        <outlet property="ingredients55" destination="gMD-a4-iPe" id="Zsg-dl-MTA"/>
+                        <outlet property="ingredients56" destination="wXL-YG-BUx" id="kfo-6c-I6U"/>
+                        <outlet property="ingredients57" destination="qiV-yz-3D7" id="Hbk-Ug-d83"/>
+                        <outlet property="ingredients58" destination="Xrq-Tu-YTE" id="N2B-8I-EFO"/>
+                        <outlet property="ingredients59" destination="1hh-tL-Evh" id="tAS-jO-xAt"/>
                         <outlet property="ingredients6" destination="fqP-cY-WLG" id="0kg-AC-OjQ"/>
                         <outlet property="ingredients7" destination="TM4-OP-eJX" id="Xo0-z5-udC"/>
+                        <outlet property="ingredients8" destination="BB9-gx-QEb" id="9O1-n2-1fb"/>
+                        <outlet property="ingredients9" destination="xwx-7R-Bug" id="4nE-Iu-jhG"/>
                         <segue destination="Idy-ZZ-Y1n" kind="show" identifier="screen" id="4cw-dk-IwL"/>
                     </connections>
                 </viewController>
