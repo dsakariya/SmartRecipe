@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LNE-9K-wb8">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -37,7 +37,7 @@
                         <imageReference key="selectedImage" image="bookmark.square.fill" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fDI-u8-cWy">
-                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -57,7 +57,7 @@
                         <imageReference key="selectedImage" image="line.3.horizontal" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cyd-pP-C7v">
-                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -77,7 +77,7 @@
                         <imageReference key="selectedImage" image="basket.fill" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gYd-tU-VRa">
-                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -96,23 +96,23 @@
             <objects>
                 <viewController id="I7Z-XL-66E" customClass="ViewController" customModule="SmartRecipe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G9w-Yv-871">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="WIr-4l-s1N">
-                                <rect key="frame" x="0.0" y="92" width="414" height="667.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="WIr-4l-s1N">
+                                <rect key="frame" x="0.0" y="86" width="390" height="628.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vegetables And Greens" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkL-ei-2d5">
-                                        <rect key="frame" x="117.5" y="0.0" width="179" height="20.5"/>
+                                        <rect key="frame" x="105.66666666666669" y="0.0" width="179" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="VRd-JZ-iDD">
-                                        <rect key="frame" x="41" y="23.5" width="332.5" height="34.5"/>
+                                        <rect key="frame" x="29" y="21.333333333333332" width="332" height="34.333333333333343"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cN-hw-TDJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="88.333333333333329" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="avocado"/>
                                                 <connections>
@@ -120,7 +120,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aD-eA-lT5">
-                                                <rect key="frame" x="92.5" y="0.0" width="85" height="34.5"/>
+                                                <rect key="frame" x="92.333333333333314" y="0.0" width="85" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="broccoli"/>
                                                 <connections>
@@ -128,7 +128,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNV-99-sWD">
-                                                <rect key="frame" x="181.5" y="0.0" width="91.5" height="34.5"/>
+                                                <rect key="frame" x="181.33333333333334" y="0.0" width="91.333333333333343" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="eggplant"/>
                                                 <connections>
@@ -136,7 +136,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSn-Ot-a05">
-                                                <rect key="frame" x="277" y="0.0" width="55.5" height="34.5"/>
+                                                <rect key="frame" x="276.66666666666669" y="0.0" width="55.333333333333314" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="leek"/>
                                                 <connections>
@@ -146,10 +146,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DEI-zI-2uP">
-                                        <rect key="frame" x="59" y="61" width="296.5" height="34.5"/>
+                                        <rect key="frame" x="46.666666666666657" y="56.666666666666657" width="296.66666666666674" height="34.333333333333343"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0d-Kw-hiA">
-                                                <rect key="frame" x="0.0" y="0.0" width="118.5" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="118.33333333333333" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="baby greens"/>
                                                 <connections>
@@ -157,7 +157,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqP-cY-WLG">
-                                                <rect key="frame" x="123.5" y="0.0" width="97.5" height="34.5"/>
+                                                <rect key="frame" x="123.33333333333334" y="0.0" width="97.666666666666657" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="beetroots"/>
                                                 <connections>
@@ -165,7 +165,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TM4-OP-eJX">
-                                                <rect key="frame" x="226" y="0.0" width="70.5" height="34.5"/>
+                                                <rect key="frame" x="226.00000000000003" y="0.0" width="70.666666666666657" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="celery"/>
                                                 <connections>
@@ -175,13 +175,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NQK-qG-BG0">
-                                        <rect key="frame" x="46" y="98.5" width="322" height="34.5"/>
+                                        <rect key="frame" x="34.333333333333343" y="92" width="321.66666666666663" height="34.333333333333343"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="mT0-En-5eC">
-                                                <rect key="frame" x="0.0" y="0.0" width="322" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="321.66666666666669" height="34.333333333333336"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BB9-gx-QEb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="58.5" height="34.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="58.666666666666664" height="34.333333333333336"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="corn"/>
                                                         <connections>
@@ -189,7 +189,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwx-7R-Bug">
-                                                        <rect key="frame" x="62.5" y="0.0" width="90.5" height="34.5"/>
+                                                        <rect key="frame" x="62.666666666666664" y="0.0" width="90.333333333333343" height="34.333333333333336"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="cabbage"/>
                                                         <connections>
@@ -197,7 +197,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BkO-Bc-14x">
-                                                        <rect key="frame" x="157" y="0.0" width="106" height="34.5"/>
+                                                        <rect key="frame" x="157" y="0.0" width="106" height="34.333333333333336"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="cauliflower"/>
                                                         <connections>
@@ -205,7 +205,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJW-fm-vEa">
-                                                        <rect key="frame" x="267" y="0.0" width="55" height="34.5"/>
+                                                        <rect key="frame" x="267" y="0.0" width="54.666666666666686" height="34.333333333333336"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="kale"/>
                                                         <connections>
@@ -217,10 +217,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="tws-dE-EAf">
-                                        <rect key="frame" x="55" y="136" width="304" height="34.5"/>
+                                        <rect key="frame" x="43.333333333333343" y="127.33333333333333" width="303.66666666666663" height="34.333333333333329"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZu-72-k9W">
-                                                <rect key="frame" x="0.0" y="0.0" width="91.5" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="eggplant"/>
                                                 <connections>
@@ -228,7 +228,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twh-tm-Ob1">
-                                                <rect key="frame" x="95.5" y="0.0" width="126.5" height="34.5"/>
+                                                <rect key="frame" x="95.333333333333314" y="0.0" width="126.33333333333331" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="mixed greens"/>
                                                 <connections>
@@ -236,7 +236,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8t-jo-uUE">
-                                                <rect key="frame" x="226" y="0.0" width="78" height="34.5"/>
+                                                <rect key="frame" x="225.66666666666663" y="0.0" width="78" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="tomato"/>
                                                 <connections>
@@ -246,10 +246,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="s2M-Tu-ERx">
-                                        <rect key="frame" x="40" y="173.5" width="334.5" height="34.5"/>
+                                        <rect key="frame" x="27.666666666666657" y="162.66666666666666" width="334.66666666666674" height="34.333333333333343"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1O-Sw-lgm">
-                                                <rect key="frame" x="0.0" y="0.0" width="69.5" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="69.666666666666671" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="carrot"/>
                                                 <connections>
@@ -257,7 +257,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDE-hY-dvw">
-                                                <rect key="frame" x="74.5" y="0.0" width="57.5" height="34.5"/>
+                                                <rect key="frame" x="74.666666666666657" y="0.0" width="57.666666666666657" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="okra"/>
                                                 <connections>
@@ -265,7 +265,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuP-KY-5ua">
-                                                <rect key="frame" x="137" y="0.0" width="76.5" height="34.5"/>
+                                                <rect key="frame" x="137.33333333333334" y="0.0" width="76.666666666666657" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="lettuce"/>
                                                 <connections>
@@ -273,7 +273,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33p-eb-83d">
-                                                <rect key="frame" x="218.5" y="0.0" width="116" height="34.5"/>
+                                                <rect key="frame" x="218.99999999999997" y="0.0" width="115.66666666666666" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="green olives"/>
                                                 <connections>
@@ -283,10 +283,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Nf5-Th-4L5">
-                                        <rect key="frame" x="31" y="211" width="352" height="34.5"/>
+                                        <rect key="frame" x="19.333333333333343" y="198" width="351.66666666666663" height="34.333333333333343"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkb-6R-tTR">
-                                                <rect key="frame" x="0.0" y="0.0" width="157.5" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="157.33333333333334" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="mixed vegetables"/>
                                                 <connections>
@@ -294,7 +294,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3G-bl-MSb">
-                                                <rect key="frame" x="161.5" y="0.0" width="113" height="34.5"/>
+                                                <rect key="frame" x="161.33333333333331" y="0.0" width="112.66666666666669" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="black olives"/>
                                                 <connections>
@@ -302,7 +302,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Yv-t7-NTW">
-                                                <rect key="frame" x="278.5" y="0.0" width="73.5" height="34.5"/>
+                                                <rect key="frame" x="278" y="0.0" width="73.666666666666686" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="potato"/>
                                                 <connections>
@@ -312,16 +312,16 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pantry Essentials" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pyo-kO-Aqp">
-                                        <rect key="frame" x="142" y="248.5" width="130" height="20.5"/>
+                                        <rect key="frame" x="130.33333333333337" y="233.33333333333331" width="129.66666666666663" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="sc5-is-6CJ">
-                                        <rect key="frame" x="38.5" y="272" width="337" height="34.5"/>
+                                        <rect key="frame" x="27" y="254.66666666666671" width="336.33333333333331" height="34.333333333333343"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebG-0y-Sb9">
-                                                <rect key="frame" x="0.0" y="0.0" width="70.5" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="70.333333333333329" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="butter"/>
                                                 <connections>
@@ -329,7 +329,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Jr-c1-bv9">
-                                                <rect key="frame" x="75.5" y="0.0" width="53.5" height="34.5"/>
+                                                <rect key="frame" x="75.333333333333329" y="0.0" width="53.333333333333329" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="egg"/>
                                                 <connections>
@@ -337,7 +337,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfA-Qt-whI">
-                                                <rect key="frame" x="134" y="0.0" width="55" height="34.5"/>
+                                                <rect key="frame" x="133.66666666666666" y="0.0" width="55" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="milk"/>
                                                 <connections>
@@ -345,7 +345,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYc-ux-IjY">
-                                                <rect key="frame" x="194" y="0.0" width="67" height="34.5"/>
+                                                <rect key="frame" x="193.66666666666666" y="0.0" width="66.999999999999972" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="sugar"/>
                                                 <connections>
@@ -353,7 +353,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngi-gS-ZxA">
-                                                <rect key="frame" x="266" y="0.0" width="71" height="34.5"/>
+                                                <rect key="frame" x="265.66666666666669" y="0.0" width="70.666666666666686" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="honey"/>
                                                 <connections>
@@ -363,10 +363,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="T08-Vw-NT7">
-                                        <rect key="frame" x="33" y="309.5" width="348.5" height="34.5"/>
+                                        <rect key="frame" x="20.666666666666657" y="290" width="348.66666666666674" height="34.333333333333314"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cw-aN-2Gj">
-                                                <rect key="frame" x="0.0" y="0.0" width="95.5" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="95.666666666666671" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="egg plant"/>
                                                 <connections>
@@ -374,7 +374,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjh-7o-l97">
-                                                <rect key="frame" x="100.5" y="0.0" width="66" height="34.5"/>
+                                                <rect key="frame" x="100.66666666666666" y="0.0" width="66" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="onion"/>
                                                 <connections>
@@ -382,7 +382,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vef-sY-fjX">
-                                                <rect key="frame" x="171.5" y="0.0" width="98.5" height="34.5"/>
+                                                <rect key="frame" x="171.66666666666669" y="0.0" width="98.333333333333314" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="cinnamon"/>
                                                 <connections>
@@ -390,7 +390,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9g-hf-Yzy">
-                                                <rect key="frame" x="275" y="0.0" width="73.5" height="34.5"/>
+                                                <rect key="frame" x="275" y="0.0" width="73.666666666666686" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="potato"/>
                                                 <connections>
@@ -400,10 +400,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mJ2-Gt-DF6">
-                                        <rect key="frame" x="37.5" y="347" width="339.5" height="34.5"/>
+                                        <rect key="frame" x="25.666666666666657" y="325.33333333333331" width="339" height="34.333333333333314"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBY-Aj-j3H">
-                                                <rect key="frame" x="0.0" y="0.0" width="52.5" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="52.333333333333336" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="rice"/>
                                                 <connections>
@@ -411,7 +411,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZL-At-EcF">
-                                                <rect key="frame" x="57.5" y="0.0" width="87" height="34.5"/>
+                                                <rect key="frame" x="57.333333333333329" y="0.0" width="86.999999999999986" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="mustard"/>
                                                 <connections>
@@ -419,7 +419,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6B-sP-yJ9">
-                                                <rect key="frame" x="149.5" y="0.0" width="116.5" height="34.5"/>
+                                                <rect key="frame" x="149.33333333333334" y="0.0" width="116.33333333333334" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="baking soda"/>
                                                 <connections>
@@ -427,7 +427,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGW-cj-m67">
-                                                <rect key="frame" x="271" y="0.0" width="68.5" height="34.5"/>
+                                                <rect key="frame" x="270.66666666666663" y="0.0" width="68.333333333333314" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="bread"/>
                                                 <connections>
@@ -437,10 +437,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Pzh-yd-dBE">
-                                        <rect key="frame" x="28.5" y="384.5" width="357.5" height="34.5"/>
+                                        <rect key="frame" x="16.333333333333343" y="360.66666666666669" width="357.66666666666663" height="34.333333333333314"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3Q-1p-RlC">
-                                                <rect key="frame" x="0.0" y="0.0" width="70.5" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="70.333333333333329" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="cumin"/>
                                                 <connections>
@@ -448,7 +448,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qm-pv-6qU">
-                                                <rect key="frame" x="75.5" y="0.0" width="87" height="34.5"/>
+                                                <rect key="frame" x="75.333333333333343" y="0.0" width="87" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="cheddar"/>
                                                 <connections>
@@ -456,7 +456,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1j-Fq-b4e">
-                                                <rect key="frame" x="167.5" y="0.0" width="115.5" height="34.5"/>
+                                                <rect key="frame" x="167.33333333333331" y="0.0" width="115.66666666666669" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="chili powder"/>
                                                 <connections>
@@ -464,7 +464,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clq-fV-cSs">
-                                                <rect key="frame" x="288" y="0.0" width="69.5" height="34.5"/>
+                                                <rect key="frame" x="288" y="0.0" width="69.666666666666686" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="carrot"/>
                                                 <connections>
@@ -474,10 +474,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uoQ-7a-Xgi">
-                                        <rect key="frame" x="26.5" y="422" width="361" height="34.5"/>
+                                        <rect key="frame" x="15" y="396" width="360" height="34.333333333333314"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOj-YM-QxO">
-                                                <rect key="frame" x="0.0" y="0.0" width="78" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="78" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="tomato"/>
                                                 <connections>
@@ -485,7 +485,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJO-hg-Sb2">
-                                                <rect key="frame" x="83" y="0.0" width="87" height="34.5"/>
+                                                <rect key="frame" x="83" y="0.0" width="86.666666666666686" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="oregano"/>
                                                 <connections>
@@ -493,7 +493,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyd-fb-fcc">
-                                                <rect key="frame" x="175" y="0.0" width="100" height="34.5"/>
+                                                <rect key="frame" x="174.66666666666666" y="0.0" width="99.666666666666657" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="bell paper"/>
                                                 <connections>
@@ -501,7 +501,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9v-Gh-VoG">
-                                                <rect key="frame" x="280" y="0.0" width="81" height="34.5"/>
+                                                <rect key="frame" x="279.33333333333331" y="0.0" width="80.666666666666686" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="olive oil"/>
                                                 <connections>
@@ -511,16 +511,16 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruits" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ki-sM-0Yk">
-                                        <rect key="frame" x="185.5" y="459.5" width="43" height="20.5"/>
+                                        <rect key="frame" x="173.66666666666666" y="431.33333333333337" width="42.666666666666657" height="20.333333333333314"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="3AU-bg-Njs">
-                                        <rect key="frame" x="29.5" y="483" width="355" height="34.5"/>
+                                        <rect key="frame" x="18" y="452.66666666666663" width="354.33333333333331" height="34.333333333333314"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xup-xo-e9A">
-                                                <rect key="frame" x="0.0" y="0.0" width="66" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="66" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="apple"/>
                                                 <connections>
@@ -528,7 +528,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sab-jt-5Qk">
-                                                <rect key="frame" x="70" y="0.0" width="77.5" height="34.5"/>
+                                                <rect key="frame" x="70" y="0.0" width="77.333333333333314" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="orange"/>
                                                 <connections>
@@ -536,7 +536,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1a-We-SX7">
-                                                <rect key="frame" x="151.5" y="0.0" width="80" height="34.5"/>
+                                                <rect key="frame" x="151.33333333333334" y="0.0" width="80" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="banana"/>
                                                 <connections>
@@ -544,7 +544,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1n2-5f-Bb6">
-                                                <rect key="frame" x="235.5" y="0.0" width="53.5" height="34.5"/>
+                                                <rect key="frame" x="235.33333333333334" y="0.0" width="53.333333333333343" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="kiwi"/>
                                                 <connections>
@@ -552,7 +552,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUt-Dr-XK1">
-                                                <rect key="frame" x="293" y="0.0" width="62" height="34.5"/>
+                                                <rect key="frame" x="292.66666666666669" y="0.0" width="61.666666666666686" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="plum"/>
                                                 <connections>
@@ -562,13 +562,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="e7N-0j-1xo">
-                                        <rect key="frame" x="37.5" y="520.5" width="339.5" height="34.5"/>
+                                        <rect key="frame" x="25.333333333333343" y="488" width="339.66666666666663" height="34.333333333333371"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="t8x-MI-twS">
-                                                <rect key="frame" x="0.0" y="0.0" width="339.5" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="339.66666666666669" height="34.333333333333336"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPR-hr-2DI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="98.5" height="34.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="98.666666666666671" height="34.333333333333336"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="pineapple"/>
                                                         <connections>
@@ -576,7 +576,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xtu-Gf-LKK">
-                                                        <rect key="frame" x="103.5" y="0.0" width="79" height="34.5"/>
+                                                        <rect key="frame" x="103.66666666666669" y="0.0" width="79" height="34.333333333333336"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="papaya"/>
                                                         <connections>
@@ -584,7 +584,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jer-OB-y1x">
-                                                        <rect key="frame" x="187.5" y="0.0" width="103.5" height="34.5"/>
+                                                        <rect key="frame" x="187.66666666666666" y="0.0" width="103.33333333333334" height="34.333333333333336"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="grape fruit"/>
                                                         <connections>
@@ -592,7 +592,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0q-35-RTq">
-                                                        <rect key="frame" x="296" y="0.0" width="43.5" height="34.5"/>
+                                                        <rect key="frame" x="296" y="0.0" width="43.666666666666686" height="34.333333333333336"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="fig"/>
                                                         <connections>
@@ -604,10 +604,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vi8-da-AIE">
-                                        <rect key="frame" x="49" y="558" width="316" height="34.5"/>
+                                        <rect key="frame" x="37.333333333333343" y="523.33333333333337" width="315.66666666666663" height="34.333333333333371"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37B-C0-djh">
-                                                <rect key="frame" x="0.0" y="0.0" width="113.5" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="113.33333333333333" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="watermelon"/>
                                                 <connections>
@@ -615,7 +615,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLb-zJ-26a">
-                                                <rect key="frame" x="118.5" y="0.0" width="71" height="34.5"/>
+                                                <rect key="frame" x="118.33333333333331" y="0.0" width="71" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="peach"/>
                                                 <connections>
@@ -623,7 +623,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMM-Ad-G70">
-                                                <rect key="frame" x="194.5" y="0.0" width="58" height="34.5"/>
+                                                <rect key="frame" x="194.33333333333331" y="0.0" width="58" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="date"/>
                                                 <connections>
@@ -631,7 +631,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMD-a4-iPe">
-                                                <rect key="frame" x="257.5" y="0.0" width="58.5" height="34.5"/>
+                                                <rect key="frame" x="257.33333333333337" y="0.0" width="58.333333333333314" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="pear"/>
                                                 <connections>
@@ -641,16 +641,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="3xq-ZM-rR5">
-                                        <rect key="frame" x="24.5" y="595.5" width="365" height="34.5"/>
+                                        <rect key="frame" x="12.666666666666657" y="558.66666666666663" width="364.66666666666674" height="34.333333333333371"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Mvp-lS-P47">
-                                                <rect key="frame" x="0.0" y="0.0" width="365" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="364.66666666666669" height="34.333333333333336"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kHh-Fb-1d4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="365" height="34.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="364.66666666666669" height="34.333333333333336"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXL-YG-BUx">
-                                                                <rect key="frame" x="0.0" y="0.0" width="86.5" height="34.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="34.333333333333336"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="coconut"/>
                                                                 <connections>
@@ -658,7 +658,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiV-yz-3D7">
-                                                                <rect key="frame" x="91.5" y="0.0" width="98.5" height="34.5"/>
+                                                                <rect key="frame" x="91.333333333333343" y="0.0" width="98.333333333333343" height="34.333333333333336"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="dried fruit"/>
                                                                 <connections>
@@ -666,7 +666,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xrq-Tu-YTE">
-                                                                <rect key="frame" x="195" y="0.0" width="69.5" height="34.5"/>
+                                                                <rect key="frame" x="194.66666666666669" y="0.0" width="69.666666666666686" height="34.333333333333336"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="guava"/>
                                                                 <connections>
@@ -674,7 +674,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hh-tL-Evh">
-                                                                <rect key="frame" x="269.5" y="0.0" width="95.5" height="34.5"/>
+                                                                <rect key="frame" x="269.33333333333331" y="0.0" width="95.333333333333314" height="34.333333333333336"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="chest nut"/>
                                                                 <connections>
@@ -688,7 +688,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3l-A3-IHi">
-                                        <rect key="frame" x="30" y="633" width="354" height="34.5"/>
+                                        <rect key="frame" x="30" y="594" width="330" height="34.333333333333371"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Submit"/>
                                         <connections>
@@ -699,7 +699,6 @@
                                 <constraints>
                                     <constraint firstItem="v3l-A3-IHi" firstAttribute="leading" secondItem="WIr-4l-s1N" secondAttribute="leading" constant="30" id="Mem-U5-Gdh"/>
                                     <constraint firstAttribute="trailing" secondItem="v3l-A3-IHi" secondAttribute="trailing" constant="30" id="NSJ-nr-vSk"/>
-                                    <constraint firstItem="v3l-A3-IHi" firstAttribute="top" secondItem="3xq-ZM-rR5" secondAttribute="bottom" constant="10" id="jdI-kd-SZd"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -708,6 +707,7 @@
                         <constraints>
                             <constraint firstItem="3sb-nn-f0K" firstAttribute="trailing" secondItem="WIr-4l-s1N" secondAttribute="trailing" id="4Av-CI-k9V"/>
                             <constraint firstItem="WIr-4l-s1N" firstAttribute="top" secondItem="G9w-Yv-871" secondAttribute="topMargin" id="4Gg-IT-jyB"/>
+                            <constraint firstItem="WIr-4l-s1N" firstAttribute="top" secondItem="3sb-nn-f0K" secondAttribute="top" constant="-5" id="Aez-19-PXf"/>
                             <constraint firstItem="WIr-4l-s1N" firstAttribute="leading" secondItem="G9w-Yv-871" secondAttribute="leading" id="Fxz-EY-5CI"/>
                         </constraints>
                     </view>
@@ -778,24 +778,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qg7-rp-mYt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3139" y="627"/>
+            <point key="canvasLocation" x="-3354" y="626"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="w6k-bA-4yD">
             <objects>
                 <viewController id="Idy-ZZ-Y1n" customClass="SecondViewController" customModule="SmartRecipe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bho-xu-g1m">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="zKL-tn-wKn">
-                                <rect key="frame" x="0.0" y="112" width="414" height="642"/>
+                                <rect key="frame" x="0.0" y="111" width="390" height="642"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ls-Ss-jFU" customClass="cardView" customModule="SmartRecipe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="120"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EhY-62-jFB">
-                                                <rect key="frame" x="10" y="10" width="394" height="100"/>
+                                                <rect key="frame" x="10" y="10" width="370" height="100"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U19-c0-BzH">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -805,13 +805,13 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="dPe-15-wlK">
-                                                        <rect key="frame" x="105" y="0.5" width="289" height="99.5"/>
+                                                        <rect key="frame" x="105" y="0.3333333333333286" width="265" height="99.333333333333329"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Uki-uA-q7C">
-                                                                <rect key="frame" x="56" y="0.0" width="177" height="35"/>
+                                                                <rect key="frame" x="44" y="0.0" width="177" height="35"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Curry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMH-f1-ANw">
-                                                                        <rect key="frame" x="0.0" y="6" width="127" height="22.5"/>
+                                                                        <rect key="frame" x="0.0" y="6.333333333333341" width="127" height="22.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -828,7 +828,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Si7-qg-Lgd">
-                                                                <rect key="frame" x="79" y="65" width="131.5" height="34.5"/>
+                                                                <rect key="frame" x="66.666666666666671" y="65.000000000000014" width="131.66666666666663" height="34.333333333333329"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Show Receipe" cornerStyle="large"/>
                                                                 <connections>
@@ -858,10 +858,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rug-KW-F5b" customClass="cardView" customModule="SmartRecipe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="174" width="414" height="120"/>
+                                        <rect key="frame" x="0.0" y="174" width="390" height="120"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2k3-cv-opK">
-                                                <rect key="frame" x="10" y="10" width="394" height="100"/>
+                                                <rect key="frame" x="10" y="10" width="370" height="100"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="743-FX-cgc">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -871,13 +871,13 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Noj-4q-7yH">
-                                                        <rect key="frame" x="105" y="0.5" width="289" height="99.5"/>
+                                                        <rect key="frame" x="105" y="0.33333333333331439" width="265" height="99.333333333333329"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cCA-eI-FhO">
-                                                                <rect key="frame" x="56" y="0.0" width="177" height="35"/>
+                                                                <rect key="frame" x="44" y="0.0" width="177" height="35"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Curry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63j-5i-YET">
-                                                                        <rect key="frame" x="0.0" y="6" width="127" height="22.5"/>
+                                                                        <rect key="frame" x="0.0" y="6.3333333333333695" width="127" height="22.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -894,7 +894,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhf-7G-h78">
-                                                                <rect key="frame" x="79" y="65" width="131.5" height="34.5"/>
+                                                                <rect key="frame" x="66.666666666666671" y="65" width="131.66666666666663" height="34.333333333333343"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Show Receipe" cornerStyle="large"/>
                                                                 <connections>
@@ -923,10 +923,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLT-IR-q8g" customClass="cardView" customModule="SmartRecipe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="348" width="414" height="120"/>
+                                        <rect key="frame" x="0.0" y="348" width="390" height="120"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BNa-H1-mOA">
-                                                <rect key="frame" x="10" y="10" width="394" height="100"/>
+                                                <rect key="frame" x="10" y="10" width="370" height="100"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VoY-Vr-Y1s">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -936,13 +936,13 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZM7-8f-xsC">
-                                                        <rect key="frame" x="105" y="0.5" width="289" height="99.5"/>
+                                                        <rect key="frame" x="105" y="0.33333333333331439" width="265" height="99.333333333333329"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Std-ra-pdF">
-                                                                <rect key="frame" x="56" y="0.0" width="177" height="35"/>
+                                                                <rect key="frame" x="44" y="0.0" width="177" height="35"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Curry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nk5-LJ-8BH">
-                                                                        <rect key="frame" x="0.0" y="6" width="127" height="22.5"/>
+                                                                        <rect key="frame" x="0.0" y="6.3333333333333695" width="127" height="22.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -959,7 +959,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilh-DS-2Kv">
-                                                                <rect key="frame" x="79" y="65" width="131.5" height="34.5"/>
+                                                                <rect key="frame" x="66.666666666666671" y="65.000000000000057" width="131.66666666666663" height="34.333333333333343"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Show Receipe" cornerStyle="large"/>
                                                                 <connections>
@@ -988,10 +988,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jka-gH-aT2" customClass="cardView" customModule="SmartRecipe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="522" width="414" height="120"/>
+                                        <rect key="frame" x="0.0" y="522" width="390" height="120"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="H0Q-tC-R8d">
-                                                <rect key="frame" x="10" y="10" width="394" height="100"/>
+                                                <rect key="frame" x="10" y="10" width="370" height="100"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kdb-tE-yZf">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -1001,13 +1001,13 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="h8L-iC-AL8">
-                                                        <rect key="frame" x="105" y="0.5" width="289" height="99.5"/>
+                                                        <rect key="frame" x="105" y="0.33333333333337123" width="265" height="99.333333333333329"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="e13-ID-4Ak">
-                                                                <rect key="frame" x="56" y="0.0" width="177" height="35"/>
+                                                                <rect key="frame" x="44" y="0.0" width="177" height="35"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Curry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlS-Ud-HMP">
-                                                                        <rect key="frame" x="0.0" y="6" width="127" height="22.5"/>
+                                                                        <rect key="frame" x="0.0" y="6.3333333333332558" width="127" height="22.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -1024,7 +1024,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwp-ra-cwX">
-                                                                <rect key="frame" x="79" y="65" width="131.5" height="34.5"/>
+                                                                <rect key="frame" x="66.666666666666671" y="65" width="131.66666666666663" height="34.333333333333343"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Show Receipe" cornerStyle="large"/>
                                                                 <connections>
@@ -1088,14 +1088,14 @@
             <objects>
                 <viewController id="kKM-nR-yzf" customClass="ViewController" customModule="SmartRecipe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PvN-dm-RV0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="i5k-75-1rn">
-                                <rect key="frame" x="0.0" y="112" width="414" height="650"/>
+                                <rect key="frame" x="0.0" y="111" width="390" height="650"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Yw-Re-P7A" customClass="cardView" customModule="SmartRecipe" customModuleProvider="target">
-                                        <rect key="frame" x="25" y="0.0" width="364" height="140"/>
+                                        <rect key="frame" x="13" y="0.0" width="364" height="140"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Q51-a4-AUx">
                                                 <rect key="frame" x="10" y="10" width="344" height="120"/>
@@ -1108,13 +1108,13 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="gwR-Z9-8Ii">
-                                                        <rect key="frame" x="105" y="10.5" width="239" height="99.5"/>
+                                                        <rect key="frame" x="105" y="10.333333333333343" width="239" height="99.333333333333329"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vya-zH-PB5">
                                                                 <rect key="frame" x="31" y="0.0" width="177" height="35"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Curry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQT-mg-4sF">
-                                                                        <rect key="frame" x="0.0" y="6" width="127" height="22.5"/>
+                                                                        <rect key="frame" x="0.0" y="6.3333333333333126" width="127" height="22.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -1131,7 +1131,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFV-V7-BDu">
-                                                                <rect key="frame" x="54" y="65" width="131.5" height="34.5"/>
+                                                                <rect key="frame" x="53.666666666666657" y="65" width="131.66666666666666" height="34.333333333333343"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Show Receipe" cornerStyle="large"/>
                                                                 <connections>
@@ -1160,7 +1160,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eae-9E-wsz" customClass="cardView" customModule="SmartRecipe" customModuleProvider="target">
-                                        <rect key="frame" x="25" y="170" width="364" height="140"/>
+                                        <rect key="frame" x="13" y="170" width="364" height="140"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="D8U-W1-faw">
                                                 <rect key="frame" x="10" y="10" width="344" height="120"/>
@@ -1173,13 +1173,13 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="oaD-Zs-ZFA">
-                                                        <rect key="frame" x="105" y="10.5" width="239" height="99.5"/>
+                                                        <rect key="frame" x="105" y="10.333333333333314" width="239" height="99.333333333333329"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qer-7O-yEW">
                                                                 <rect key="frame" x="31" y="0.0" width="177" height="35"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Curry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zb-cX-5g3">
-                                                                        <rect key="frame" x="0.0" y="6" width="127" height="22.5"/>
+                                                                        <rect key="frame" x="0.0" y="6.3333333333333695" width="127" height="22.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -1196,7 +1196,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vg7-ph-ZOc">
-                                                                <rect key="frame" x="54" y="65" width="131.5" height="34.5"/>
+                                                                <rect key="frame" x="53.666666666666657" y="65" width="131.66666666666666" height="34.333333333333343"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Show Receipe" cornerStyle="large"/>
                                                                 <connections>
@@ -1225,7 +1225,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBr-0k-f3t" customClass="cardView" customModule="SmartRecipe" customModuleProvider="target">
-                                        <rect key="frame" x="25" y="340" width="364" height="140"/>
+                                        <rect key="frame" x="13" y="340" width="364" height="140"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Hb6-TD-skm">
                                                 <rect key="frame" x="10" y="10" width="344" height="120"/>
@@ -1238,13 +1238,13 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fAp-1G-w2q">
-                                                        <rect key="frame" x="105" y="10.5" width="239" height="99.5"/>
+                                                        <rect key="frame" x="105" y="10.333333333333314" width="239" height="99.333333333333329"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uNv-Rb-bde">
                                                                 <rect key="frame" x="31" y="0.0" width="177" height="35"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Curry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FK8-cj-GYS">
-                                                                        <rect key="frame" x="0.0" y="6" width="127" height="22.5"/>
+                                                                        <rect key="frame" x="0.0" y="6.3333333333333695" width="127" height="22.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -1261,7 +1261,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2K-ui-fkr">
-                                                                <rect key="frame" x="54" y="65" width="131.5" height="34.5"/>
+                                                                <rect key="frame" x="53.666666666666657" y="65.000000000000057" width="131.66666666666666" height="34.333333333333343"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Show Receipe" cornerStyle="large"/>
                                                                 <connections>
@@ -1290,7 +1290,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kL4-ns-rgS" customClass="cardView" customModule="SmartRecipe" customModuleProvider="target">
-                                        <rect key="frame" x="25" y="510" width="364" height="140"/>
+                                        <rect key="frame" x="13" y="510" width="364" height="140"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LRZ-QT-4Em">
                                                 <rect key="frame" x="10" y="10" width="344" height="120"/>
@@ -1303,13 +1303,13 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="g8s-Yz-0cA">
-                                                        <rect key="frame" x="105" y="10.5" width="239" height="99.5"/>
+                                                        <rect key="frame" x="105" y="10.333333333333371" width="239" height="99.333333333333329"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aZE-Gv-hlY">
                                                                 <rect key="frame" x="31" y="0.0" width="177" height="35"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Curry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ia0-0k-pxM">
-                                                                        <rect key="frame" x="0.0" y="6" width="127" height="22.5"/>
+                                                                        <rect key="frame" x="0.0" y="6.3333333333332558" width="127" height="22.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -1326,7 +1326,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKN-Q0-gmU">
-                                                                <rect key="frame" x="54" y="65" width="131.5" height="34.5"/>
+                                                                <rect key="frame" x="53.666666666666657" y="65" width="131.66666666666666" height="34.333333333333343"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Show Receipe" cornerStyle="large"/>
                                                                 <connections>
@@ -1390,7 +1390,7 @@
             <objects>
                 <viewController id="qLA-pt-HSq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sKA-k7-zZD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="mVx-hD-VsK"/>
                         <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
