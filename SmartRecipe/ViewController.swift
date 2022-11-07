@@ -47,7 +47,44 @@ class ViewController: UIViewController {
     var ingredientSelected22 = false
     var ingredientSelected23 = false
     var ingredientSelected24 = false
-    
+    var ingredientSelected25 = false
+    var ingredientSelected26 = false
+    var ingredientSelected27 = false
+    var ingredientSelected28 = false
+    var ingredientSelected29 = false
+    var ingredientSelected30 = false
+    var ingredientSelected31 = false
+    var ingredientSelected32 = false
+    var ingredientSelected33 = false
+    var ingredientSelected34 = false
+    var ingredientSelected35 = false
+    var ingredientSelected36 = false
+    var ingredientSelected37 = false
+    var ingredientSelected38 = false
+    var ingredientSelected39 = false
+    var ingredientSelected40 = false
+    var ingredientSelected41 = false
+    var ingredientSelected42 = false
+    var ingredientSelected43 = false
+    var ingredientSelected44 = false
+    var ingredientSelected45 = false
+    var ingredientSelected46 = false
+    var ingredientSelected47 = false
+    var ingredientSelected48 = false
+    var ingredientSelected49 = false
+    var ingredientSelected50 = false
+    var ingredientSelected51 = false
+    var ingredientSelected52 = false
+    var ingredientSelected53 = false
+    var ingredientSelected54 = false
+    var ingredientSelected55 = false
+    var ingredientSelected56 = false
+    var ingredientSelected57 = false
+    var ingredientSelected58 = false
+    var ingredientSelected59 = false
+    var ingredientSelected60 = false
+    var ingredientSelected61 = false
+    var ingredientSelected62 = false
     
     @IBOutlet weak var ingredients1: UIButton!
     @IBOutlet weak var ingredients2: UIButton!
@@ -73,7 +110,44 @@ class ViewController: UIViewController {
     @IBOutlet weak var ingredients22: UIButton!
     @IBOutlet weak var ingredients23: UIButton!
     @IBOutlet weak var ingredients24: UIButton!
-
+    @IBOutlet weak var ingredients25: UIButton!
+    @IBOutlet weak var ingredients26: UIButton!
+    @IBOutlet weak var ingredients27: UIButton!
+    @IBOutlet weak var ingredients28: UIButton!
+    @IBOutlet weak var ingredients29: UIButton!
+    @IBOutlet weak var ingredients30: UIButton!
+    @IBOutlet weak var ingredients31: UIButton!
+    @IBOutlet weak var ingredients32: UIButton!
+    @IBOutlet weak var ingredients33: UIButton!
+    @IBOutlet weak var ingredients34: UIButton!
+    @IBOutlet weak var ingredients35: UIButton!
+    @IBOutlet weak var ingredients36: UIButton!
+    @IBOutlet weak var ingredients37: UIButton!
+    @IBOutlet weak var ingredients38: UIButton!
+    @IBOutlet weak var ingredients39: UIButton!
+    @IBOutlet weak var ingredients40: UIButton!
+    @IBOutlet weak var ingredients41: UIButton!
+    @IBOutlet weak var ingredients42: UIButton!
+    @IBOutlet weak var ingredients43: UIButton!
+    @IBOutlet weak var ingredients44: UIButton!
+    @IBOutlet weak var ingredients45: UIButton!
+    @IBOutlet weak var ingredients46: UIButton!
+    @IBOutlet weak var ingredients47: UIButton!
+    @IBOutlet weak var ingredients48: UIButton!
+    @IBOutlet weak var ingredients49: UIButton!
+    @IBOutlet weak var ingredients50: UIButton!
+    @IBOutlet weak var ingredients51: UIButton!
+    @IBOutlet weak var ingredients52: UIButton!
+    @IBOutlet weak var ingredients53: UIButton!
+    @IBOutlet weak var ingredients54: UIButton!
+    @IBOutlet weak var ingredients55: UIButton!
+    @IBOutlet weak var ingredients56: UIButton!
+    @IBOutlet weak var ingredients57: UIButton!
+    @IBOutlet weak var ingredients58: UIButton!
+    @IBOutlet weak var ingredients59: UIButton!
+    @IBOutlet weak var ingredients60: UIButton!
+    @IBOutlet weak var ingredients61: UIButton!
+    @IBOutlet weak var ingredients62: UIButton!
     
     @IBOutlet weak var Submit: UIButton!
     
@@ -346,7 +420,232 @@ class ViewController: UIViewController {
         }
         
     }
+    @IBAction func ingredients25Tapped(_ sender: Any) {
+        if ingredientSelected25==false{
+            ingredientSelected25=true
+            ingredients25.tintColor = .systemGray
+            queryList.append(ingredients25.titleLabel!.text ?? "")}
+        else{
+            ingredientSelected25=false
+            ingredients25.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients25.titleLabel!.text ?? "")} )
+            }
+    }
+    @IBAction func ingredients26Tapped(_ sender: Any) {
+        if ingredientSelected26==false{
+            ingredientSelected26=true
+            ingredients26.tintColor = .systemGray
+            queryList.append(ingredients26.titleLabel!.text ?? "")}
+        else{
+            ingredientSelected26=false
+            ingredients26.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients26.titleLabel!.text ?? "")} )
+            
+        }
+        
+    }
+    @IBAction func ingredients27Tapped(_ sender: Any) {
+        if ingredientSelected27==false{
+            ingredientSelected27=true
+            ingredients27.tintColor = .systemGray
+            queryList.append(ingredients27.titleLabel!.text ?? "")}
+        else{ingredientSelected27=false
+                ingredients27.tintColor = .systemBlue
+                queryList.removeAll(where: {$0.contains(ingredients27.titleLabel!.text ?? "")} )
+                
+            }
+        
+    }
+    @IBAction func ingredients28Tapped(_ sender: Any) {
+        if ingredientSelected28==false{
+            ingredientSelected28=true
+            ingredients28.tintColor = .systemGray
+            queryList.append(ingredients28.titleLabel!.text ?? "")}
+        else{ingredientSelected28=false
+                ingredients28.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients28.titleLabel!.text ?? "")} ) } }
+    @IBAction func ingredients29Tapped(_ sender: Any) {if ingredientSelected29==false{ ingredientSelected29=true
+        ingredients29.tintColor = .systemGray
+        queryList.append(ingredients29.titleLabel!.text ?? "")}
+        else{ingredientSelected29=false
+            ingredients29.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients29.titleLabel!.text ?? "")} ) } }
+    @IBAction func ingredients30Tapped(_ sender: Any) {if ingredientSelected30==false{ ingredientSelected30=true
+        ingredients30.tintColor = .systemGray
+        queryList.append(ingredients30.titleLabel!.text ?? "")}else{ingredientSelected30=false
+            ingredients30.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients30.titleLabel!.text ?? "")} ) } }
+    @IBAction func ingredients31Tapped(_ sender: Any) {if ingredientSelected31==false{ ingredientSelected31=true
+        ingredients31.tintColor = .systemGray
+        queryList.append(ingredients31.titleLabel!.text ?? "")}else{ingredientSelected31=false
+            ingredients31.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients31.titleLabel!.text ?? "")} ) } }
+    @IBAction func ingredients32Tapped(_ sender: Any) {if ingredientSelected32==false{ ingredientSelected32=true
+        ingredients32.tintColor = .systemGray
+        queryList.append(ingredients32.titleLabel!.text ?? "")}else{ingredientSelected32=false
+            ingredients32.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients32.titleLabel!.text ?? "")} ) } }
+    @IBAction func ingredients33Tapped(_ sender: Any) {if ingredientSelected33==false{ ingredientSelected33=true
+        ingredients33.tintColor = .systemGray
+        queryList.append(ingredients33.titleLabel!.text ?? "")}else{ingredientSelected33=false
+            ingredients33.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients33.titleLabel!.text ?? "")} ) } }
     
+    @IBAction func ingredients34Tapped(_ sender: Any) {if ingredientSelected34==false{ ingredientSelected34=true
+        ingredients34.tintColor = .systemGray
+        queryList.append(ingredients34.titleLabel!.text ?? "")}else{ingredientSelected34=false
+            ingredients34.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients34.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients35Tapped(_ sender: Any) {if ingredientSelected35==false{ ingredientSelected35=true
+        ingredients35.tintColor = .systemGray
+        queryList.append(ingredients35.titleLabel!.text ?? "")}else{ingredientSelected35=false
+            ingredients35.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients35.titleLabel!.text ?? "")} ) } }
+    @IBAction func ingredients36Tapped(_ sender: Any) {if ingredientSelected36==false{ ingredientSelected36=true
+        ingredients36.tintColor = .systemGray
+        queryList.append(ingredients36.titleLabel!.text ?? "")}else{ingredientSelected36=false
+            ingredients36.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients36.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients37Tapped(_ sender: Any) {if ingredientSelected37==false{ ingredientSelected37=true
+        ingredients37.tintColor = .systemGray
+        queryList.append(ingredients37.titleLabel!.text ?? "")}else{ingredientSelected37=false
+            ingredients37.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients37.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients38Tapped(_ sender: Any) {if ingredientSelected38==false{ ingredientSelected38=true
+        ingredients38.tintColor = .systemGray
+        queryList.append(ingredients38.titleLabel!.text ?? "")}else{ingredientSelected38=false
+            ingredients38.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients38.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients39Tapped(_ sender: Any) {if ingredientSelected39==false{ ingredientSelected39=true
+        ingredients39.tintColor = .systemGray
+        queryList.append(ingredients39.titleLabel!.text ?? "")}else{ingredientSelected39=false
+            ingredients39.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients39.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients40Tapped(_ sender: Any) {if ingredientSelected40==false{ ingredientSelected40=true
+        ingredients40.tintColor = .systemGray
+        queryList.append(ingredients40.titleLabel!.text ?? "")}else{ingredientSelected40=false
+            ingredients40.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients40.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients41Tapped(_ sender: Any) {if ingredientSelected41==false{ ingredientSelected41=true
+        ingredients41.tintColor = .systemGray
+        queryList.append(ingredients41.titleLabel!.text ?? "")}else{ingredientSelected41=false
+            ingredients41.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients41.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients42Tapped(_ sender: Any) {if ingredientSelected42==false{ ingredientSelected42=true
+        ingredients42.tintColor = .systemGray
+        queryList.append(ingredients42.titleLabel!.text ?? "")}else{ingredientSelected42=false
+            ingredients42.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients42.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients43Tapped(_ sender: Any) {if ingredientSelected43==false{ ingredientSelected43=true
+        ingredients43.tintColor = .systemGray
+        queryList.append(ingredients43.titleLabel!.text ?? "")}else{ingredientSelected43=false
+            ingredients43.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients43.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients44Tapped(_ sender: Any) {if ingredientSelected44==false{ ingredientSelected44=true
+        ingredients44.tintColor = .systemGray
+        queryList.append(ingredients44.titleLabel!.text ?? "")}else{ingredientSelected44=false
+            ingredients44.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients44.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients45Tapped(_ sender: Any) {if ingredientSelected45==false{ ingredientSelected45=true
+        ingredients45.tintColor = .systemGray
+        queryList.append(ingredients45.titleLabel!.text ?? "")}else{ingredientSelected45=false
+            ingredients45.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients45.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients46Tapped(_ sender: Any) {if ingredientSelected46==false{ ingredientSelected46=true
+        ingredients46.tintColor = .systemGray
+        queryList.append(ingredients46.titleLabel!.text ?? "")}else{ingredientSelected46=false
+            ingredients46.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients46.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients47Tapped(_ sender: Any) {if ingredientSelected47==false{ ingredientSelected47=true
+        ingredients47.tintColor = .systemGray
+        queryList.append(ingredients47.titleLabel!.text ?? "")}else{ingredientSelected47=false
+            ingredients47.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients47.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients48Tapped(_ sender: Any) {if ingredientSelected48==false{ ingredientSelected48=true
+        ingredients48.tintColor = .systemGray
+        queryList.append(ingredients48.titleLabel!.text ?? "")}else{ingredientSelected48=false
+            ingredients48.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients48.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients49Tapped(_ sender: Any) {if ingredientSelected49==false{ ingredientSelected49=true
+        ingredients49.tintColor = .systemGray
+        queryList.append(ingredients49.titleLabel!.text ?? "")}else{ingredientSelected49=false
+            ingredients49.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients49.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients50Tapped(_ sender: Any) {if ingredientSelected50==false{ ingredientSelected50=true
+        ingredients50.tintColor = .systemGray
+        queryList.append(ingredients50.titleLabel!.text ?? "")}else{ingredientSelected50=false
+            ingredients50.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients50.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients51Tapped(_ sender: Any) {if ingredientSelected51==false{ ingredientSelected51=true
+        ingredients51.tintColor = .systemGray
+        queryList.append(ingredients51.titleLabel!.text ?? "")}else{ingredientSelected51=false
+            ingredients51.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients51.titleLabel!.text ?? "")} ) } }
+    @IBAction func ingredients52Tapped(_ sender: Any) {if ingredientSelected52==false{ ingredientSelected52=true
+        ingredients52.tintColor = .systemGray
+        queryList.append(ingredients52.titleLabel!.text ?? "")}else{ingredientSelected52=false
+            ingredients52.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients52.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients53Tapped(_ sender: Any) {if ingredientSelected53==false{ ingredientSelected53=true
+        ingredients53.tintColor = .systemGray
+        queryList.append(ingredients53.titleLabel!.text ?? "")}else{ingredientSelected53=false
+            ingredients53.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients53.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients54Tapped(_ sender: Any) {if ingredientSelected54==false{ ingredientSelected54=true
+        ingredients54.tintColor = .systemGray
+        queryList.append(ingredients54.titleLabel!.text ?? "")}else{ingredientSelected54=false
+            ingredients54.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients54.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients55Tapped(_ sender: Any) {if ingredientSelected55==false{ ingredientSelected55=true
+        ingredients55.tintColor = .systemGray
+        queryList.append(ingredients55.titleLabel!.text ?? "")}else{ingredientSelected55=false
+            ingredients55.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients55.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients56Tapped(_ sender: Any) {if ingredientSelected56==false{ ingredientSelected56=true
+        ingredients56.tintColor = .systemGray
+        queryList.append(ingredients56.titleLabel!.text ?? "")}else{ingredientSelected56=false
+            ingredients56.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients56.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients57Tapped(_ sender: Any) {if ingredientSelected57==false{ ingredientSelected57=true
+        ingredients57.tintColor = .systemGray
+        queryList.append(ingredients57.titleLabel!.text ?? "")}else{ingredientSelected57=false
+            ingredients57.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients57.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients58Tapped(_ sender: Any) {if ingredientSelected58==false{ ingredientSelected58=true
+        ingredients58.tintColor = .systemGray
+        queryList.append(ingredients58.titleLabel!.text ?? "")}else{ingredientSelected58=false
+            ingredients58.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients58.titleLabel!.text ?? "")} ) } }
+    
+    @IBAction func ingredients59Tapped(_ sender: Any) {if ingredientSelected59==false{ ingredientSelected59=true
+        ingredients59.tintColor = .systemGray
+        queryList.append(ingredients59.titleLabel!.text ?? "")}else{ingredientSelected59=false
+            ingredients59.tintColor = .systemBlue
+            queryList.removeAll(where: {$0.contains(ingredients59.titleLabel!.text ?? "")} ) } }
+    
+  
     
 //    @IBAction func ingredients2Tapped(_ sender: Any) {
 //        ingredients2.tintColor = .systemGray

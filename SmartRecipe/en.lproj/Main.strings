@@ -1,0 +1,432 @@
+
+/* Class = "UIButton"; configuration.title = "egg"; ObjectID = "0Jr-c1-bv9"; */
+"0Jr-c1-bv9.configuration.title" = "egg";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "0Jr-c1-bv9"; */
+"0Jr-c1-bv9.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "chest nut"; ObjectID = "1hh-tL-Evh"; */
+"1hh-tL-Evh.configuration.title" = "chest nut";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1hh-tL-Evh"; */
+"1hh-tL-Evh.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "kiwi"; ObjectID = "1n2-5f-Bb6"; */
+"1n2-5f-Bb6.configuration.title" = "kiwi";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1n2-5f-Bb6"; */
+"1n2-5f-Bb6.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2gl-mK-HVs"; */
+"2gl-mK-HVs.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Chicken Curry"; ObjectID = "2zb-cX-5g3"; */
+"2zb-cX-5g3.text" = "Chicken Curry";
+
+/* Class = "UIButton"; configuration.title = "green olives"; ObjectID = "33p-eb-83d"; */
+"33p-eb-83d.configuration.title" = "green olives";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "33p-eb-83d"; */
+"33p-eb-83d.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "watermelon"; ObjectID = "37B-C0-djh"; */
+"37B-C0-djh.configuration.title" = "watermelon";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "37B-C0-djh"; */
+"37B-C0-djh.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "egg plant"; ObjectID = "5cw-aN-2Gj"; */
+"5cw-aN-2Gj.configuration.title" = "egg plant";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "5cw-aN-2Gj"; */
+"5cw-aN-2Gj.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "cheddar"; ObjectID = "5qm-pv-6qU"; */
+"5qm-pv-6qU.configuration.title" = "cheddar";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "5qm-pv-6qU"; */
+"5qm-pv-6qU.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Fruits"; ObjectID = "6ki-sM-0Yk"; */
+"6ki-sM-0Yk.text" = "Fruits";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7yh-Z4-lQb"; */
+"7yh-Z4-lQb.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "broccoli"; ObjectID = "8aD-eA-lT5"; */
+"8aD-eA-lT5.configuration.title" = "broccoli";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "8aD-eA-lT5"; */
+"8aD-eA-lT5.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "potato"; ObjectID = "9Yv-t7-NTW"; */
+"9Yv-t7-NTW.configuration.title" = "potato";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "9Yv-t7-NTW"; */
+"9Yv-t7-NTW.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "avocado"; ObjectID = "9cN-hw-TDJ"; */
+"9cN-hw-TDJ.configuration.title" = "avocado";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "9cN-hw-TDJ"; */
+"9cN-hw-TDJ.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "9yU-oG-FLX"; */
+"9yU-oG-FLX.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "corn"; ObjectID = "BB9-gx-QEb"; */
+"BB9-gx-QEb.configuration.title" = "corn";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "BB9-gx-QEb"; */
+"BB9-gx-QEb.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "cauliflower"; ObjectID = "BkO-Bc-14x"; */
+"BkO-Bc-14x.configuration.title" = "cauliflower";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "BkO-Bc-14x"; */
+"BkO-Bc-14x.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "fig"; ObjectID = "C0q-35-RTq"; */
+"C0q-35-RTq.configuration.title" = "fig";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "C0q-35-RTq"; */
+"C0q-35-RTq.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "baking soda"; ObjectID = "E6B-sP-yJ9"; */
+"E6B-sP-yJ9.configuration.title" = "baking soda";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "E6B-sP-yJ9"; */
+"E6B-sP-yJ9.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Pantry"; ObjectID = "EKy-Rd-TSg"; */
+"EKy-Rd-TSg.title" = "Pantry";
+
+/* Class = "UIButton"; configuration.title = "cumin"; ObjectID = "F3Q-1p-RlC"; */
+"F3Q-1p-RlC.configuration.title" = "cumin";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "F3Q-1p-RlC"; */
+"F3Q-1p-RlC.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Chicken Curry"; ObjectID = "FK8-cj-GYS"; */
+"FK8-cj-GYS.text" = "Chicken Curry";
+
+/* Class = "UITabBarItem"; title = "Bookmark"; ObjectID = "Gnc-zH-lFa"; */
+"Gnc-zH-lFa.title" = "Bookmark";
+
+/* Class = "UILabel"; text = "Chicken Curry"; ObjectID = "Ia0-0k-pxM"; */
+"Ia0-0k-pxM.text" = "Chicken Curry";
+
+/* Class = "UILabel"; text = "Vegetables And Greens"; ObjectID = "IkL-ei-2d5"; */
+"IkL-ei-2d5.text" = "Vegetables And Greens";
+
+/* Class = "UINavigationItem"; title = "Pantry"; ObjectID = "IrY-yf-FPA"; */
+"IrY-yf-FPA.title" = "Pantry";
+
+/* Class = "UIButton"; configuration.title = "mustard"; ObjectID = "JZL-At-EcF"; */
+"JZL-At-EcF.configuration.title" = "mustard";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "JZL-At-EcF"; */
+"JZL-At-EcF.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "grape fruit"; ObjectID = "Jer-OB-y1x"; */
+"Jer-OB-y1x.configuration.title" = "grape fruit";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Jer-OB-y1x"; */
+"Jer-OB-y1x.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "olive oil"; ObjectID = "L9v-Gh-VoG"; */
+"L9v-Gh-VoG.configuration.title" = "olive oil";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "L9v-Gh-VoG"; */
+"L9v-Gh-VoG.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "eggplant"; ObjectID = "LNV-99-sWD"; */
+"LNV-99-sWD.configuration.title" = "eggplant";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "LNV-99-sWD"; */
+"LNV-99-sWD.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "tomato"; ObjectID = "MOj-YM-QxO"; */
+"MOj-YM-QxO.configuration.title" = "tomato";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "MOj-YM-QxO"; */
+"MOj-YM-QxO.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "baby greens"; ObjectID = "N0d-Kw-hiA"; */
+"N0d-Kw-hiA.configuration.title" = "baby greens";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "N0d-Kw-hiA"; */
+"N0d-Kw-hiA.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "kale"; ObjectID = "NJW-fm-vEa"; */
+"NJW-fm-vEa.configuration.title" = "kale";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "NJW-fm-vEa"; */
+"NJW-fm-vEa.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Show Receipe"; ObjectID = "NKN-Q0-gmU"; */
+"NKN-Q0-gmU.configuration.title" = "Show Receipe";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "NKN-Q0-gmU"; */
+"NKN-Q0-gmU.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Bookmark"; ObjectID = "NUu-uO-hfP"; */
+"NUu-uO-hfP.title" = "Bookmark";
+
+/* Class = "UIButton"; configuration.title = "honey"; ObjectID = "Ngi-gS-ZxA"; */
+"Ngi-gS-ZxA.configuration.title" = "honey";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ngi-gS-ZxA"; */
+"Ngi-gS-ZxA.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "O3K-ee-P1u"; */
+"O3K-ee-P1u.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "lettuce"; ObjectID = "PuP-KY-5ua"; */
+"PuP-KY-5ua.configuration.title" = "lettuce";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "PuP-KY-5ua"; */
+"PuP-KY-5ua.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Pantry Essentials"; ObjectID = "Pyo-kO-Aqp"; */
+"Pyo-kO-Aqp.text" = "Pantry Essentials";
+
+/* Class = "UIButton"; configuration.title = "okra"; ObjectID = "RDE-hY-dvw"; */
+"RDE-hY-dvw.configuration.title" = "okra";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "RDE-hY-dvw"; */
+"RDE-hY-dvw.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "oregano"; ObjectID = "RJO-hg-Sb2"; */
+"RJO-hg-Sb2.configuration.title" = "oregano";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "RJO-hg-Sb2"; */
+"RJO-hg-Sb2.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "tomato"; ObjectID = "S8t-jo-uUE"; */
+"S8t-jo-uUE.configuration.title" = "tomato";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "S8t-jo-uUE"; */
+"S8t-jo-uUE.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "orange"; ObjectID = "Sab-jt-5Qk"; */
+"Sab-jt-5Qk.configuration.title" = "orange";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Sab-jt-5Qk"; */
+"Sab-jt-5Qk.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "celery"; ObjectID = "TM4-OP-eJX"; */
+"TM4-OP-eJX.configuration.title" = "celery";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "TM4-OP-eJX"; */
+"TM4-OP-eJX.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "black olives"; ObjectID = "V3G-bl-MSb"; */
+"V3G-bl-MSb.configuration.title" = "black olives";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "V3G-bl-MSb"; */
+"V3G-bl-MSb.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "cinnamon"; ObjectID = "Vef-sY-fjX"; */
+"Vef-sY-fjX.configuration.title" = "cinnamon";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Vef-sY-fjX"; */
+"Vef-sY-fjX.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "bread"; ObjectID = "WGW-cj-m67"; */
+"WGW-cj-m67.configuration.title" = "bread";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "WGW-cj-m67"; */
+"WGW-cj-m67.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "onion"; ObjectID = "Wjh-7o-l97"; */
+"Wjh-7o-l97.configuration.title" = "onion";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Wjh-7o-l97"; */
+"Wjh-7o-l97.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "eggplant"; ObjectID = "XZu-72-k9W"; */
+"XZu-72-k9W.configuration.title" = "eggplant";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "XZu-72-k9W"; */
+"XZu-72-k9W.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "guava"; ObjectID = "Xrq-Tu-YTE"; */
+"Xrq-Tu-YTE.configuration.title" = "guava";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Xrq-Tu-YTE"; */
+"Xrq-Tu-YTE.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "papaya"; ObjectID = "Xtu-Gf-LKK"; */
+"Xtu-Gf-LKK.configuration.title" = "papaya";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Xtu-Gf-LKK"; */
+"Xtu-Gf-LKK.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "apple"; ObjectID = "Xup-xo-e9A"; */
+"Xup-xo-e9A.configuration.title" = "apple";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Xup-xo-e9A"; */
+"Xup-xo-e9A.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "leek"; ObjectID = "YSn-Ot-a05"; */
+"YSn-Ot-a05.configuration.title" = "leek";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "YSn-Ot-a05"; */
+"YSn-Ot-a05.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "date"; ObjectID = "aMM-Ad-G70"; */
+"aMM-Ad-G70.configuration.title" = "date";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "aMM-Ad-G70"; */
+"aMM-Ad-G70.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "carrot"; ObjectID = "c1O-Sw-lgm"; */
+"c1O-Sw-lgm.configuration.title" = "carrot";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "c1O-Sw-lgm"; */
+"c1O-Sw-lgm.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Menu"; ObjectID = "cWQ-gU-Ak3"; */
+"cWQ-gU-Ak3.title" = "Menu";
+
+/* Class = "UIButton"; configuration.title = "carrot"; ObjectID = "clq-fV-cSs"; */
+"clq-fV-cSs.configuration.title" = "carrot";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "clq-fV-cSs"; */
+"clq-fV-cSs.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "sugar"; ObjectID = "dYc-ux-IjY"; */
+"dYc-ux-IjY.configuration.title" = "sugar";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dYc-ux-IjY"; */
+"dYc-ux-IjY.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "butter"; ObjectID = "ebG-0y-Sb9"; */
+"ebG-0y-Sb9.configuration.title" = "butter";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ebG-0y-Sb9"; */
+"ebG-0y-Sb9.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "beetroots"; ObjectID = "fqP-cY-WLG"; */
+"fqP-cY-WLG.configuration.title" = "beetroots";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fqP-cY-WLG"; */
+"fqP-cY-WLG.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "pear"; ObjectID = "gMD-a4-iPe"; */
+"gMD-a4-iPe.configuration.title" = "pear";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gMD-a4-iPe"; */
+"gMD-a4-iPe.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "banana"; ObjectID = "h1a-We-SX7"; */
+"h1a-We-SX7.configuration.title" = "banana";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "h1a-We-SX7"; */
+"h1a-We-SX7.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Show Receipe"; ObjectID = "h2K-ui-fkr"; */
+"h2K-ui-fkr.configuration.title" = "Show Receipe";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "h2K-ui-fkr"; */
+"h2K-ui-fkr.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "pineapple"; ObjectID = "hPR-hr-2DI"; */
+"hPR-hr-2DI.configuration.title" = "pineapple";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hPR-hr-2DI"; */
+"hPR-hr-2DI.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "chili powder"; ObjectID = "i1j-Fq-b4e"; */
+"i1j-Fq-b4e.configuration.title" = "chili powder";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "i1j-Fq-b4e"; */
+"i1j-Fq-b4e.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Chicken Curry"; ObjectID = "iQT-mg-4sF"; */
+"iQT-mg-4sF.text" = "Chicken Curry";
+
+/* Class = "UIButton"; configuration.title = "rice"; ObjectID = "nBY-Aj-j3H"; */
+"nBY-Aj-j3H.configuration.title" = "rice";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "nBY-Aj-j3H"; */
+"nBY-Aj-j3H.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "bell paper"; ObjectID = "oyd-fb-fcc"; */
+"oyd-fb-fcc.configuration.title" = "bell paper";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "oyd-fb-fcc"; */
+"oyd-fb-fcc.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "dried fruit"; ObjectID = "qiV-yz-3D7"; */
+"qiV-yz-3D7.configuration.title" = "dried fruit";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qiV-yz-3D7"; */
+"qiV-yz-3D7.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "plum"; ObjectID = "rUt-Dr-XK1"; */
+"rUt-Dr-XK1.configuration.title" = "plum";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "rUt-Dr-XK1"; */
+"rUt-Dr-XK1.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "milk"; ObjectID = "sfA-Qt-whI"; */
+"sfA-Qt-whI.configuration.title" = "milk";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "sfA-Qt-whI"; */
+"sfA-Qt-whI.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "mixed greens"; ObjectID = "twh-tm-Ob1"; */
+"twh-tm-Ob1.configuration.title" = "mixed greens";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "twh-tm-Ob1"; */
+"twh-tm-Ob1.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Show Receipe"; ObjectID = "vg7-ph-ZOc"; */
+"vg7-ph-ZOc.configuration.title" = "Show Receipe";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vg7-ph-ZOc"; */
+"vg7-ph-ZOc.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Recipes"; ObjectID = "w5I-ts-iYF"; */
+"w5I-ts-iYF.title" = "Recipes";
+
+/* Class = "UIButton"; configuration.title = "peach"; ObjectID = "wLb-zJ-26a"; */
+"wLb-zJ-26a.configuration.title" = "peach";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "wLb-zJ-26a"; */
+"wLb-zJ-26a.normalTitle" = "Button";
+
+/* Class = "UINavigationController"; title = "Pantry"; ObjectID = "wVT-em-mPG"; */
+"wVT-em-mPG.title" = "Pantry";
+
+/* Class = "UIButton"; configuration.title = "coconut"; ObjectID = "wXL-YG-BUx"; */
+"wXL-YG-BUx.configuration.title" = "coconut";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "wXL-YG-BUx"; */
+"wXL-YG-BUx.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "mixed vegetables"; ObjectID = "wkb-6R-tTR"; */
+"wkb-6R-tTR.configuration.title" = "mixed vegetables";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "wkb-6R-tTR"; */
+"wkb-6R-tTR.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Show Receipe"; ObjectID = "xFV-V7-BDu"; */
+"xFV-V7-BDu.configuration.title" = "Show Receipe";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xFV-V7-BDu"; */
+"xFV-V7-BDu.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "cabbage"; ObjectID = "xwx-7R-Bug"; */
+"xwx-7R-Bug.configuration.title" = "cabbage";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xwx-7R-Bug"; */
+"xwx-7R-Bug.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "potato"; ObjectID = "y9g-hf-Yzy"; */
+"y9g-hf-Yzy.configuration.title" = "potato";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "y9g-hf-Yzy"; */
+"y9g-hf-Yzy.normalTitle" = "Button";
