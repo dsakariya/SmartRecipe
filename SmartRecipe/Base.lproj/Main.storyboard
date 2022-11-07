@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LNE-9K-wb8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LNE-9K-wb8">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -131,11 +131,17 @@
                                                 <rect key="frame" x="181.5" y="0.0" width="91.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="eggplant"/>
+                                                <connections>
+                                                    <action selector="ingredients3Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="XyO-ue-i7N"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSn-Ot-a05">
                                                 <rect key="frame" x="277" y="0.0" width="55.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="leek"/>
+                                                <connections>
+                                                    <action selector="ingredients4Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="n8L-KI-Huk"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -146,16 +152,25 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="118.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="baby greens"/>
+                                                <connections>
+                                                    <action selector="ingredients5Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="dsI-m5-Zpb"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqP-cY-WLG">
                                                 <rect key="frame" x="123.5" y="0.0" width="97.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="beetroots"/>
+                                                <connections>
+                                                    <action selector="ingredients6Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="EUF-tU-WFd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TM4-OP-eJX">
                                                 <rect key="frame" x="226" y="0.0" width="70.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="celery"/>
+                                                <connections>
+                                                    <action selector="ingredients7Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="n8S-A7-AdI"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -545,6 +560,11 @@
                         <outlet property="Submit" destination="v3l-A3-IHi" id="Eax-rq-Pkb"/>
                         <outlet property="ingredients1" destination="9cN-hw-TDJ" id="AUG-at-8uV"/>
                         <outlet property="ingredients2" destination="8aD-eA-lT5" id="Kj5-Fv-kZu"/>
+                        <outlet property="ingredients3" destination="LNV-99-sWD" id="EmP-gK-2f1"/>
+                        <outlet property="ingredients4" destination="YSn-Ot-a05" id="91w-Q8-JUO"/>
+                        <outlet property="ingredients5" destination="N0d-Kw-hiA" id="cXn-OD-CSk"/>
+                        <outlet property="ingredients6" destination="fqP-cY-WLG" id="0kg-AC-OjQ"/>
+                        <outlet property="ingredients7" destination="TM4-OP-eJX" id="Xo0-z5-udC"/>
                         <segue destination="Idy-ZZ-Y1n" kind="show" identifier="screen" id="4cw-dk-IwL"/>
                     </connections>
                 </viewController>
@@ -669,6 +689,9 @@
                                                                 <rect key="frame" x="79" y="65" width="131.5" height="34.5"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Show Receipe" cornerStyle="large"/>
+                                                                <connections>
+                                                                    <action selector="btn2Tapped:" destination="Idy-ZZ-Y1n" eventType="touchUpInside" id="rZJ-LO-SZe"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -731,6 +754,9 @@
                                                                 <rect key="frame" x="79" y="65" width="131.5" height="34.5"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Show Receipe" cornerStyle="large"/>
+                                                                <connections>
+                                                                    <action selector="btn3Tapped:" destination="Idy-ZZ-Y1n" eventType="touchUpInside" id="Dgl-tC-VFW"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -793,6 +819,9 @@
                                                                 <rect key="frame" x="79" y="65" width="131.5" height="34.5"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Show Receipe" cornerStyle="large"/>
+                                                                <connections>
+                                                                    <action selector="btn4Tapped:" destination="Idy-ZZ-Y1n" eventType="touchUpInside" id="BbN-d2-aGj"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>

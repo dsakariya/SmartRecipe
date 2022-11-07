@@ -6,7 +6,7 @@
 "0Jr-c1-bv9.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "chest nut"; ObjectID = "1hh-tL-Evh"; */
-"1hh-tL-Evh.configuration.title" = "chest nut";
+"1hh-tL-Evh.configuration.title" = "chestnut";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1hh-tL-Evh"; */
 "1hh-tL-Evh.normalTitle" = "Button";
@@ -152,7 +152,7 @@
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "MOj-YM-QxO"; */
 "MOj-YM-QxO.normalTitle" = "Button";
 
-/* Class = "UIButton"; configuration.title = "baby greens"; ObjectID = "N0d-Kw-hiA"; */
+/* Class = "UIButton"; configuration.title = "babygreens"; ObjectID = "N0d-Kw-hiA"; */
 "N0d-Kw-hiA.configuration.title" = "baby greens";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "N0d-Kw-hiA"; */
