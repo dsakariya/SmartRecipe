@@ -40,6 +40,18 @@ class ViewController: UIViewController {
 //        ingredients4.tintColor = .systemGray
 //      }
     
+    @IBAction func Submit(_ sender: Any) {
+    }
+    @IBOutlet weak var Submit: UIButton!
+    
+    @IBAction func onSubmit(_ sender: Any) {
+//        let storyboard=self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController")as! SecondViewController
+//        self.navigationController?.pushViewController(storyboard, animated: true )
+        
+        self.performSegue(withIdentifier: "screen", sender: self)
+        
+    }
+    
     
     @IBAction func btn1Tapped(_ sender: Any) {
 //        btn1.tintColor = .red
