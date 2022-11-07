@@ -75,7 +75,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var ingredients24: UIButton!
 
     
-
+    @IBOutlet weak var Submit: UIButton!
+    
+    @IBAction func OnClick(_ sender: Any) {
+        
+        self.performSegue(withIdentifier: "screen", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let passData=segue.destination as! SecondViewController
+        var query = queryList.joined(separator: "%20")
+        passData.text="https://api.edamam.com/api/recipes/v2?type=public&q=\(query)&app_id=907d2b4b&app_key=db6697b492e4a4b02a8f3ea2b44abb79"
+    }
     @IBAction func ingredients1Tapped(_ sender: Any) {
         if ingredientSelected1==false{
             ingredientSelected1=true
@@ -347,17 +358,12 @@ class ViewController: UIViewController {
 //        ingredients4.tintColor = .systemGray
 //      }
     
-    @IBAction func Submit(_ sender: Any) {
-    }
-    @IBOutlet weak var Submit: UIButton!
+   
+        
+//
     
-    @IBAction func onSubmit(_ sender: Any) {
-//        let storyboard=self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController")as! SecondViewController
-//        self.navigationController?.pushViewController(storyboard, animated: true )
-        
-        self.performSegue(withIdentifier: "screen", sender: self)
-        
-    }
+    
+   
     
     
     @IBAction func btn1Tapped(_ sender: Any) {
@@ -390,6 +396,9 @@ class ViewController: UIViewController {
             let url: String
             let ingredientLines :[String]
             let image : String
+        }
+        struct URLs: Decodable{
+            let url1:String
         }
         //        struct Ingredients: Decodable{
         //            let ingredient: String
