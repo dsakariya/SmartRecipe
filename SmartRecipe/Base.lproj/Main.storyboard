@@ -95,21 +95,23 @@
         <scene sceneID="0Y4-Dw-caR">
             <objects>
                 <viewController id="I7Z-XL-66E" customClass="ViewController" customModule="SmartRecipe" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="G9w-Yv-871">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="G9w-Yv-871">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cut-cO-0gL">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cut-cO-0gL">
                                 <rect key="frame" x="0.0" y="91" width="390" height="670"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mqi-vS-QT9">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mqi-vS-QT9">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="1200"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UbI-4u-YGg">
                                                 <rect key="frame" x="43" y="645" width="304.66666666666669" height="34.333333333333371"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Submit"/>
                                                 <connections>
                                                     <action selector="OnClick:" destination="I7Z-XL-66E" eventType="touchUpInside" id="Jez-R1-ZIv"/>
                                                 </connections>
@@ -130,36 +132,46 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="YHC-cX-Qzb">
-                                                <rect key="frame" x="16.333333333333343" y="21.333333333333332" width="332" height="34.333333333333343"/>
+                                                <rect key="frame" x="31.666666666666657" y="21.333333333333332" width="301.66666666666674" height="34.333333333333343"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5P-zr-rx4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="88.333333333333329" height="34.333333333333336"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="avocado"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="58" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="avocado"/>
                                                         <connections>
                                                             <action selector="ingredients1Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="soi-0C-UYw"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YX-ub-PPk">
-                                                        <rect key="frame" x="92.333333333333343" y="0.0" width="85" height="34.333333333333336"/>
+                                                        <rect key="frame" x="62" y="0.0" width="85" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="broccoli"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="broccoli"/>
                                                         <connections>
                                                             <action selector="ingredients2Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="ghc-9O-Wtk"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9m-8j-Oi6">
-                                                        <rect key="frame" x="181.33333333333331" y="0.0" width="91.333333333333314" height="34.333333333333336"/>
+                                                        <rect key="frame" x="151" y="0.0" width="91.333333333333314" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="eggplant"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="eggplant">
+                                                            <backgroundConfiguration key="background"/>
+                                                        </buttonConfiguration>
                                                         <connections>
                                                             <action selector="ingredients3Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="UwV-Ca-Dcm"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8XY-h8-v8j">
-                                                        <rect key="frame" x="276.66666666666669" y="0.0" width="55.333333333333314" height="34.333333333333336"/>
+                                                        <rect key="frame" x="246.33333333333334" y="0.0" width="55.333333333333343" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="leek"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="leek"/>
                                                         <connections>
                                                             <action selector="ingredients4Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="Ulu-pC-JdN"/>
                                                         </connections>
@@ -171,24 +183,30 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lng-bV-Gqn">
                                                         <rect key="frame" x="0.0" y="0.0" width="118.33333333333333" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="baby greens"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="baby greens"/>
                                                         <connections>
                                                             <action selector="ingredients5Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="Dnt-Cx-h80"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eu-u2-zxe">
                                                         <rect key="frame" x="123.33333333333334" y="0.0" width="97.666666666666657" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="beetroots"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="beetroots"/>
                                                         <connections>
                                                             <action selector="ingredients6Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="mGI-o4-HK2"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B85-u9-kLb">
                                                         <rect key="frame" x="225.99999999999997" y="0.0" width="70.666666666666657" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="celery"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="celery"/>
                                                         <connections>
                                                             <action selector="ingredients7Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="7bk-GR-NaE"/>
                                                         </connections>
@@ -203,32 +221,40 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVA-0z-lta">
                                                                 <rect key="frame" x="0.0" y="0.0" width="58.666666666666664" height="34.333333333333336"/>
+                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="filled" title="corn"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="corn"/>
                                                                 <connections>
                                                                     <action selector="ingredients8Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="OuS-d4-n65"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ac-2l-tWi">
                                                                 <rect key="frame" x="62.66666666666665" y="0.0" width="90.333333333333314" height="34.333333333333336"/>
+                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="filled" title="cabbage"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="cabbage"/>
                                                                 <connections>
                                                                     <action selector="ingredients9Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="sKW-aO-vWJ"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ET2-6X-izB">
                                                                 <rect key="frame" x="157" y="0.0" width="106" height="34.333333333333336"/>
+                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="filled" title="cauliflower"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="cauliflower"/>
                                                                 <connections>
                                                                     <action selector="ingredients10Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="WjP-f0-fvx"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kax-Zi-XJF">
                                                                 <rect key="frame" x="267" y="0.0" width="54.666666666666686" height="34.333333333333336"/>
+                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="filled" title="kale"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="kale"/>
                                                                 <connections>
                                                                     <action selector="ingredients11Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="w3E-dq-txJ"/>
                                                                 </connections>
@@ -242,24 +268,30 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVk-wG-21A">
                                                         <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="eggplant"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="eggplant"/>
                                                         <connections>
                                                             <action selector="ingredients12Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="dwS-yq-oKb"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viA-jo-rcW">
                                                         <rect key="frame" x="95.333333333333343" y="0.0" width="126.33333333333334" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="mixed greens"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="mixed greens"/>
                                                         <connections>
                                                             <action selector="ingredients13Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="TCm-gS-MKP"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofw-NN-qPj">
                                                         <rect key="frame" x="225.66666666666663" y="0.0" width="78" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="tomato"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="tomato"/>
                                                         <connections>
                                                             <action selector="ingredients14Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="4Er-IY-aOR"/>
                                                         </connections>
@@ -271,32 +303,40 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aws-cz-gUd">
                                                         <rect key="frame" x="0.0" y="0.0" width="69.666666666666671" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="carrot"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="carrot"/>
                                                         <connections>
                                                             <action selector="ingredients15Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="GZN-Z0-5wu"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ii-JP-iF7">
                                                         <rect key="frame" x="74.666666666666671" y="0.0" width="57.666666666666671" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="okra"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="okra"/>
                                                         <connections>
                                                             <action selector="ingredients16Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="6Z7-3M-Su6"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jir-3q-iSa">
                                                         <rect key="frame" x="137.33333333333334" y="0.0" width="76.666666666666657" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="lettuce"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="lettuce"/>
                                                         <connections>
                                                             <action selector="ingredients17Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="Vyh-lB-eOF"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfT-69-LU2">
                                                         <rect key="frame" x="218.99999999999997" y="0.0" width="115.66666666666666" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="green olives"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="green olives"/>
                                                         <connections>
                                                             <action selector="ingredients18Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="sjn-xM-t9E"/>
                                                         </connections>
@@ -308,24 +348,30 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lA3-NV-ppv">
                                                         <rect key="frame" x="0.0" y="0.0" width="157.33333333333334" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="mixed vegetables"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="mixed vegetables"/>
                                                         <connections>
                                                             <action selector="ingredients19Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="qvg-Of-JHU"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34U-Xw-9hS">
                                                         <rect key="frame" x="161.33333333333334" y="0.0" width="112.66666666666666" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="black olives"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="black olives"/>
                                                         <connections>
                                                             <action selector="ingredients20Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="uEb-u8-28x"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYa-pW-hoP">
                                                         <rect key="frame" x="278" y="0.0" width="73.666666666666686" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="potato"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="potato"/>
                                                         <connections>
                                                             <action selector="ingredients21Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="X8Z-bq-fBy"/>
                                                         </connections>
@@ -343,40 +389,50 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOe-cM-Uzc">
                                                         <rect key="frame" x="0.0" y="0.0" width="70.333333333333329" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="butter"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="butter"/>
                                                         <connections>
                                                             <action selector="ingredients22Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="RGq-XQ-g0v"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwp-n5-LFR">
                                                         <rect key="frame" x="75.333333333333343" y="0.0" width="53.333333333333343" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="egg"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="egg"/>
                                                         <connections>
                                                             <action selector="ingredients23Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="0ke-lr-o48"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dn-aS-EsA">
                                                         <rect key="frame" x="133.66666666666666" y="0.0" width="55" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="milk"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="milk"/>
                                                         <connections>
                                                             <action selector="ingredients24Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="2go-5v-L8n"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4B3-oC-YFk">
                                                         <rect key="frame" x="193.66666666666666" y="0.0" width="66.999999999999972" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="sugar"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="sugar"/>
                                                         <connections>
                                                             <action selector="ingredients25Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="M1t-ZA-ykE"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7e-7d-3JI">
                                                         <rect key="frame" x="265.66666666666669" y="0.0" width="70.666666666666686" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="honey"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="honey"/>
                                                         <connections>
                                                             <action selector="ingredients26Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="TBM-F2-ksY"/>
                                                         </connections>
@@ -388,32 +444,40 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6m8-JX-UHh">
                                                         <rect key="frame" x="0.0" y="0.0" width="95.666666666666671" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="egg plant"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="egg plant"/>
                                                         <connections>
                                                             <action selector="ingredients27Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="jE3-1c-1FC"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkf-hv-SbD">
                                                         <rect key="frame" x="100.66666666666669" y="0.0" width="66" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="onion"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="onion"/>
                                                         <connections>
                                                             <action selector="ingredients28Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="tcE-JA-FY1"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yd-Ap-Yey">
                                                         <rect key="frame" x="171.66666666666666" y="0.0" width="98.333333333333343" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="cinnamon"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="cinnamon"/>
                                                         <connections>
                                                             <action selector="ingredients29Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="yDZ-AJ-1kV"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FQ-fO-cVo">
                                                         <rect key="frame" x="275" y="0.0" width="73.666666666666686" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="potato"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="potato"/>
                                                         <connections>
                                                             <action selector="ingredients30Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="Sj7-LN-PmI"/>
                                                         </connections>
@@ -425,32 +489,40 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6n-kK-rfd">
                                                         <rect key="frame" x="0.0" y="0.0" width="52.333333333333336" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="rice"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="rice"/>
                                                         <connections>
                                                             <action selector="ingredients31Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="9Rf-nE-P4Y"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tu-w9-lC2">
                                                         <rect key="frame" x="57.333333333333329" y="0.0" width="86.999999999999986" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="mustard"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="mustard"/>
                                                         <connections>
                                                             <action selector="ingredients32Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="vj4-oa-hm7"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXZ-C3-Eg8">
                                                         <rect key="frame" x="149.33333333333334" y="0.0" width="116.33333333333334" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="baking soda"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="baking soda"/>
                                                         <connections>
                                                             <action selector="ingredients33Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="y4y-I3-PxQ"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqk-L7-ICf">
                                                         <rect key="frame" x="270.66666666666669" y="0.0" width="68.333333333333314" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="bread"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="bread"/>
                                                         <connections>
                                                             <action selector="ingredients34Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="mmT-en-QDK"/>
                                                         </connections>
@@ -462,32 +534,40 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hn-YD-ezQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="70.333333333333329" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="cumin"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="cumin"/>
                                                         <connections>
                                                             <action selector="ingredients35Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="dvi-Mp-A9s"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hof-Pw-Fkk">
                                                         <rect key="frame" x="75.333333333333329" y="0.0" width="86.999999999999986" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="cheddar"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="cheddar"/>
                                                         <connections>
                                                             <action selector="ingredients36Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="v2G-Up-0xy"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="001-Ix-Smg">
                                                         <rect key="frame" x="167.33333333333334" y="0.0" width="115.66666666666666" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="chili powder"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="chili powder"/>
                                                         <connections>
                                                             <action selector="ingredients37Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="SwT-Vy-IiO"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Uz-kv-ZaE">
                                                         <rect key="frame" x="288" y="0.0" width="69.666666666666686" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="carrot"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="carrot"/>
                                                         <connections>
                                                             <action selector="ingredients38Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="SVO-Wx-fgf"/>
                                                         </connections>
@@ -499,32 +579,40 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5M4-Lp-WrR">
                                                         <rect key="frame" x="0.0" y="0.0" width="78" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="tomato"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="tomato"/>
                                                         <connections>
                                                             <action selector="ingredients39Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="22T-7q-8ka"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZx-hJ-OSc">
                                                         <rect key="frame" x="83" y="0.0" width="86.666666666666686" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="oregano"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="oregano"/>
                                                         <connections>
                                                             <action selector="ingredients40Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="YBE-Ex-W9N"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qm9-P0-dDD">
                                                         <rect key="frame" x="174.66666666666666" y="0.0" width="99.666666666666657" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="bell paper"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="bell paper"/>
                                                         <connections>
                                                             <action selector="ingredients41Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="3Qn-Aj-JTA"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0l-v7-8P0">
                                                         <rect key="frame" x="279.33333333333337" y="0.0" width="80.666666666666686" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="olive oil"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="olive oil"/>
                                                         <connections>
                                                             <action selector="ingredients42Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="NJA-pA-aMI"/>
                                                         </connections>
@@ -542,40 +630,50 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJQ-X1-l0e">
                                                         <rect key="frame" x="0.0" y="0.0" width="66" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="apple"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="apple"/>
                                                         <connections>
                                                             <action selector="ingredients43Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="pzf-pF-5hx"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6x-hJ-IxI">
                                                         <rect key="frame" x="70" y="0.0" width="77.333333333333314" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="orange"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="orange"/>
                                                         <connections>
                                                             <action selector="ingredients44Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="0tC-ud-ifr"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzK-ip-c4T">
                                                         <rect key="frame" x="151.33333333333331" y="0.0" width="80" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="banana"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="banana"/>
                                                         <connections>
                                                             <action selector="ingredients45Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="TT3-Rm-MTD"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ak-eg-sbm">
                                                         <rect key="frame" x="235.33333333333334" y="0.0" width="53.333333333333343" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="kiwi"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="kiwi"/>
                                                         <connections>
                                                             <action selector="ingredients46Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="vBC-kg-ilc"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92Q-Mk-Uf1">
                                                         <rect key="frame" x="292.66666666666669" y="0.0" width="61.666666666666686" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="plum"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="plum"/>
                                                         <connections>
                                                             <action selector="ingredients47Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="7RH-C8-2Mf"/>
                                                         </connections>
@@ -590,32 +688,40 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkE-U9-8e4">
                                                                 <rect key="frame" x="0.0" y="0.0" width="98.666666666666671" height="34.333333333333336"/>
+                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="filled" title="pineapple"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="pineapple"/>
                                                                 <connections>
                                                                     <action selector="ingredients48Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="iac-0o-yMf"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgR-M1-5i5">
                                                                 <rect key="frame" x="103.66666666666666" y="0.0" width="79" height="34.333333333333336"/>
+                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="filled" title="papaya"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="papaya"/>
                                                                 <connections>
                                                                     <action selector="ingredients49Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="oZ9-k3-m2i"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWp-RQ-qVK">
                                                                 <rect key="frame" x="187.66666666666669" y="0.0" width="103.33333333333331" height="34.333333333333336"/>
+                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="filled" title="grape fruit"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="grape fruit"/>
                                                                 <connections>
                                                                     <action selector="ingredients50Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="E69-dM-9vZ"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqe-HD-gH9">
                                                                 <rect key="frame" x="296" y="0.0" width="43.666666666666686" height="34.333333333333336"/>
+                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="filled" title="fig"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="fig"/>
                                                                 <connections>
                                                                     <action selector="ingredients51Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="s0a-Ja-2Zt"/>
                                                                 </connections>
@@ -629,32 +735,40 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVV-kl-r6q">
                                                         <rect key="frame" x="0.0" y="0.0" width="113.33333333333333" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="watermelon"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="watermelon"/>
                                                         <connections>
                                                             <action selector="ingredients52Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="ojj-9c-FBz"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUt-dO-m2V">
                                                         <rect key="frame" x="118.33333333333331" y="0.0" width="71" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="peach"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="peach"/>
                                                         <connections>
                                                             <action selector="ingredients53Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="XOl-Za-Qrt"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Z8-mH-on1">
                                                         <rect key="frame" x="194.33333333333334" y="0.0" width="58" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="date"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="date"/>
                                                         <connections>
                                                             <action selector="ingredients54Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="isF-ox-E1g"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cek-gJ-bWH">
                                                         <rect key="frame" x="257.33333333333331" y="0.0" width="58.333333333333314" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="pear"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="pear"/>
                                                         <connections>
                                                             <action selector="ingredients55Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="zJq-4C-Jig"/>
                                                         </connections>
@@ -672,32 +786,40 @@
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kib-3z-dHR">
                                                                         <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="34.333333333333336"/>
+                                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="coconut"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" title="coconut"/>
                                                                         <connections>
                                                                             <action selector="ingredients56Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="DXa-BD-kk5"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJB-gq-zq9">
                                                                         <rect key="frame" x="91.333333333333343" y="0.0" width="98.333333333333343" height="34.333333333333336"/>
+                                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="dried fruit"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" title="dried fruit"/>
                                                                         <connections>
                                                                             <action selector="ingredients57Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="8mx-Oq-WeR"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZV0-PT-Vgm">
                                                                         <rect key="frame" x="194.66666666666666" y="0.0" width="69.666666666666657" height="34.333333333333336"/>
+                                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="guava"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" title="guava"/>
                                                                         <connections>
                                                                             <action selector="ingredients58Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="xzL-lO-7by"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v01-Fp-1IC">
                                                                         <rect key="frame" x="269.33333333333331" y="0.0" width="95.333333333333314" height="34.333333333333336"/>
+                                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="chest nut"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" title="chest nut"/>
                                                                         <connections>
                                                                             <action selector="ingredients59Tapped:" destination="I7Z-XL-66E" eventType="touchUpInside" id="sg9-cR-Uk9"/>
                                                                         </connections>
@@ -732,7 +854,66 @@
                     </view>
                     <navigationItem key="navigationItem" title="Pantry" id="IrY-yf-FPA"/>
                     <connections>
+                        <outlet property="Submit" destination="UbI-4u-YGg" id="LIr-QY-uKU"/>
                         <outlet property="ingredients1" destination="a5P-zr-rx4" id="eSg-Df-cbs"/>
+                        <outlet property="ingredients10" destination="ET2-6X-izB" id="jVL-nb-FjK"/>
+                        <outlet property="ingredients11" destination="Kax-Zi-XJF" id="zNO-6B-KIO"/>
+                        <outlet property="ingredients12" destination="WVk-wG-21A" id="S7O-c3-6o7"/>
+                        <outlet property="ingredients13" destination="viA-jo-rcW" id="GJg-bl-BAm"/>
+                        <outlet property="ingredients14" destination="ofw-NN-qPj" id="PTR-YT-t1W"/>
+                        <outlet property="ingredients15" destination="aws-cz-gUd" id="CV8-5D-uVt"/>
+                        <outlet property="ingredients16" destination="2ii-JP-iF7" id="opU-g0-CEo"/>
+                        <outlet property="ingredients17" destination="jir-3q-iSa" id="Uk5-8H-yXB"/>
+                        <outlet property="ingredients18" destination="OfT-69-LU2" id="GJF-TH-KgW"/>
+                        <outlet property="ingredients19" destination="lA3-NV-ppv" id="w9o-fg-Aut"/>
+                        <outlet property="ingredients2" destination="3YX-ub-PPk" id="ccU-g6-nhZ"/>
+                        <outlet property="ingredients20" destination="34U-Xw-9hS" id="0Xe-7H-mhU"/>
+                        <outlet property="ingredients21" destination="xYa-pW-hoP" id="tJK-ps-IBH"/>
+                        <outlet property="ingredients22" destination="fOe-cM-Uzc" id="vmh-1p-3jC"/>
+                        <outlet property="ingredients23" destination="Jwp-n5-LFR" id="jRZ-Dy-BPU"/>
+                        <outlet property="ingredients24" destination="6dn-aS-EsA" id="xrE-qJ-gdc"/>
+                        <outlet property="ingredients25" destination="4B3-oC-YFk" id="vFB-gk-4XL"/>
+                        <outlet property="ingredients26" destination="K7e-7d-3JI" id="piD-rs-eMd"/>
+                        <outlet property="ingredients27" destination="6m8-JX-UHh" id="sH0-fp-qsR"/>
+                        <outlet property="ingredients28" destination="pkf-hv-SbD" id="xHO-gg-1D6"/>
+                        <outlet property="ingredients29" destination="1yd-Ap-Yey" id="jsx-hK-Gv2"/>
+                        <outlet property="ingredients3" destination="L9m-8j-Oi6" id="1UE-8i-qH8"/>
+                        <outlet property="ingredients30" destination="1FQ-fO-cVo" id="Ya4-B5-9DS"/>
+                        <outlet property="ingredients31" destination="n6n-kK-rfd" id="ZOC-z8-qEU"/>
+                        <outlet property="ingredients32" destination="0tu-w9-lC2" id="Nc9-Dv-XU1"/>
+                        <outlet property="ingredients33" destination="lXZ-C3-Eg8" id="yfg-8M-uAc"/>
+                        <outlet property="ingredients34" destination="zqk-L7-ICf" id="wgk-jA-xfP"/>
+                        <outlet property="ingredients35" destination="6hn-YD-ezQ" id="2Zb-27-5Ph"/>
+                        <outlet property="ingredients36" destination="hof-Pw-Fkk" id="YrP-I2-98L"/>
+                        <outlet property="ingredients37" destination="001-Ix-Smg" id="JHV-Ok-LbG"/>
+                        <outlet property="ingredients38" destination="3Uz-kv-ZaE" id="joG-Y1-P9e"/>
+                        <outlet property="ingredients39" destination="5M4-Lp-WrR" id="HoV-m5-s8r"/>
+                        <outlet property="ingredients4" destination="8XY-h8-v8j" id="yTq-ZN-mGU"/>
+                        <outlet property="ingredients40" destination="XZx-hJ-OSc" id="k8W-jJ-95Z"/>
+                        <outlet property="ingredients41" destination="qm9-P0-dDD" id="7Ym-X6-FqT"/>
+                        <outlet property="ingredients42" destination="G0l-v7-8P0" id="RuW-fC-987"/>
+                        <outlet property="ingredients43" destination="GJQ-X1-l0e" id="mWk-UN-sY5"/>
+                        <outlet property="ingredients44" destination="G6x-hJ-IxI" id="CUg-Tg-fqy"/>
+                        <outlet property="ingredients45" destination="qzK-ip-c4T" id="oRl-qR-5iu"/>
+                        <outlet property="ingredients46" destination="5ak-eg-sbm" id="ZMS-sz-sOK"/>
+                        <outlet property="ingredients47" destination="92Q-Mk-Uf1" id="AF4-A7-bUS"/>
+                        <outlet property="ingredients48" destination="kkE-U9-8e4" id="9Nt-ep-o46"/>
+                        <outlet property="ingredients49" destination="lgR-M1-5i5" id="P5y-Uq-I2j"/>
+                        <outlet property="ingredients5" destination="Lng-bV-Gqn" id="pk6-dP-TLp"/>
+                        <outlet property="ingredients50" destination="EWp-RQ-qVK" id="7tN-qH-CvW"/>
+                        <outlet property="ingredients51" destination="fqe-HD-gH9" id="esY-Wu-Ql9"/>
+                        <outlet property="ingredients52" destination="DVV-kl-r6q" id="O1I-yH-618"/>
+                        <outlet property="ingredients53" destination="IUt-dO-m2V" id="QQm-E5-ZtB"/>
+                        <outlet property="ingredients54" destination="4Z8-mH-on1" id="MyP-Gj-T4Y"/>
+                        <outlet property="ingredients55" destination="cek-gJ-bWH" id="SEk-Pj-HSc"/>
+                        <outlet property="ingredients56" destination="kib-3z-dHR" id="JaZ-iW-yO6"/>
+                        <outlet property="ingredients57" destination="GJB-gq-zq9" id="gBN-rB-vhK"/>
+                        <outlet property="ingredients58" destination="ZV0-PT-Vgm" id="slj-tN-FG0"/>
+                        <outlet property="ingredients59" destination="v01-Fp-1IC" id="mHk-7S-UZy"/>
+                        <outlet property="ingredients6" destination="0eu-u2-zxe" id="bIM-0N-yso"/>
+                        <outlet property="ingredients7" destination="B85-u9-kLb" id="WOW-Z7-WJP"/>
+                        <outlet property="ingredients8" destination="NVA-0z-lta" id="lFj-SA-mHg"/>
+                        <outlet property="ingredients9" destination="9ac-2l-tWi" id="FD2-w7-lbk"/>
                         <segue destination="Idy-ZZ-Y1n" kind="show" identifier="screen" id="4cw-dk-IwL"/>
                     </connections>
                 </viewController>
@@ -770,7 +951,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Uki-uA-q7C">
                                                                 <rect key="frame" x="44" y="0.0" width="177" height="35"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Curry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMH-f1-ANw">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Curry" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMH-f1-ANw">
                                                                         <rect key="frame" x="0.0" y="6.333333333333341" width="127" height="22.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                                                         <nil key="textColor"/>
@@ -836,7 +1017,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cCA-eI-FhO">
                                                                 <rect key="frame" x="44" y="0.0" width="177" height="35"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Curry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63j-5i-YET">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Curry" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63j-5i-YET">
                                                                         <rect key="frame" x="0.0" y="6.3333333333333695" width="127" height="22.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                                                         <nil key="textColor"/>
@@ -901,7 +1082,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Std-ra-pdF">
                                                                 <rect key="frame" x="44" y="0.0" width="177" height="35"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Curry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nk5-LJ-8BH">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Curry" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nk5-LJ-8BH">
                                                                         <rect key="frame" x="0.0" y="6.3333333333333695" width="127" height="22.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                                                         <nil key="textColor"/>
@@ -966,7 +1147,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="e13-ID-4Ak">
                                                                 <rect key="frame" x="44" y="0.0" width="177" height="35"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Curry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlS-Ud-HMP">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Curry" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlS-Ud-HMP">
                                                                         <rect key="frame" x="0.0" y="6.3333333333332558" width="127" height="22.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                                                         <nil key="textColor"/>

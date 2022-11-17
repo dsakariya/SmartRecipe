@@ -43,9 +43,8 @@ class SecondViewController: UIViewController {
     }
     override func viewDidLoad() {
             super.viewDidLoad()
-//        if let receviedtext=text{
-//                        label.text=text
-//                    }
+
+        
             // Do any additional setup after loading the view.
             struct RecipeResponse: Decodable{
                 let hits : [Hits]
