@@ -154,11 +154,27 @@ class ViewController: UIViewController {
         self.performSegue(withIdentifier: "screen", sender: self)
     }
     
+  
+    
+    
+    @IBAction func Bookmark(_ sender: Any) {
+        
+                let storyboard=UIStoryboard(name: "Main", bundle: nil)
+                let vc=storyboard.instantiateViewController(withIdentifier: "Login")
+                navigationController?.pushViewController(vc, animated: true)
+        
+        
+                
+                }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let passData=segue.destination as! SecondViewController
         let query = queryList.joined(separator: " ")
         passData.text="https://api.edamam.com/api/recipes/v2?type=public&q=\(query)&app_id=907d2b4b&app_key=db6697b492e4a4b02a8f3ea2b44abb79"
     }
+    
+    
+    
     @IBAction func ingredients1Tapped(_ sender: Any) {
         if ingredientSelected1==false{
             ingredientSelected1=true

@@ -58,10 +58,8 @@ class SecondViewController: UIViewController {
                 let ingredientLines :[String]
                 let image : String
             }
-            //        struct Ingredients: Decodable{
-            //            let ingredient: String
-            //        }
-        var urlString = text?.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+            
+        let urlString = text?.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         print(urlString)
         let url = URL(string: urlString ?? "https://api.edamam.com/api/recipes/v2?type=public&q=avocado&app_id=907d2b4b&app_key=db6697b492e4a4b02a8f3ea2b44abb79")
 //        "https://api.edamam.com/api/recipes/v2?type=public&q=avocado&app_id=907d2b4b&app_key=db6697b492e4a4b02a8f3ea2b44abb79")
@@ -72,7 +70,7 @@ class SecondViewController: UIViewController {
                         else{
                             if let data = data {
                                 do {
-            //                        let jsonResult = try JSONSerialization.jsonObject(with: urlContent, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
+           
                                     let result = try! JSONDecoder().decode(RecipeResponse.self, from: data)
     //                                print("Label " + (result.hits[0].recipe.label))
     //                                print(result.hits[0].recipe.uri)
