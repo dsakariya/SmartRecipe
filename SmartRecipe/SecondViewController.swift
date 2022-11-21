@@ -14,6 +14,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var dishImage3: UIImageView!
     @IBOutlet weak var dishImage4: UIImageView!
     
+    @IBOutlet weak var Signupemail: UITextField!
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var label3: UILabel!
@@ -147,15 +148,8 @@ class SecondViewController: UIViewController {
                     }
                     task.resume()
         }
-        
-        
-       
-       
-        // Do any additional setup after loading the view.
-   
-        
-        
-        
+    
+    
         
     }
 

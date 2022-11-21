@@ -5,9 +5,15 @@
 //  Created by Denish Kakadiya on 2022-10-09.
 //
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class ViewController: UIViewController {
 
+    
+    let user = Auth.auth().currentUser
+    
+    
     @IBOutlet weak var dishImage1: UIImageView!
     @IBOutlet weak var dishImage2: UIImageView!
     @IBOutlet weak var dishImage3: UIImageView!
@@ -159,13 +165,22 @@ class ViewController: UIViewController {
     
     @IBAction func Bookmark(_ sender: Any) {
         
-                let storyboard=UIStoryboard(name: "Main", bundle: nil)
-                let vc=storyboard.instantiateViewController(withIdentifier: "Login")
-                navigationController?.pushViewController(vc, animated: true)
+        if let user = user {
+            let view = self.storyboard?.instantiateViewController(withIdentifier: "bookmark")
+            self.present(view!, animated: true, completion: nil)
+        
+            
+        }else{
+            let storyboard=UIStoryboard(name: "Main", bundle: nil)
+            let vc=storyboard.instantiateViewController(withIdentifier: "Login")
+            navigationController?.pushViewController(vc, animated: true)
+        }
         
         
-                
-                }
+        
+        
+        
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let passData=segue.destination as! SecondViewController
