@@ -24,10 +24,8 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        
         return true;
     }
     
@@ -37,20 +35,18 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
             let alert = UIAlertController(title: "Error", message: "Please enter password/username" , preferredStyle: .alert)
             let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alert.addAction(action)
-                        self.present(alert, animated: true, completion: nil)
+            self.present(alert, animated: true, completion: nil)
         }else{
             Auth.auth().signIn(withEmail: LoginEmail.text!, password: Loginpassword.text!){(user,error) in
                 if error==nil{
                     let view = self.storyboard?.instantiateViewController(withIdentifier: "bookmark")
                     self.present(view!, animated: true, completion: nil)
-                    
                 }else{
                     let alert = UIAlertController(title: "Error", message: error?.localizedDescription , preferredStyle: .alert)
-                                        let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
-                                        alert.addAction(action)
-                                        self.present(alert, animated: true, completion: nil)
+                    let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                    alert.addAction(action)
+                    self.present(alert, animated: true, completion: nil)
                 }
-                
             }
         }
     }

@@ -156,8 +156,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var Submit: UIButton!
     
     @IBAction func OnClick(_ sender: Any) {
-        
         self.performSegue(withIdentifier: "screen", sender: self)
+        
     }
     
   
@@ -168,18 +168,12 @@ class ViewController: UIViewController {
         if let user = user {
             let view = self.storyboard?.instantiateViewController(withIdentifier: "bookmark")
             self.present(view!, animated: true, completion: nil)
-        
-            
+          
         }else{
             let storyboard=UIStoryboard(name: "Main", bundle: nil)
             let vc=storyboard.instantiateViewController(withIdentifier: "Login")
             navigationController?.pushViewController(vc, animated: true)
         }
-        
-        
-        
-        
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
