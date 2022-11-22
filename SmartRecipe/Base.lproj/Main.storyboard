@@ -932,13 +932,13 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="dPe-15-wlK">
-                                                        <rect key="frame" x="105" y="0.3333333333333286" width="265" height="99.333333333333329"/>
+                                                        <rect key="frame" x="105" y="0.6666666666666714" width="265" height="98.666666666666671"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Uki-uA-q7C">
                                                                 <rect key="frame" x="44" y="0.0" width="177" height="35"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Curry" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMH-f1-ANw">
-                                                                        <rect key="frame" x="0.0" y="6.333333333333341" width="127" height="22.333333333333329"/>
+                                                                        <rect key="frame" x="0.0" y="6.3333333333333268" width="127" height="22.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                                                         <color key="textColor" red="0.13333333333333333" green="0.15686274509803921" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <color key="highlightedColor" red="0.94117647058823528" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -955,13 +955,11 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Si7-qg-Lgd">
-                                                                <rect key="frame" x="66.666666666666671" y="65.000000000000014" width="131.66666666666663" height="34.333333333333329"/>
+                                                                <rect key="frame" x="70.333333333333343" y="64.999999999999986" width="124.33333333333334" height="33.666666666666671"/>
                                                                 <color key="tintColor" systemColor="systemBlueColor"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
-                                                                    <attributedString key="attributedTitle">
-                                                                        <fragment content="Show Receipe"/>
-                                                                    </attributedString>
+                                                                <buttonConfiguration key="configuration" style="filled" title="Show Recipe" cornerStyle="large">
+                                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="btn1Tapped:" destination="Idy-ZZ-Y1n" eventType="touchUpInside" id="kki-AQ-bO4"/>
@@ -1026,9 +1024,9 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhf-7G-h78">
-                                                                <rect key="frame" x="66.666666666666671" y="65" width="131.66666666666663" height="34.333333333333343"/>
+                                                                <rect key="frame" x="71.333333333333343" y="65" width="122.33333333333334" height="34.333333333333343"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="filled" title="Show Receipe" cornerStyle="large"/>
+                                                                <buttonConfiguration key="configuration" style="filled" title="Show Recipe" cornerStyle="large"/>
                                                                 <connections>
                                                                     <action selector="btn2Tapped:" destination="Idy-ZZ-Y1n" eventType="touchUpInside" id="rZJ-LO-SZe"/>
                                                                 </connections>
@@ -1091,9 +1089,9 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilh-DS-2Kv">
-                                                                <rect key="frame" x="66.666666666666671" y="65.000000000000057" width="131.66666666666663" height="34.333333333333343"/>
+                                                                <rect key="frame" x="71.333333333333343" y="65.000000000000057" width="122.33333333333334" height="34.333333333333343"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="filled" title="Show Receipe" cornerStyle="large"/>
+                                                                <buttonConfiguration key="configuration" style="filled" title="Show Recipe" cornerStyle="large"/>
                                                                 <connections>
                                                                     <action selector="btn3Tapped:" destination="Idy-ZZ-Y1n" eventType="touchUpInside" id="Dgl-tC-VFW"/>
                                                                 </connections>
@@ -1273,9 +1271,9 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yH9-ih-O9F">
-                                                                        <rect key="frame" x="53.666666666666657" y="65.000000000000014" width="131.66666666666666" height="34.333333333333329"/>
+                                                                        <rect key="frame" x="58.333333333333336" y="65.000000000000014" width="122.33333333333331" height="34.333333333333329"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="Show Receipe" cornerStyle="large"/>
+                                                                        <buttonConfiguration key="configuration" style="filled" title="Show Recipe" cornerStyle="large"/>
                                                                         <connections>
                                                                             <action selector="btn1Tapped:" destination="kKM-nR-yzf" eventType="touchUpInside" id="O36-wc-Xx3"/>
                                                                         </connections>
@@ -1338,9 +1336,9 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Gs-rK-zBM">
-                                                                        <rect key="frame" x="53.666666666666657" y="65" width="131.66666666666666" height="34.333333333333343"/>
+                                                                        <rect key="frame" x="58.333333333333336" y="65" width="122.33333333333331" height="34.333333333333343"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="Show Receipe" cornerStyle="large"/>
+                                                                        <buttonConfiguration key="configuration" style="filled" title="Show Recipe" cornerStyle="large"/>
                                                                         <connections>
                                                                             <action selector="btn2Tapped:" destination="kKM-nR-yzf" eventType="touchUpInside" id="PzP-UD-rhg"/>
                                                                         </connections>
@@ -1403,9 +1401,9 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1Y-ah-MyN">
-                                                                        <rect key="frame" x="53.666666666666657" y="65.000000000000057" width="131.66666666666666" height="34.333333333333343"/>
+                                                                        <rect key="frame" x="58.333333333333336" y="65.000000000000057" width="122.33333333333331" height="34.333333333333343"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="Show Receipe" cornerStyle="large"/>
+                                                                        <buttonConfiguration key="configuration" style="filled" title="Show Recipe" cornerStyle="large"/>
                                                                         <connections>
                                                                             <action selector="btn3Tapped:" destination="kKM-nR-yzf" eventType="touchUpInside" id="iYD-sn-SQ2"/>
                                                                         </connections>
@@ -1468,9 +1466,9 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIM-4e-wqk">
-                                                                        <rect key="frame" x="53.666666666666657" y="65" width="131.66666666666666" height="34.333333333333343"/>
+                                                                        <rect key="frame" x="58.333333333333336" y="65" width="122.33333333333331" height="34.333333333333343"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="Show Receipe" cornerStyle="large"/>
+                                                                        <buttonConfiguration key="configuration" style="filled" title="Show Recipe" cornerStyle="large"/>
                                                                         <connections>
                                                                             <action selector="btn4Tapped:" destination="kKM-nR-yzf" eventType="touchUpInside" id="k8O-RG-oSV"/>
                                                                         </connections>
@@ -1550,73 +1548,96 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login Here!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnP-jf-Ebm">
-                                <rect key="frame" x="141" y="302" width="136" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2O-pn-BC3">
-                                <rect key="frame" x="53" y="369" width="51" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAi-u0-DOd">
-                                <rect key="frame" x="34" y="443" width="89" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mhm-DC-coc">
-                                <rect key="frame" x="139" y="364" width="217" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UT8-AO-teI">
-                                <rect key="frame" x="139" y="438" width="217" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Smart Recipie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3c-Al-sws">
-                                <rect key="frame" x="139" y="227" width="142" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="512" translatesAutoresizingMaskIntoConstraints="NO" id="E30-jO-JaY">
-                                <rect key="frame" x="88" y="91" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tE0-w8-mfC">
-                                <rect key="frame" x="122" y="557" width="177" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Login"/>
-                                <connections>
-                                    <action selector="LoginBtnTapped:" destination="ozw-VY-lMD" eventType="touchUpInside" id="lwR-fX-Wah"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrn-HN-IDF">
-                                <rect key="frame" x="141" y="651" width="143" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Create Account"/>
-                                <connections>
-                                    <action selector="RegisterButtonTapped:" destination="ozw-VY-lMD" eventType="touchUpInside" id="Sb3-x4-gmI"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="lgo-lZ-28c">
+                                <rect key="frame" x="0.0" y="97" width="390" height="707.66666666666663"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="512" translatesAutoresizingMaskIntoConstraints="NO" id="E30-jO-JaY">
+                                        <rect key="frame" x="70" y="0.0" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="qJJ-Hb-hgA"/>
+                                            <constraint firstAttribute="width" constant="250" id="rGl-KK-GNa"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart Recipe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3c-Al-sws">
+                                        <rect key="frame" x="109.33333333333333" y="293" width="171.33333333333337" height="38"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please login to Bookmark" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnP-jf-Ebm">
+                                        <rect key="frame" x="78" y="374" width="234" height="25"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="3Mc-XK-QUX">
+                                        <rect key="frame" x="30" y="442" width="330" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2O-pn-BC3">
+                                                <rect key="frame" x="0.0" y="0.0" width="50.666666666666664" height="34"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mhm-DC-coc">
+                                                <rect key="frame" x="85.666666666666671" y="0.0" width="244.33333333333331" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="TPk-KJ-m2V">
+                                        <rect key="frame" x="30" y="519" width="330" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAi-u0-DOd">
+                                                <rect key="frame" x="0.0" y="0.0" width="88.333333333333329" height="34"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UT8-AO-teI">
+                                                <rect key="frame" x="104.33333333333336" y="0.0" width="225.66666666666663" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tE0-w8-mfC">
+                                        <rect key="frame" x="50" y="596" width="290" height="34.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Login">
+                                            <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="LoginBtnTapped:" destination="ozw-VY-lMD" eventType="touchUpInside" id="lwR-fX-Wah"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrn-HN-IDF">
+                                        <rect key="frame" x="124.00000000000001" y="673.33333333333337" width="142.33333333333337" height="34.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Create Account"/>
+                                        <connections>
+                                            <action selector="RegisterButtonTapped:" destination="ozw-VY-lMD" eventType="touchUpInside" id="Sb3-x4-gmI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="TPk-KJ-m2V" firstAttribute="leading" secondItem="lgo-lZ-28c" secondAttribute="leading" constant="30" id="KcF-Gj-7Rq"/>
+                                    <constraint firstItem="tE0-w8-mfC" firstAttribute="leading" secondItem="lgo-lZ-28c" secondAttribute="leading" constant="50" id="Kth-Fh-SGw"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Mc-XK-QUX" secondAttribute="trailing" constant="30" id="QTx-Xe-Z3I"/>
+                                    <constraint firstAttribute="trailing" secondItem="TPk-KJ-m2V" secondAttribute="trailing" constant="30" id="Vo8-pE-0mt"/>
+                                    <constraint firstAttribute="trailing" secondItem="tE0-w8-mfC" secondAttribute="trailing" constant="50" id="aSJ-gI-9LT"/>
+                                    <constraint firstItem="3Mc-XK-QUX" firstAttribute="leading" secondItem="lgo-lZ-28c" secondAttribute="leading" constant="30" id="bSq-qe-Z3b"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dTP-ww-Qpy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lgo-lZ-28c" firstAttribute="top" secondItem="dTP-ww-Qpy" secondAttribute="top" constant="50" id="5Iw-yr-0dr"/>
+                            <constraint firstItem="dTP-ww-Qpy" firstAttribute="trailing" secondItem="lgo-lZ-28c" secondAttribute="trailing" id="olm-H5-UZX"/>
+                            <constraint firstItem="lgo-lZ-28c" firstAttribute="leading" secondItem="dTP-ww-Qpy" secondAttribute="leading" id="pVd-J5-r5r"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5gF-pG-nO9"/>
                     <connections>
@@ -1637,73 +1658,99 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWd-3r-nF4">
-                                <rect key="frame" x="145" y="250" width="101" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrJ-Wr-jCt">
-                                <rect key="frame" x="38" y="373" width="51" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQU-5o-ZCn">
-                                <rect key="frame" x="19" y="432" width="89" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gpb-3a-gh7">
-                                <rect key="frame" x="124" y="368" width="217" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TqQ-dg-ViT">
-                                <rect key="frame" x="124" y="427" width="217" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Smart Recipie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D08-q0-d0k">
-                                <rect key="frame" x="124" y="201" width="142" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="512" translatesAutoresizingMaskIntoConstraints="NO" id="bl7-NE-hcZ">
-                                <rect key="frame" x="75" y="65" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRA-dG-NIX">
-                                <rect key="frame" x="107" y="531" width="177" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Sign up"/>
-                                <connections>
-                                    <action selector="BtnonSignupTapped:" destination="VCe-M1-uc0" eventType="touchUpInside" id="Ng4-q6-ZuL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T57-4z-cTx">
-                                <rect key="frame" x="52" y="613" width="285" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Already have Account? Login Here"/>
-                                <connections>
-                                    <action selector="OnBtnLoginTapped:" destination="VCe-M1-uc0" eventType="touchUpInside" id="4be-1N-kwW"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dV6-39-KDV">
+                                <rect key="frame" x="0.0" y="97" width="390" height="663"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="512" translatesAutoresizingMaskIntoConstraints="NO" id="bl7-NE-hcZ">
+                                        <rect key="frame" x="70" y="0.0" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="AUO-nu-5Uj"/>
+                                            <constraint firstAttribute="height" constant="250" id="byj-I5-PL0"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart Recipe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D08-q0-d0k">
+                                        <rect key="frame" x="109.33333333333333" y="285.66666666666669" width="171.33333333333337" height="38"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWd-3r-nF4">
+                                        <rect key="frame" x="155.33333333333334" y="359" width="79.666666666666657" height="25"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wi4-9Q-LjB">
+                                        <rect key="frame" x="30" y="419.66666666666663" width="330" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrJ-Wr-jCt">
+                                                <rect key="frame" x="0.0" y="0.0" width="50.666666666666664" height="34"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gpb-3a-gh7">
+                                                <rect key="frame" x="55.666666666666657" y="0.0" width="274.33333333333337" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZKo-kp-oaA">
+                                        <rect key="frame" x="30" y="489.33333333333337" width="330" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQU-5o-ZCn">
+                                                <rect key="frame" x="0.0" y="0.0" width="88.333333333333329" height="34"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TqQ-dg-ViT">
+                                                <rect key="frame" x="98.333333333333357" y="0.0" width="231.66666666666663" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRA-dG-NIX">
+                                        <rect key="frame" x="50" y="558.66666666666663" width="290" height="34.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sign up">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="labelColor"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="BtnonSignupTapped:" destination="VCe-M1-uc0" eventType="touchUpInside" id="Ng4-q6-ZuL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T57-4z-cTx">
+                                        <rect key="frame" x="52.666666666666657" y="628.66666666666663" width="284.66666666666674" height="34.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Already have Account? Login Here"/>
+                                        <connections>
+                                            <action selector="OnBtnLoginTapped:" destination="VCe-M1-uc0" eventType="touchUpInside" id="4be-1N-kwW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wi4-9Q-LjB" firstAttribute="leading" secondItem="dV6-39-KDV" secondAttribute="leading" constant="30" id="3Bb-fL-ZM7"/>
+                                    <constraint firstItem="NRA-dG-NIX" firstAttribute="leading" secondItem="dV6-39-KDV" secondAttribute="leading" constant="50" id="Vj2-89-aad"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZKo-kp-oaA" secondAttribute="trailing" constant="30" id="ZTR-go-EPS"/>
+                                    <constraint firstAttribute="trailing" secondItem="NRA-dG-NIX" secondAttribute="trailing" constant="50" id="cc3-W1-AMd"/>
+                                    <constraint firstItem="ZKo-kp-oaA" firstAttribute="leading" secondItem="dV6-39-KDV" secondAttribute="leading" constant="30" id="pnx-CY-ReJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="wi4-9Q-LjB" secondAttribute="trailing" constant="30" id="zUz-On-TBc"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Q9B-uL-lFE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q9B-uL-lFE" firstAttribute="trailing" secondItem="dV6-39-KDV" secondAttribute="trailing" id="DxZ-Wu-lUy"/>
+                            <constraint firstItem="dV6-39-KDV" firstAttribute="leading" secondItem="Q9B-uL-lFE" secondAttribute="leading" id="Yd2-Z0-1h0"/>
+                            <constraint firstItem="dV6-39-KDV" firstAttribute="top" secondItem="Q9B-uL-lFE" secondAttribute="top" constant="50" id="c04-49-afC"/>
+                            <constraint firstItem="Q9B-uL-lFE" firstAttribute="bottom" secondItem="dV6-39-KDV" secondAttribute="bottom" constant="50" id="vgU-oR-7qr"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="TxtEmail" destination="Gpb-3a-gh7" id="hkx-s5-1w6"/>
@@ -1712,7 +1759,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xNw-Lw-qIj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2282" y="1405"/>
+            <point key="canvasLocation" x="-2283.0769230769229" y="1404.739336492891"/>
         </scene>
         <!--Bookmark-->
         <scene sceneID="QAa-dg-ALV">
@@ -1722,32 +1769,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bookmark Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqk-G5-tit">
-                                <rect key="frame" x="66" y="383" width="259" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ako-J7-Fd0">
-                                <rect key="frame" x="66" y="221" width="259" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDu-3x-GXI">
-                                <rect key="frame" x="151" y="576" width="90" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Sign Out"/>
-                                <connections>
-                                    <action selector="OnSignoutTapped:" destination="qLA-pt-HSq" eventType="touchUpInside" id="Rm4-6f-frg"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="RPM-eb-3RD">
+                                <rect key="frame" x="20" y="47" width="350" height="763"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bookmark Recipe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqk-G5-tit">
+                                        <rect key="frame" x="60.000000000000014" y="0.0" width="230.33333333333337" height="39"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ako-J7-Fd0">
+                                        <rect key="frame" x="175" y="384" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDu-3x-GXI">
+                                        <rect key="frame" x="130" y="728.66666666666663" width="90" height="34.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Sign Out"/>
+                                        <connections>
+                                            <action selector="OnSignoutTapped:" destination="qLA-pt-HSq" eventType="touchUpInside" id="Rm4-6f-frg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mVx-hD-VsK"/>
                         <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RPM-eb-3RD" firstAttribute="leading" secondItem="mVx-hD-VsK" secondAttribute="leading" constant="20" id="2QT-fM-Z1p"/>
+                            <constraint firstItem="mVx-hD-VsK" firstAttribute="trailing" secondItem="RPM-eb-3RD" secondAttribute="trailing" constant="20" id="VcU-CL-f1J"/>
+                            <constraint firstItem="mVx-hD-VsK" firstAttribute="bottom" secondItem="RPM-eb-3RD" secondAttribute="bottom" id="gkg-af-vWS"/>
+                            <constraint firstItem="RPM-eb-3RD" firstAttribute="top" secondItem="mVx-hD-VsK" secondAttribute="top" id="n3s-2I-2fI"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Bookmark" id="NUu-uO-hfP"/>
                     <connections>
