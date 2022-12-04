@@ -14,6 +14,7 @@ class BookmarkViewController: UIViewController {
     @IBOutlet weak var LblStatus: UILabel!
     @IBOutlet weak var BtnSignout: UIButton!
     
+    @IBOutlet weak var bkmkLabel: UILabel!
     let user = Auth.auth().currentUser
     
     override func viewDidLoad() {
@@ -21,6 +22,17 @@ class BookmarkViewController: UIViewController {
         if let user = user {
                     LblStatus.text = "You are logged in with email: \(user.email!)"
                 }
+        
+        var ref:DatabaseReference!
+                ref = Database.database().reference()
+                ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
+                    guard error == nil else {
+                        print(error!.localizedDescription)
+                        return;
+                    }
+                    self.bkmkLabel.text = snapshot?.value as? String;
+                });
+        
 
     }
     

@@ -30,6 +30,7 @@ class SecondViewController: UIViewController {
     static var url2 :String = ""
     static var url3 :String = ""
     static var url4 :String = ""
+    
     @IBAction func btn1Tapped(_ sender: Any) {
         UIApplication.shared.open(NSURL(string:SecondViewController.url1)! as URL)
     }
@@ -63,7 +64,7 @@ class SecondViewController: UIViewController {
         let urlString = text?.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         print(urlString!)
         let url = URL(string: urlString ?? "https://api.edamam.com/api/recipes/v2?type=public&q=avocado&app_id=907d2b4b&app_key=db6697b492e4a4b02a8f3ea2b44abb79")
-//"https://api.edamam.com/api/recipes/v2?type=public&q=avocado&app_id=907d2b4b&app_key=db6697b492e4a4b02a8f3ea2b44abb79")
+
             let task = URLSession.shared.dataTask(with: url!) { [self] (data, response, error) in
                         if error != nil {
                             print(error!)
@@ -152,7 +153,7 @@ class SecondViewController: UIViewController {
                                         present(alert, animated: true,completion: nil)
 //                                        alert.addAction(action)
 //                                        self.present(alert, animated: true, completion: nil)
-//                                        self.navigationController?.popViewController(animated: true)
+//
                                     }
                                 }
                                 catch{

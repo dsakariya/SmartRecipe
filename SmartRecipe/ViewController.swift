@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     
     let user = Auth.auth().currentUser
-    
+    var image1=""
     
     @IBOutlet weak var dishImage1: UIImageView!
     @IBOutlet weak var dishImage2: UIImageView!
@@ -164,17 +164,36 @@ class ViewController: UIViewController {
     
     
     @IBAction func Bookmark(_ sender: Any) {
-        
-        if let user = user {
-            let view = self.storyboard?.instantiateViewController(withIdentifier: "bookmark")
-            self.present(view!, animated: true, completion: nil)
-          
-        }else{
-            let storyboard=UIStoryboard(name: "Main", bundle: nil)
-            let vc=storyboard.instantiateViewController(withIdentifier: "Login")
-            navigationController?.pushViewController(vc, animated: true)
-        }
+        bookMark()
     }
+    
+    func bookMark(){
+            var refRecipe: DatabaseReference!
+            refRecipe = Database.database().reference().child("Recipe");
+        
+        
+            if user != nil {
+                
+                let key = refRecipe.childByAutoId().key
+                let recipe = ["id":user?.email,
+                              "recipeName": label1.text! as String,
+                              "recipeImage" :image1 as String
+                              ]
+                refRecipe.child(user?.uid ?? "Guest").setValue(recipe)
+                
+                
+                let view = self.storyboard?.instantiateViewController(withIdentifier: "bookmark")
+                self.present(view!, animated: true, completion: nil)
+              
+            }else{
+                
+                let storyboard=UIStoryboard(name: "Main", bundle: nil)
+                let vc=storyboard.instantiateViewController(withIdentifier: "Login")
+                navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let passData=segue.destination as! SecondViewController
@@ -671,20 +690,7 @@ class ViewController: UIViewController {
         queryList.append(ingredients59.titleLabel!.text ?? "")}else{ingredientSelected59=false
             ingredients59.backgroundColor = .systemGray
             queryList.removeAll(where: {$0.contains(ingredients59.titleLabel!.text ?? "")} ) } }
-    
-  
-    
-//    @IBAction func ingredients2Tapped(_ sender: Any) {
-//        ingredients2.tintColor = .systemGray
-//       }
-//    @IBAction func ingredients3Tapped(_ sender: Any) {
-//        ingredients3.tintColor = .systemGray
-//       }
-//    @IBAction func ingredients4Tapped(_ sender: Any) {
-//        ingredients4.tintColor = .systemGray
-//      }
-    
-   
+
         
 //   
     
@@ -748,6 +754,7 @@ class ViewController: UIViewController {
                                 
                                 let img = result.hits[0].recipe.image
                                 let url = URL(string: img)!
+                                
                                 DispatchQueue.global().async {
                                     // Fetch Image Data
                                     if let data = try? Data(contentsOf: url) {
@@ -758,6 +765,7 @@ class ViewController: UIViewController {
                                     }
                                 }
                                 let img1 = result.hits[1].recipe.image
+                                image1=img1
                                 let url1 = URL(string: img1)!
                                 DispatchQueue.global().async {
                                     // Fetch Image Data
