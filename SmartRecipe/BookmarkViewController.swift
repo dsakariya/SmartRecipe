@@ -46,12 +46,12 @@ class BookmarkViewController: UIViewController, UITableViewDelegate, UITableView
                             let btnUrl = Object?["link"]
                             let imageUrl = Object?["recipeImage"]
                             let rec = RecipeModel(id: id as? String, link: btnUrl as? String, recipeImage: imageUrl as? String, recipeName: Name as? String)
-         
+                            self.table.append(rec)
                             self.TableView.reloadData()
                         }
                     }
                 }
-                )                   self.table.append(rec)
+                )
         
     }
     

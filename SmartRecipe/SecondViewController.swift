@@ -9,6 +9,38 @@ import UIKit
 import CoreData
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var dishImage1: UIImageView!
+    @IBOutlet weak var dishImage2: UIImageView!
+    @IBOutlet weak var dishImage3: UIImageView!
+    @IBOutlet weak var dishImage4: UIImageView!
+    @IBOutlet weak var dishImage5: UIImageView!
+    @IBOutlet weak var dishImage6: UIImageView!
+    @IBOutlet weak var dishImage7: UIImageView!
+    @IBOutlet weak var dishImage8: UIImageView!
+    @IBOutlet weak var dishImage9: UIImageView!
+    @IBOutlet weak var dishImage10: UIImageView!
+    
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label3: UILabel!
+    @IBOutlet weak var label4: UILabel!
+    @IBOutlet weak var label5: UILabel!
+    @IBOutlet weak var label6: UILabel!
+    @IBOutlet weak var label7: UILabel!
+    @IBOutlet weak var label8: UILabel!
+    @IBOutlet weak var label9: UILabel!
+    @IBOutlet weak var label10: UILabel!
+
+    @IBOutlet weak var btn1: UIButton!
+    @IBOutlet weak var btn2: UIButton!
+    @IBOutlet weak var btn3: UIButton!
+    @IBOutlet weak var btn4: UIButton!
+    @IBOutlet weak var btn5: UIButton!
+    @IBOutlet weak var btn6: UIButton!
+    @IBOutlet weak var btn7: UIButton!
+    @IBOutlet weak var btn8: UIButton!
+    @IBOutlet weak var btn9: UIButton!
+    @IBOutlet weak var btn10: UIButton!
     
     var text:String?
     static var url1 :String = ""
@@ -35,7 +67,24 @@ class SecondViewController: UIViewController {
     @IBAction func btn4Tapped(_ sender: Any) {
         UIApplication.shared.open(NSURL(string: SecondViewController.url4)! as URL)
     }
-        
+    @IBAction func btn5Tapped(_ sender: Any) {
+        UIApplication.shared.open(NSURL(string: SecondViewController.url4)! as URL)
+    }
+    @IBAction func btn6Tapped(_ sender: Any) {
+        UIApplication.shared.open(NSURL(string: SecondViewController.url4)! as URL)
+    }
+    @IBAction func btn7Tapped(_ sender: Any) {
+        UIApplication.shared.open(NSURL(string: SecondViewController.url4)! as URL)
+    }
+    @IBAction func btn8Tapped(_ sender: Any) {
+        UIApplication.shared.open(NSURL(string: SecondViewController.url4)! as URL)
+    }
+    @IBAction func btn9Tapped(_ sender: Any) {
+        UIApplication.shared.open(NSURL(string: SecondViewController.url4)! as URL)
+    }
+    @IBAction func btn10Tapped(_ sender: Any) {
+        UIApplication.shared.open(NSURL(string: SecondViewController.url4)! as URL)
+    }
     
     override func viewDidLoad() {
             super.viewDidLoad()
