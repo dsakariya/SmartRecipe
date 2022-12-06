@@ -18,30 +18,17 @@ class ViewController: UIViewController {
     
     let user = Auth.auth().currentUser
     
+    var image0=""
     var image1=""
-    var Burl1=url1
     var image2=""
-    var Burl2=url2
-    
     var image3=""
-    var Burl3=url3
     var image4=""
-    var Burl4=url4
-    
     var image5=""
-    var Burl5=url5
     var image6=""
-    var Burl6=url6
-
     var image7=""
-    var Burl7=url7
     var image8=""
-    var Burl8=url8
-    
     var image9=""
-    var Burl9=url9
     var image10=""
-    var Burl10=url10
     
     
     
@@ -236,18 +223,9 @@ class ViewController: UIViewController {
     @IBAction func Bookmark2(_ sender: Any) {
         
         let ref = Database.database().reference().child("Recipe")
-        ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
-            guard error == nil else {
-                print(error!.localizedDescription)
-                return;
-            }
-            var name=snapshot?.value as? String;
-
-            if(self.label1.text==name){
-                self.Bookmark.tintColor = .purple
-            }
-
-        });
+        
+        
+        
         
         refRecipe = Database.database().reference().child("Recipe");
         if user != nil {
@@ -255,33 +233,27 @@ class ViewController: UIViewController {
             let key = refRecipe.childByAutoId().key
             let recipe = ["id":user?.email,
                           "recipeName": label2.text! as String,
-                          "recipeImage" :image2 as String,
-                          "link":Burl2 as String
+                          "recipeImage" :image1 as String,
+                          "link":ViewController.url2
             ]
             refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
             //Dishant Put alert box "Recipe Bookmarked!!!"
-            
+            let alert = UIAlertController(title: "Bookmark", message: "You Recipe saved in Bookmark Tab", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             
         }else{
             loginpage()
+            //            }
+            
+            print("Insert")
+            
+            
+            
         }
-        
     }
     @IBAction func Bookmark(_ sender: Any) {
         
-        let ref = Database.database().reference().child("Recipe")
-        ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
-            guard error == nil else {
-                print(error!.localizedDescription)
-                return;
-            }
-            var name=snapshot?.value as? String;
-
-            if(self.label1.text==name){
-                self.Bookmark.tintColor = .purple
-            }
-
-        });
 
         refRecipe = Database.database().reference().child("Recipe");
         
@@ -290,10 +262,14 @@ class ViewController: UIViewController {
             let key = refRecipe.childByAutoId().key
             let recipe = ["id":user?.email,
                           "recipeName": label1.text! as String,
-                          "recipeImage" :image1 as String,
-                          "link":Burl1 as String
+                          "recipeImage" :image0 as String,
+                          "link":ViewController.url1
             ]
             refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
+            
+            let alert = UIAlertController(title: "Bookmark", message: "You Recipe saved in Bookmark Tab", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             
         }else{
             loginpage()
@@ -302,20 +278,6 @@ class ViewController: UIViewController {
     
     @IBAction func Bookmark3(_ sender: Any){
         
-        let ref = Database.database().reference().child("Recipe")
-        ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
-            guard error == nil else {
-                print(error!.localizedDescription)
-                return;
-            }
-            var name=snapshot?.value as? String;
-
-            if(self.label3.text==name){
-                self.Bookmark.tintColor = .purple
-            }
-
-        });
-
         refRecipe = Database.database().reference().child("Recipe");
         
         if user != nil {
@@ -323,10 +285,14 @@ class ViewController: UIViewController {
             let key = refRecipe.childByAutoId().key
             let recipe = ["id":user?.email,
                           "recipeName": label3.text! as String,
-                          "recipeImage" :image3 as String,
-                          "link":Burl1 as String
+                          "recipeImage" :image2 as String,
+                          "link":ViewController.url3
             ]
             refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
+            
+            let alert = UIAlertController(title: "Bookmark", message: "You Recipe saved in Bookmark Tab", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             
         }else{
             loginpage()
@@ -336,20 +302,6 @@ class ViewController: UIViewController {
     
     @IBAction func Bookmark4(_ sender: Any){
         
-        let ref = Database.database().reference().child("Recipe")
-        ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
-            guard error == nil else {
-                print(error!.localizedDescription)
-                return;
-            }
-            var name=snapshot?.value as? String;
-
-            if(self.label4.text==name){
-                self.Bookmark.tintColor = .purple
-            }
-
-        });
-
         refRecipe = Database.database().reference().child("Recipe");
         
         if user != nil {
@@ -357,10 +309,14 @@ class ViewController: UIViewController {
             let key = refRecipe.childByAutoId().key
             let recipe = ["id":user?.email,
                           "recipeName": label4.text! as String,
-                          "recipeImage" :image4 as String,
-                          "link":Burl1 as String
+                          "recipeImage" :image3 as String,
+                          "link":ViewController.url4
             ]
             refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
+        
+            let alert = UIAlertController(title: "Bookmark", message: "You Recipe saved in Bookmark Tab", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             
         }else{
             loginpage()
@@ -369,19 +325,7 @@ class ViewController: UIViewController {
     }
     @IBAction func Bookmark5(_ sender: Any){
         
-        let ref = Database.database().reference().child("Recipe")
-        ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
-            guard error == nil else {
-                print(error!.localizedDescription)
-                return;
-            }
-            var name=snapshot?.value as? String;
 
-            if(self.label5.text==name){
-                self.Bookmark.tintColor = .purple
-            }
-
-        });
 
         refRecipe = Database.database().reference().child("Recipe");
         
@@ -390,10 +334,14 @@ class ViewController: UIViewController {
             let key = refRecipe.childByAutoId().key
             let recipe = ["id":user?.email,
                           "recipeName": label5.text! as String,
-                          "recipeImage" :image5 as String,
-                          "link":Burl1 as String
+                          "recipeImage" :image4 as String,
+                          "link":ViewController.url5
             ]
             refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
+            
+            let alert = UIAlertController(title: "Bookmark", message: "You Recipe saved in Bookmark Tab", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             
         }else{
             loginpage()
@@ -402,20 +350,6 @@ class ViewController: UIViewController {
     }
     @IBAction func Bookmark6(_ sender: Any){
         
-        let ref = Database.database().reference().child("Recipe")
-        ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
-            guard error == nil else {
-                print(error!.localizedDescription)
-                return;
-            }
-            var name=snapshot?.value as? String;
-
-            if(self.label6.text==name){
-                self.Bookmark.tintColor = .purple
-            }
-
-        });
-
         refRecipe = Database.database().reference().child("Recipe");
         
         if user != nil {
@@ -423,10 +357,14 @@ class ViewController: UIViewController {
             let key = refRecipe.childByAutoId().key
             let recipe = ["id":user?.email,
                           "recipeName": label6.text! as String,
-                          "recipeImage" :image6 as String,
-                          "link":Burl1 as String
+                          "recipeImage" :image5 as String,
+                          "link":ViewController.url6
             ]
             refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
+            
+            let alert = UIAlertController(title: "Bookmark", message: "You Recipe saved in Bookmark Tab", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             
         }else{
             loginpage()
@@ -435,20 +373,6 @@ class ViewController: UIViewController {
     }
     @IBAction func Bookmark7(_ sender: Any){
         
-        let ref = Database.database().reference().child("Recipe")
-        ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
-            guard error == nil else {
-                print(error!.localizedDescription)
-                return;
-            }
-            var name=snapshot?.value as? String;
-
-            if(self.label7.text==name){
-                self.Bookmark.tintColor = .purple
-            }
-
-        });
-
         refRecipe = Database.database().reference().child("Recipe");
         
         if user != nil {
@@ -456,10 +380,14 @@ class ViewController: UIViewController {
             let key = refRecipe.childByAutoId().key
             let recipe = ["id":user?.email,
                           "recipeName": label7.text! as String,
-                          "recipeImage" :image7 as String,
-                          "link":Burl1 as String
+                          "recipeImage" :image6 as String,
+                          "link":ViewController.url7
             ]
             refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
+            
+            let alert = UIAlertController(title: "Bookmark", message: "You Recipe saved in Bookmark Tab", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             
         }else{
             loginpage()
@@ -467,19 +395,6 @@ class ViewController: UIViewController {
         
     }
     @IBAction func Bookmark8(_ sender: Any){
-        let ref = Database.database().reference().child("Recipe")
-        ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
-            guard error == nil else {
-                print(error!.localizedDescription)
-                return;
-            }
-            var name=snapshot?.value as? String;
-
-            if(self.label8.text==name){
-                self.Bookmark.tintColor = .purple
-            }
-
-        });
 
         refRecipe = Database.database().reference().child("Recipe");
         
@@ -488,10 +403,14 @@ class ViewController: UIViewController {
             let key = refRecipe.childByAutoId().key
             let recipe = ["id":user?.email,
                           "recipeName": label8.text! as String,
-                          "recipeImage" :image8 as String,
-                          "link":Burl1 as String
+                          "recipeImage" :image7 as String,
+                          "link":ViewController.url8
             ]
             refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
+            
+            let alert = UIAlertController(title: "Bookmark", message: "You Recipe saved in Bookmark Tab", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             
         }else{
             loginpage()
@@ -519,8 +438,8 @@ class ViewController: UIViewController {
             let key = refRecipe.childByAutoId().key
             let recipe = ["id":user?.email,
                           "recipeName": label9.text! as String,
-                          "recipeImage" :image9 as String,
-                          "link":Burl1 as String
+                          "recipeImage" :image8 as String,
+                          "link":ViewController.url9
             ]
             refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
             
@@ -529,20 +448,7 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func Bookmark10(_ sender: Any){
-        let ref = Database.database().reference().child("Recipe")
-        ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
-            guard error == nil else {
-                print(error!.localizedDescription)
-                return;
-            }
-            var name=snapshot?.value as? String;
-
-            if(self.label10.text==name){
-                self.Bookmark.tintColor = .purple
-            }
-
-        });
-
+        
         refRecipe = Database.database().reference().child("Recipe");
         
         if user != nil {
@@ -550,10 +456,14 @@ class ViewController: UIViewController {
             let key = refRecipe.childByAutoId().key
             let recipe = ["id":user?.email,
                           "recipeName": label10.text! as String,
-                          "recipeImage" :image10 as String,
-                          "link":Burl1 as String
+                          "recipeImage" :image9 as String,
+                          "link":ViewController.url10
             ]
             refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
+            
+            let alert = UIAlertController(title: "Bookmark", message: "You Recipe saved in Bookmark Tab", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             
         }else{
             loginpage()
@@ -1180,6 +1090,7 @@ class ViewController: UIViewController {
                         
                         
                         let img = result.hits[0].recipe.image
+                        image0=img
                         let url = URL(string: img)!
                         
                         DispatchQueue.global().async {
@@ -1216,6 +1127,7 @@ class ViewController: UIViewController {
                             }
                         }
                         let img3 = result.hits[3].recipe.image
+                        image3=img3
                         let url3 = URL(string: img3)!
                         DispatchQueue.global().async {
                             // Fetch Image Data
@@ -1227,6 +1139,7 @@ class ViewController: UIViewController {
                             }
                         }
                         let img4 = result.hits[4].recipe.image
+                        image4=img4
                         let url4 = URL(string: img4)!
                         DispatchQueue.global().async {
                             // Fetch Image Data
@@ -1238,6 +1151,7 @@ class ViewController: UIViewController {
                             }
                         }
                         let img5 = result.hits[5].recipe.image
+                        image5=img5
                         let url5 = URL(string: img5)!
                         DispatchQueue.global().async {
                             // Fetch Image Data
@@ -1249,6 +1163,7 @@ class ViewController: UIViewController {
                             }
                         }
                         let img6 = result.hits[6].recipe.image
+                        image6=img6
                         let url6 = URL(string: img6)!
                         DispatchQueue.global().async {
                             // Fetch Image Data
@@ -1260,6 +1175,7 @@ class ViewController: UIViewController {
                             }
                         }
                         let img7 = result.hits[7].recipe.image
+                        image7=img7
                         let url7 = URL(string: img7)!
                         DispatchQueue.global().async {
                             // Fetch Image Data
@@ -1271,6 +1187,7 @@ class ViewController: UIViewController {
                             }
                         }
                         let img8 = result.hits[8].recipe.image
+                        image8=img8
                         let url8 = URL(string: img8)!
                         DispatchQueue.global().async {
                             // Fetch Image Data
@@ -1282,7 +1199,9 @@ class ViewController: UIViewController {
                             }
                         }
                         let img9 = result.hits[11].recipe.image
+                        image9=img9
                         let url9 = URL(string: img9)!
+                        
                         DispatchQueue.global().async {
                             // Fetch Image Data
                             if let data = try? Data(contentsOf: url9) {

@@ -24,7 +24,7 @@ class BookmarkViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var BtnSignout: UIButton!
     
     @IBOutlet weak var TableView: UITableView!
-    @IBOutlet weak var bkmkLabel: UILabel!
+ 
     let user = Auth.auth().currentUser
     
     
@@ -34,6 +34,7 @@ class BookmarkViewController: UIViewController, UITableViewDelegate, UITableView
         if let user = user {
             LblStatus.text = "You are logged in with email: \(user.email!)"
         }
+        
         var refRecipe=Database.database().reference().child("Recipe")
                 ref = Database.database().reference().child("Recipe")
                 ref.queryOrdered(byChild:"id").queryEqual(toValue:user?.email).observe( DataEventType.value, with: { (snapshot) in
