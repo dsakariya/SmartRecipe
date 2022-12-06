@@ -56,7 +56,12 @@ class BookmarkViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     @IBAction func OnSignoutTapped(_ sender: Any) {
-        
+        let auth=Auth.auth()
+            do{
+                try auth.signOut()
+                self.dismiss(animated: true,completion: nil)
+            }catch let SignoutError{
+            }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return table.count
