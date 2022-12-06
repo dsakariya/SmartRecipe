@@ -6,30 +6,22 @@
 //
 
 import UIKit
-
+import CoreData
 class SecondViewController: UIViewController {
 
-    @IBOutlet weak var dishImage1: UIImageView!
-    @IBOutlet weak var dishImage2: UIImageView!
-    @IBOutlet weak var dishImage3: UIImageView!
-    @IBOutlet weak var dishImage4: UIImageView!
     
-    @IBOutlet weak var Signupemail: UITextField!
-    @IBOutlet weak var label1: UILabel!
-    @IBOutlet weak var label2: UILabel!
-    @IBOutlet weak var label3: UILabel!
-    @IBOutlet weak var label4: UILabel!
-
-    @IBOutlet weak var btn1: UIButton!
-    @IBOutlet weak var btn2: UIButton!
-    @IBOutlet weak var btn3: UIButton!
-    @IBOutlet weak var btn4: UIButton!
-    @IBOutlet weak var label: UILabel!
     var text:String?
     static var url1 :String = ""
     static var url2 :String = ""
     static var url3 :String = ""
     static var url4 :String = ""
+    static var url5 :String = ""
+    static var url6 :String = ""
+    static var url7 :String = ""
+    static var url8 :String = ""
+    static var url9 :String = ""
+    static var url10 :String = ""
+
     
     @IBAction func btn1Tapped(_ sender: Any) {
         UIApplication.shared.open(NSURL(string:SecondViewController.url1)! as URL)
@@ -43,6 +35,8 @@ class SecondViewController: UIViewController {
     @IBAction func btn4Tapped(_ sender: Any) {
         UIApplication.shared.open(NSURL(string: SecondViewController.url4)! as URL)
     }
+        
+    
     override func viewDidLoad() {
             super.viewDidLoad()
 
@@ -74,14 +68,6 @@ class SecondViewController: UIViewController {
                             if let data = data {
                                 do {
                                     let result = try! JSONDecoder().decode(RecipeResponse.self, from: data)
-//                                print("Label " + (result.hits[0].recipe.label))
-//                                print(result.hits[0].recipe.uri)
-//                                print(result.hits[0].recipe.ingredientLines)
-//                                print(result.hits[0].recipe)
-//                                let ingredients = result.hits[0].recipe.ingredientLines
-//                                for ingredient in ingredients {
-//                                print(ingredient)
-//                                }
                                     if result.hits.count>3
                                     {
                                         let hits = result.hits

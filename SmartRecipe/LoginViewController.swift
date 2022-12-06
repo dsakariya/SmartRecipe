@@ -7,7 +7,7 @@
 
 import UIKit
 import FirebaseAuth
-
+import CoreData
 
 class LoginViewController: UIViewController,UITextFieldDelegate {
 
@@ -41,6 +41,8 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
                 if error==nil{
                     let view = self.storyboard?.instantiateViewController(withIdentifier: "bookmark")
                     self.present(view!, animated: true, completion: nil)
+                    self.LoginEmail.text=""
+                    self.Loginpassword.text=""
                 }else{
                     let alert = UIAlertController(title: "Error", message: error?.localizedDescription , preferredStyle: .alert)
                     let action = UIAlertAction(title: "Ok", style: .default, handler: nil)

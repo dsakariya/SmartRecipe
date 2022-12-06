@@ -7,27 +7,63 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import CoreData
 
 class ViewController: UIViewController {
-
+    
+    
+    var refRecipe: DatabaseReference!
+    
+    
     
     let user = Auth.auth().currentUser
     var image1=""
+    var Burl1=url1
+    var image2=""
+    var Burl2=url2
+    
+    @IBOutlet weak var ShowBookmark: UIButton!
+    
     
     @IBOutlet weak var dishImage1: UIImageView!
     @IBOutlet weak var dishImage2: UIImageView!
     @IBOutlet weak var dishImage3: UIImageView!
     @IBOutlet weak var dishImage4: UIImageView!
+    @IBOutlet weak var dishImage5: UIImageView!
+    @IBOutlet weak var dishImage6: UIImageView!
+    @IBOutlet weak var dishImage7: UIImageView!
+    @IBOutlet weak var dishImage8: UIImageView!
+    @IBOutlet weak var dishImage9: UIImageView!
+    @IBOutlet weak var dishImage10: UIImageView!
+    
+ 
     
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var label3: UILabel!
     @IBOutlet weak var label4: UILabel!
-
+    @IBOutlet weak var label5: UILabel!
+    @IBOutlet weak var label6: UILabel!
+    @IBOutlet weak var label7: UILabel!
+    @IBOutlet weak var label8: UILabel!
+    @IBOutlet weak var label9: UILabel!
+    @IBOutlet weak var label10: UILabel!
+    
+    
     @IBOutlet weak var btn1: UIButton!
     @IBOutlet weak var btn2: UIButton!
     @IBOutlet weak var btn3: UIButton!
     @IBOutlet weak var btn4: UIButton!
+    @IBOutlet weak var btn5: UIButton!
+    @IBOutlet weak var btn6: UIButton!
+    @IBOutlet weak var btn7: UIButton!
+    @IBOutlet weak var btn8: UIButton!
+    @IBOutlet weak var btn9: UIButton!
+    @IBOutlet weak var btn10: UIButton!
+    
+    
+    
+    
     
     var queryList : [String] = []
     var ingredientSelected1 = false
@@ -153,46 +189,84 @@ class ViewController: UIViewController {
     @IBOutlet weak var ingredients58: UIButton!
     @IBOutlet weak var ingredients59: UIButton!
     
+    @IBOutlet weak var Bookmark:UIButton!
     @IBOutlet weak var Submit: UIButton!
+    
+    
     
     @IBAction func OnClick(_ sender: Any) {
         self.performSegue(withIdentifier: "screen", sender: self)
         
     }
+    @IBOutlet weak var Bookmark2: UIButton!
     
-  
     
-    
+    @IBAction func Bookmark2(_ sender: Any) {
+        
+        refRecipe = Database.database().reference().child("Recipe");
+        if user != nil {
+            
+            let key = refRecipe.childByAutoId().key
+            let recipe = ["id":user?.email,
+                          "recipeName": label2.text! as String,
+                          "recipeImage" :image2 as String,
+                          "link":Burl2 as String
+            ]
+            refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
+            //Dishant Put alert box "Recipe Bookmarked!!!"
+            
+//            let view = self.storyboard?.instantiateViewController(withIdentifier: "bookmark")
+//            self.present(view!, animated: true, completion: nil)
+            
+        }else{
+            loginpage()
+        }
+        
+    }
     @IBAction func Bookmark(_ sender: Any) {
-        bookMark()
+        
+        let ref = Database.database().reference()
+
+
+        ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
+            guard error == nil else {
+                print(error!.localizedDescription)
+                return;
+            }
+            var name=snapshot?.value as? String;
+
+            if(self.label1.text==name){
+                self.Bookmark.tintColor = .purple
+            }
+
+        });
+
+        refRecipe = Database.database().reference().child("Recipe");
+        
+        if user != nil {
+            
+//            let key = refRecipe.childByAutoId().key
+//            let recipe = ["id":user?.email,
+//                          "recipeName": label1.text! as String,
+//                          "recipeImage" :image1 as String,
+//                          "link":Burl1 as String
+//            ]
+//            refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
+//            
+//            
+            let view = self.storyboard?.instantiateViewController(withIdentifier: "bookmark")
+            self.present(view!, animated: true, completion: nil)
+            
+        }else{
+            loginpage()
+        }
     }
     
-    func bookMark(){
-            var refRecipe: DatabaseReference!
-            refRecipe = Database.database().reference().child("Recipe");
-        
-        
-            if user != nil {
-                
-                let key = refRecipe.childByAutoId().key
-                let recipe = ["id":user?.email,
-                              "recipeName": label1.text! as String,
-                              "recipeImage" :image1 as String
-                              ]
-                refRecipe.child(user?.uid ?? "Guest").setValue(recipe)
-                
-                
-                let view = self.storyboard?.instantiateViewController(withIdentifier: "bookmark")
-                self.present(view!, animated: true, completion: nil)
-              
-            }else{
-                
-                let storyboard=UIStoryboard(name: "Main", bundle: nil)
-                let vc=storyboard.instantiateViewController(withIdentifier: "Login")
-                navigationController?.pushViewController(vc, animated: true)
-            }
-        }
-    
+    func loginpage(){
+        let storyboard=UIStoryboard(name: "Main", bundle: nil)
+        let vc=storyboard.instantiateViewController(withIdentifier: "Login")
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -202,6 +276,16 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func showBookmarkTapped(_ sender: Any) {
+        if user != nil {
+            let view = self.storyboard?.instantiateViewController(withIdentifier: "bookmark")
+            self.present(view!, animated: true, completion: nil)
+
+        }else{
+            loginpage()
+        }
+        
+    }
     
     @IBAction func ingredients1Tapped(_ sender: Any) {
         if ingredientSelected1==false{
@@ -224,7 +308,7 @@ class ViewController: UIViewController {
         else{ingredientSelected2=false
             ingredients2.backgroundColor = .systemGray
             queryList.removeAll(where: {$0.contains(ingredients2.titleLabel!.text ?? "")} )
-            }
+        }
     }
     @IBAction func ingredients3Tapped(_ sender: Any) {
         if ingredientSelected3==false{
@@ -234,8 +318,8 @@ class ViewController: UIViewController {
         else{ingredientSelected3=false
             ingredients3.backgroundColor = .systemGray
             queryList.removeAll(where: {$0.contains(ingredients3.titleLabel!.text ?? "")} )
-            }
         }
+    }
     @IBAction func ingredients4Tapped(_ sender: Any) {
         if ingredientSelected4==false{
             ingredientSelected4=true
@@ -244,7 +328,7 @@ class ViewController: UIViewController {
         else{ingredientSelected4=false
             ingredients4.backgroundColor = .systemGray
             queryList.removeAll(where: {$0.contains(ingredients4.titleLabel!.text ?? "")} )
-            }
+        }
     }
     @IBAction func ingredients5Tapped(_ sender: Any) {
         if ingredientSelected5==false{
@@ -254,8 +338,8 @@ class ViewController: UIViewController {
         else{ingredientSelected5=false
             ingredients5.backgroundColor = .systemGray
             queryList.removeAll(where: {$0.contains(ingredients5.titleLabel!.text ?? "")} )
-            }
         }
+    }
     @IBAction func ingredients6Tapped(_ sender: Any) {
         if ingredientSelected6==false{
             ingredientSelected6=true
@@ -264,7 +348,7 @@ class ViewController: UIViewController {
         else{ingredientSelected6=false
             ingredients6.backgroundColor = .systemGray
             queryList.removeAll(where: {$0.contains(ingredients6.titleLabel!.text ?? "")} )
-            }
+        }
     }
     @IBAction func ingredients7Tapped(_ sender: Any) {
         if ingredientSelected7==false{
@@ -274,8 +358,8 @@ class ViewController: UIViewController {
         else{ingredientSelected7=false
             ingredients7.backgroundColor = .systemGray
             queryList.removeAll(where: {$0.contains(ingredients7.titleLabel!.text ?? "")} )
-            }
         }
+    }
     @IBAction func ingredients8Tapped(_ sender: Any) {
         if ingredientSelected8==false{
             ingredientSelected8=true
@@ -284,8 +368,8 @@ class ViewController: UIViewController {
         else{ingredientSelected8=false
             ingredients8.backgroundColor = .systemGray
             queryList.removeAll(where: {$0.contains(ingredients8.titleLabel!.text ?? "")} )
-            }
         }
+    }
     @IBAction func ingredients9Tapped(_ sender: Any) {
         if ingredientSelected9==false{
             ingredientSelected9=true
@@ -294,8 +378,8 @@ class ViewController: UIViewController {
         else{ingredientSelected9=false
             ingredients9.backgroundColor = .systemGray
             queryList.removeAll(where: {$0.contains(ingredients9.titleLabel!.text ?? "")} )
-            }
         }
+    }
     @IBAction func ingredients10Tapped(_ sender: Any) {
         if ingredientSelected10==false{
             ingredientSelected10=true
@@ -304,8 +388,8 @@ class ViewController: UIViewController {
         else{ingredientSelected10=false
             ingredients10.backgroundColor = .systemGray
             queryList.removeAll(where: {$0.contains(ingredients10.titleLabel!.text ?? "")} )
-            }
         }
+    }
     @IBAction func ingredients11Tapped(_ sender: Any) {
         if ingredientSelected11==false{
             ingredientSelected11=true
@@ -314,8 +398,8 @@ class ViewController: UIViewController {
         else{ingredientSelected11=false
             ingredients11.backgroundColor = .systemGray
             queryList.removeAll(where: {$0.contains(ingredients11.titleLabel!.text ?? "")} )
-            }
         }
+    }
     @IBAction func ingredients12Tapped(_ sender: Any) {
         if ingredientSelected12==false{
             ingredientSelected12=true
@@ -324,7 +408,7 @@ class ViewController: UIViewController {
         else{ingredientSelected12=false
             ingredients12.backgroundColor = .systemGray
             queryList.removeAll(where: {$0.contains(ingredients12.titleLabel!.text ?? "")} )
-            }
+        }
     }
     @IBAction func ingredients13Tapped(_ sender: Any) {
         if ingredientSelected13==false{
@@ -334,8 +418,8 @@ class ViewController: UIViewController {
         else{ingredientSelected13=false
             ingredients13.tintColor = .systemGray
             queryList.removeAll(where: {$0.contains(ingredients13.titleLabel!.text ?? "")} )
-            }
         }
+    }
     @IBAction func ingredients14Tapped(_ sender: Any) {
         if ingredientSelected14==false{
             ingredientSelected14=true
@@ -344,8 +428,8 @@ class ViewController: UIViewController {
         else{ingredientSelected14=false
             ingredients14.backgroundColor = .systemGray
             queryList.removeAll(where: {$0.contains(ingredients14.titleLabel!.text ?? "")} )
-            }
         }
+    }
     @IBAction func ingredients15Tapped(_ sender: Any) {
         if ingredientSelected15==false{
             ingredientSelected15=true
@@ -354,8 +438,8 @@ class ViewController: UIViewController {
                 ingredientSelected15=false
                 ingredients15.backgroundColor = .systemGray
                 queryList.removeAll(where: {$0.contains(ingredients15.titleLabel!.text ?? "")} )
-                }
-        }
+            }
+    }
     @IBAction func ingredients16Tapped(_ sender: Any) {
         if ingredientSelected16==false{
             ingredientSelected16=true
@@ -471,7 +555,7 @@ class ViewController: UIViewController {
             ingredientSelected25=false
             ingredients25.backgroundColor = .systemGray
             queryList.removeAll(where: {$0.contains(ingredients25.titleLabel!.text ?? "")} )
-            }
+        }
     }
     @IBAction func ingredients26Tapped(_ sender: Any) {
         if ingredientSelected26==false{
@@ -492,10 +576,10 @@ class ViewController: UIViewController {
             ingredients27.backgroundColor = .systemBlue
             queryList.append(ingredients27.titleLabel!.text ?? "")}
         else{ingredientSelected27=false
-                ingredients27.backgroundColor = .systemGray
-                queryList.removeAll(where: {$0.contains(ingredients27.titleLabel!.text ?? "")} )
-                
-            }
+            ingredients27.backgroundColor = .systemGray
+            queryList.removeAll(where: {$0.contains(ingredients27.titleLabel!.text ?? "")} )
+            
+        }
         
     }
     @IBAction func ingredients28Tapped(_ sender: Any) {
@@ -504,7 +588,7 @@ class ViewController: UIViewController {
             ingredients28.backgroundColor = .systemBlue
             queryList.append(ingredients28.titleLabel!.text ?? "")}
         else{ingredientSelected28=false
-                ingredients28.backgroundColor = .systemGray
+            ingredients28.backgroundColor = .systemGray
             queryList.removeAll(where: {$0.contains(ingredients28.titleLabel!.text ?? "")} ) } }
     
     @IBAction func ingredients29Tapped(_ sender: Any) {if ingredientSelected29==false{ ingredientSelected29=true
@@ -690,26 +774,53 @@ class ViewController: UIViewController {
         queryList.append(ingredients59.titleLabel!.text ?? "")}else{ingredientSelected59=false
             ingredients59.backgroundColor = .systemGray
             queryList.removeAll(where: {$0.contains(ingredients59.titleLabel!.text ?? "")} ) } }
-
-        
-//   
+    
+    
+    //
+    
+    static var url1:String=""
+    static var url2:String=""
+    static var url3:String=""
+    static var url4:String=""
+    static var url5:String=""
+    static var url6:String=""
+    static var url7:String=""
+    static var url8:String=""
+    static var url9:String=""
+    static var url10:String=""
+    
     
     @IBAction func btn1Tapped(_ sender: Any) {
-//        btn1.tintColor = .red
-        UIApplication.shared.open(NSURL(string: "http://www.seriouseats.com/recipes/2011/12/chicken-vesuvio-recipe.html")! as URL)
+        UIApplication.shared.open(NSURL(string: ViewController.url1)! as URL)
     }
     @IBAction func btn2Tapped(_ sender: Any) {
-//        btn1.tintColor = .red
-        UIApplication.shared.open(NSURL(string: "http://norecipes.com/recipe/chicken-paprikash/")! as URL)
+        UIApplication.shared.open(NSURL(string: ViewController.url2)! as URL)
     }
     @IBAction func btn3Tapped(_ sender: Any) {
-//        btn1.tintColor = .red
-        UIApplication.shared.open(NSURL(string: "http://www.marthastewart.com/318981/baked-chicken")! as URL)
+        UIApplication.shared.open(NSURL(string: ViewController.url3)! as URL)
     }
     @IBAction func btn4Tapped(_ sender: Any) {
-//        btn1.tintColor = .red
-        UIApplication.shared.open(NSURL(string: "http://www.bonappetit.com/columns/breadwinner/article/how-to-get-your-kids-to-eat-sauce-let-them-cook-it-themselves")! as URL)
+        UIApplication.shared.open(NSURL(string: ViewController.url4)! as URL)
     }
+    @IBAction func btn5Tapped(_ sender: Any) {
+        UIApplication.shared.open(NSURL(string: ViewController.url5)! as URL)
+    }
+    @IBAction func btn6Tapped(_ sender: Any) {
+        UIApplication.shared.open(NSURL(string: ViewController.url6)! as URL)
+    }
+    @IBAction func btn7Tapped(_ sender: Any) {
+        UIApplication.shared.open(NSURL(string: ViewController.url7)! as URL)
+    }
+    @IBAction func btn8Tapped(_ sender: Any) {
+        UIApplication.shared.open(NSURL(string: ViewController.url8)! as URL)
+    }
+    @IBAction func btn9Tapped(_ sender: Any) {
+        UIApplication.shared.open(NSURL(string: ViewController.url9)! as URL)
+    }
+    @IBAction func btn10Tapped(_ sender: Any) {
+        UIApplication.shared.open(NSURL(string: ViewController.url10)! as URL)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -730,87 +841,170 @@ class ViewController: UIViewController {
             let url1:String
         }
         
-                let url = URL(string: "https://api.edamam.com/api/recipes/v2?type=public&q=avocado&app_id=907d2b4b&app_key=db6697b492e4a4b02a8f3ea2b44abb79")
+        let url = URL(string: "https://api.edamam.com/api/recipes/v2?type=public&q=avocado&app_id=907d2b4b&app_key=db6697b492e4a4b02a8f3ea2b44abb79")
         let task = URLSession.shared.dataTask(with: url!) { [self] (data, response, error) in
-                    if error != nil {
-                        print(error!)
-                    }
-                    else{
-                        if let data = data {
-                            do {
-
-                                let result = try! JSONDecoder().decode(RecipeResponse.self, from: data)
-
-                                let hits = result.hits
-                                for hit in hits {
-                                    print(hit.recipe.url)
-                                }
-                                DispatchQueue.main.async{
-                                    self.label1?.text = result.hits[0].recipe.label
-                                    self.label2?.text = result.hits[1].recipe.label
-                                    self.label3?.text = result.hits[2].recipe.label
-                                    self.label4?.text = result.hits[3].recipe.label
-                                }
-                                
-                                let img = result.hits[0].recipe.image
-                                let url = URL(string: img)!
-                                
-                                DispatchQueue.global().async {
-                                    // Fetch Image Data
-                                    if let data = try? Data(contentsOf: url) {
-                                        DispatchQueue.main.async {
-                                            // Create Image and Update Image View
-                                            self.dishImage1?.image = UIImage(data: data)
-                                        }
-                                    }
-                                }
-                                let img1 = result.hits[1].recipe.image
-                                image1=img1
-                                let url1 = URL(string: img1)!
-                                DispatchQueue.global().async {
-                                    // Fetch Image Data
-                                    if let data = try? Data(contentsOf: url1) {
-                                        DispatchQueue.main.async {
-                                            // Create Image and Update Image View
-                                            self.dishImage2?.image = UIImage(data: data)
-                                        }
-                                    }
-                                }
-                                let img2 = result.hits[2].recipe.image
-                                let url2 = URL(string: img2)!
-                                DispatchQueue.global().async {
-                                    // Fetch Image Data
-                                    if let data = try? Data(contentsOf: url2) {
-                                        DispatchQueue.main.async {
-                                            // Create Image and Update Image View
-                                            self.dishImage3?.image = UIImage(data: data)
-                                        }
-                                    }
-                                }
-                                let img3 = result.hits[3].recipe.image
-                                let url3 = URL(string: img3)!
-                                DispatchQueue.global().async {
-                                    // Fetch Image Data
-                                    if let data = try? Data(contentsOf: url3) {
-                                        DispatchQueue.main.async {
-                                            // Create Image and Update Image View
-                                            self.dishImage4?.image = UIImage(data: data)
-                                        }
-                                    }
+            if error != nil {
+                print(error!)
+            }
+            else{
+                if let data = data {
+                    do {
+                        
+                        let result = try! JSONDecoder().decode(RecipeResponse.self, from: data)
+                        
+                        let hits = result.hits
+                        for hit in hits {
+                            print(hit.recipe.url)
+                        }
+                        DispatchQueue.main.async{
+                            self.label1?.text = result.hits[0].recipe.label
+                            self.label2?.text = result.hits[1].recipe.label
+                            self.label3?.text = result.hits[2].recipe.label
+                            self.label4?.text = result.hits[3].recipe.label
+                            self.label5?.text = result.hits[4].recipe.label
+                            self.label6?.text = result.hits[5].recipe.label
+                            self.label7?.text = result.hits[6].recipe.label
+                            self.label8?.text = result.hits[7].recipe.label
+                            self.label9?.text = result.hits[8].recipe.label
+                            self.label10?.text = result.hits[11].recipe.label
+                        }
+                        
+                        ViewController.url1 = result.hits[0].recipe.url
+                        ViewController.url2 = result.hits[1].recipe.url
+                        ViewController.url3 = result.hits[2].recipe.url
+                        ViewController.url4 = result.hits[3].recipe.url
+                        ViewController.url5 = result.hits[4].recipe.url
+                        ViewController.url6 = result.hits[5].recipe.url
+                        ViewController.url7 = result.hits[6].recipe.url
+                        ViewController.url8 = result.hits[7].recipe.url
+                        ViewController.url9 = result.hits[8].recipe.url
+                        ViewController.url10 = result.hits[11].recipe.url
+                        
+                        
+                        let img = result.hits[0].recipe.image
+                        let url = URL(string: img)!
+                        
+                        DispatchQueue.global().async {
+                            // Fetch Image Data
+                            if let data = try? Data(contentsOf: url) {
+                                DispatchQueue.main.async {
+                                    // Create Image and Update Image View
+                                    self.dishImage1?.image = UIImage(data: data)
                                 }
                             }
-                            catch{
-                                print("JSon Parsing error")
+                        }
+                        let img1 = result.hits[1].recipe.image
+                        image1=img1
+                        let url1 = URL(string: img1)!
+                        DispatchQueue.global().async {
+                            // Fetch Image Data
+                            if let data = try? Data(contentsOf: url1) {
+                                DispatchQueue.main.async {
+                                    // Create Image and Update Image View
+                                    self.dishImage2?.image = UIImage(data: data)
+                                }
+                            }
+                        }
+                        let img2 = result.hits[2].recipe.image
+                        image2=img2
+                        let url2 = URL(string: img2)!
+                        DispatchQueue.global().async {
+                            // Fetch Image Data
+                            if let data = try? Data(contentsOf: url2) {
+                                DispatchQueue.main.async {
+                                    // Create Image and Update Image View
+                                    self.dishImage3?.image = UIImage(data: data)
+                                }
+                            }
+                        }
+                        let img3 = result.hits[3].recipe.image
+                        let url3 = URL(string: img3)!
+                        DispatchQueue.global().async {
+                            // Fetch Image Data
+                            if let data = try? Data(contentsOf: url3) {
+                                DispatchQueue.main.async {
+                                    // Create Image and Update Image View
+                                    self.dishImage4?.image = UIImage(data: data)
+                                }
+                            }
+                        }
+                        let img4 = result.hits[4].recipe.image
+                        let url4 = URL(string: img4)!
+                        DispatchQueue.global().async {
+                            // Fetch Image Data
+                            if let data = try? Data(contentsOf: url4) {
+                                DispatchQueue.main.async {
+                                    // Create Image and Update Image View
+                                    self.dishImage5?.image = UIImage(data: data)
+                                }
+                            }
+                        }
+                        let img5 = result.hits[5].recipe.image
+                        let url5 = URL(string: img5)!
+                        DispatchQueue.global().async {
+                            // Fetch Image Data
+                            if let data = try? Data(contentsOf: url5) {
+                                DispatchQueue.main.async {
+                                    // Create Image and Update Image View
+                                    self.dishImage6?.image = UIImage(data: data)
+                                }
+                            }
+                        }
+                        let img6 = result.hits[6].recipe.image
+                        let url6 = URL(string: img6)!
+                        DispatchQueue.global().async {
+                            // Fetch Image Data
+                            if let data = try? Data(contentsOf: url6) {
+                                DispatchQueue.main.async {
+                                    // Create Image and Update Image View
+                                    self.dishImage7?.image = UIImage(data: data)
+                                }
+                            }
+                        }
+                        let img7 = result.hits[7].recipe.image
+                        let url7 = URL(string: img7)!
+                        DispatchQueue.global().async {
+                            // Fetch Image Data
+                            if let data = try? Data(contentsOf: url7) {
+                                DispatchQueue.main.async {
+                                    // Create Image and Update Image View
+                                    self.dishImage8?.image = UIImage(data: data)
+                                }
+                            }
+                        }
+                        let img8 = result.hits[8].recipe.image
+                        let url8 = URL(string: img8)!
+                        DispatchQueue.global().async {
+                            // Fetch Image Data
+                            if let data = try? Data(contentsOf: url8) {
+                                DispatchQueue.main.async {
+                                    // Create Image and Update Image View
+                                    self.dishImage9?.image = UIImage(data: data)
+                                }
+                            }
+                        }
+                        let img9 = result.hits[11].recipe.image
+                        let url9 = URL(string: img9)!
+                        DispatchQueue.global().async {
+                            // Fetch Image Data
+                            if let data = try? Data(contentsOf: url9) {
+                                DispatchQueue.main.async {
+                                    // Create Image and Update Image View
+                                    self.dishImage10?.image = UIImage(data: data)
+                                }
                             }
                         }
                     }
+                    catch{
+                        print("JSon Parsing error")
+                    }
                 }
-                task.resume()
+            }
+        }
+        task.resume()
     }
-    @IBAction func DidTapbutton(){
-        let vc = UIViewController()
-        vc.view.backgroundColor  = .red
-        navigationController?.pushViewController(vc, animated: true)
-    }
-
+    
 }
+
+
+
