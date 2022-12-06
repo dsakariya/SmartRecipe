@@ -24,7 +24,7 @@ class BookmarkViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var BtnSignout: UIButton!
     
     @IBOutlet weak var TableView: UITableView!
-    @IBOutlet weak var bkmkLabel: UILabel!
+    
     let user = Auth.auth().currentUser
     
     
