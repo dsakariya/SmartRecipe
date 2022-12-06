@@ -7,6 +7,9 @@
 
 import UIKit
 import CoreData
+import Firebase
+import FirebaseAuth
+
 class SecondViewController: UIViewController {
 
     @IBOutlet weak var dishImage1: UIImageView!
@@ -42,7 +45,13 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var btn9: UIButton!
     @IBOutlet weak var btn10: UIButton!
     
+    let user = Auth.auth().currentUser
+    var refRecipe: DatabaseReference!
+    
+   
+    
     var text:String?
+    
     static var url1 :String = ""
     static var url2 :String = ""
     static var url3 :String = ""
@@ -54,6 +63,61 @@ class SecondViewController: UIViewController {
     static var url9 :String = ""
     static var url10 :String = ""
 
+    
+    var image1=""
+    var image2=""
+
+    
+    
+    
+    @IBOutlet weak var bookmark1: UIButton!
+    @IBOutlet weak var bookmark2: UIButton!
+    @IBOutlet weak var bookmark3: UIButton!
+    @IBOutlet weak var bookmark4: UIButton!
+    
+    
+    @IBAction func Bookmark1Tapped(_ sender: Any) {
+        
+        
+        let ref = Database.database().reference().child("Recipe")
+        ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
+            guard error == nil else {
+                print(error!.localizedDescription)
+                return;
+            }
+            let name=snapshot?.value as? String;
+
+            if(self.label1.text==name){
+                self.bookmark1.tintColor = .purple
+            }
+
+        });
+
+        refRecipe = Database.database().reference().child("Recipe");
+        
+        if user != nil {
+            
+            let key = refRecipe.childByAutoId().key
+            let recipe = ["id":user?.email,
+                          "recipeName": label1.text! as String,
+                          "recipeImage" :image1 as String,
+                          "link":SecondViewController.url1 as String
+            ]
+            refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
+            
+        
+        }else{
+            loginpage()
+        }
+        
+    }
+    @IBAction func Bookmark2Tapped(_ sender: Any) {
+    }
+    @IBAction func Bookmark3Tapped(_ sender: Any) {
+    }
+    @IBAction func Bookmark4Tapped(_ sender: Any) {
+    }
+    
     
     @IBAction func btn1Tapped(_ sender: Any) {
         UIApplication.shared.open(NSURL(string:SecondViewController.url1)! as URL)
@@ -129,11 +193,22 @@ class SecondViewController: UIViewController {
                                             self.label3?.text = result.hits[2].recipe.label
                                             self.label4?.text = result.hits[3].recipe.label
                                         }
+                                        
+                                        
                                         SecondViewController.url1 = result.hits[0].recipe.url
                                         SecondViewController.url2 = result.hits[1].recipe.url
                                         SecondViewController.url3 = result.hits[2].recipe.url
                                         SecondViewController.url4 = result.hits[3].recipe.url
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
                                         let img = result.hits[0].recipe.image
+                                        image1=img
                                         let url = URL(string: img)!
                                         DispatchQueue.global().async {
                                             // Fetch Image Data
@@ -201,7 +276,11 @@ class SecondViewController: UIViewController {
                     task.resume()
         }
     
-    
+    func loginpage(){
+        let storyboard=UIStoryboard(name: "Main", bundle: nil)
+        let vc=storyboard.instantiateViewController(withIdentifier: "Login")
+        navigationController?.pushViewController(vc, animated: true)
+    }
         
     }
 

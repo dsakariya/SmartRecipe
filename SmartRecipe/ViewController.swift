@@ -17,10 +17,35 @@ class ViewController: UIViewController {
     
     
     let user = Auth.auth().currentUser
+    
     var image1=""
     var Burl1=url1
     var image2=""
     var Burl2=url2
+    
+    var image3=""
+    var Burl3=url3
+    var image4=""
+    var Burl4=url4
+    
+    var image5=""
+    var Burl5=url5
+    var image6=""
+    var Burl6=url6
+
+    var image7=""
+    var Burl7=url7
+    var image8=""
+    var Burl8=url8
+    
+    var image9=""
+    var Burl9=url9
+    var image10=""
+    var Burl10=url10
+    
+    
+    
+    
     
     @IBOutlet weak var ShowBookmark: UIButton!
     
@@ -199,9 +224,30 @@ class ViewController: UIViewController {
         
     }
     @IBOutlet weak var Bookmark2: UIButton!
-    
+    @IBOutlet weak var Bookmark3: UIButton!
+    @IBOutlet weak var Bookmark4: UIButton!
+    @IBOutlet weak var Bookmark5: UIButton!
+    @IBOutlet weak var Bookmark6: UIButton!
+    @IBOutlet weak var Bookmark7: UIButton!
+    @IBOutlet weak var Bookmark8: UIButton!
+    @IBOutlet weak var Bookmark9: UIButton!
+    @IBOutlet weak var Bookmark10: UIButton!
     
     @IBAction func Bookmark2(_ sender: Any) {
+        
+        let ref = Database.database().reference().child("Recipe")
+        ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
+            guard error == nil else {
+                print(error!.localizedDescription)
+                return;
+            }
+            var name=snapshot?.value as? String;
+
+            if(self.label1.text==name){
+                self.Bookmark.tintColor = .purple
+            }
+
+        });
         
         refRecipe = Database.database().reference().child("Recipe");
         if user != nil {
@@ -215,8 +261,6 @@ class ViewController: UIViewController {
             refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
             //Dishant Put alert box "Recipe Bookmarked!!!"
             
-//            let view = self.storyboard?.instantiateViewController(withIdentifier: "bookmark")
-//            self.present(view!, animated: true, completion: nil)
             
         }else{
             loginpage()
@@ -225,9 +269,7 @@ class ViewController: UIViewController {
     }
     @IBAction func Bookmark(_ sender: Any) {
         
-        let ref = Database.database().reference()
-
-
+        let ref = Database.database().reference().child("Recipe")
         ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
             guard error == nil else {
                 print(error!.localizedDescription)
@@ -245,17 +287,273 @@ class ViewController: UIViewController {
         
         if user != nil {
             
-//            let key = refRecipe.childByAutoId().key
-//            let recipe = ["id":user?.email,
-//                          "recipeName": label1.text! as String,
-//                          "recipeImage" :image1 as String,
-//                          "link":Burl1 as String
-//            ]
-//            refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
-//            
-//            
-            let view = self.storyboard?.instantiateViewController(withIdentifier: "bookmark")
-            self.present(view!, animated: true, completion: nil)
+            let key = refRecipe.childByAutoId().key
+            let recipe = ["id":user?.email,
+                          "recipeName": label1.text! as String,
+                          "recipeImage" :image1 as String,
+                          "link":Burl1 as String
+            ]
+            refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
+            
+        }else{
+            loginpage()
+        }
+    }
+    
+    @IBAction func Bookmark3(_ sender: Any){
+        
+        let ref = Database.database().reference().child("Recipe")
+        ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
+            guard error == nil else {
+                print(error!.localizedDescription)
+                return;
+            }
+            var name=snapshot?.value as? String;
+
+            if(self.label3.text==name){
+                self.Bookmark.tintColor = .purple
+            }
+
+        });
+
+        refRecipe = Database.database().reference().child("Recipe");
+        
+        if user != nil {
+            
+            let key = refRecipe.childByAutoId().key
+            let recipe = ["id":user?.email,
+                          "recipeName": label3.text! as String,
+                          "recipeImage" :image3 as String,
+                          "link":Burl1 as String
+            ]
+            refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
+            
+        }else{
+            loginpage()
+        }
+        
+    }
+    
+    @IBAction func Bookmark4(_ sender: Any){
+        
+        let ref = Database.database().reference().child("Recipe")
+        ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
+            guard error == nil else {
+                print(error!.localizedDescription)
+                return;
+            }
+            var name=snapshot?.value as? String;
+
+            if(self.label4.text==name){
+                self.Bookmark.tintColor = .purple
+            }
+
+        });
+
+        refRecipe = Database.database().reference().child("Recipe");
+        
+        if user != nil {
+            
+            let key = refRecipe.childByAutoId().key
+            let recipe = ["id":user?.email,
+                          "recipeName": label4.text! as String,
+                          "recipeImage" :image4 as String,
+                          "link":Burl1 as String
+            ]
+            refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
+            
+        }else{
+            loginpage()
+        }
+        
+    }
+    @IBAction func Bookmark5(_ sender: Any){
+        
+        let ref = Database.database().reference().child("Recipe")
+        ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
+            guard error == nil else {
+                print(error!.localizedDescription)
+                return;
+            }
+            var name=snapshot?.value as? String;
+
+            if(self.label5.text==name){
+                self.Bookmark.tintColor = .purple
+            }
+
+        });
+
+        refRecipe = Database.database().reference().child("Recipe");
+        
+        if user != nil {
+            
+            let key = refRecipe.childByAutoId().key
+            let recipe = ["id":user?.email,
+                          "recipeName": label5.text! as String,
+                          "recipeImage" :image5 as String,
+                          "link":Burl1 as String
+            ]
+            refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
+            
+        }else{
+            loginpage()
+        }
+        
+    }
+    @IBAction func Bookmark6(_ sender: Any){
+        
+        let ref = Database.database().reference().child("Recipe")
+        ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
+            guard error == nil else {
+                print(error!.localizedDescription)
+                return;
+            }
+            var name=snapshot?.value as? String;
+
+            if(self.label6.text==name){
+                self.Bookmark.tintColor = .purple
+            }
+
+        });
+
+        refRecipe = Database.database().reference().child("Recipe");
+        
+        if user != nil {
+            
+            let key = refRecipe.childByAutoId().key
+            let recipe = ["id":user?.email,
+                          "recipeName": label6.text! as String,
+                          "recipeImage" :image6 as String,
+                          "link":Burl1 as String
+            ]
+            refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
+            
+        }else{
+            loginpage()
+        }
+        
+    }
+    @IBAction func Bookmark7(_ sender: Any){
+        
+        let ref = Database.database().reference().child("Recipe")
+        ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
+            guard error == nil else {
+                print(error!.localizedDescription)
+                return;
+            }
+            var name=snapshot?.value as? String;
+
+            if(self.label7.text==name){
+                self.Bookmark.tintColor = .purple
+            }
+
+        });
+
+        refRecipe = Database.database().reference().child("Recipe");
+        
+        if user != nil {
+            
+            let key = refRecipe.childByAutoId().key
+            let recipe = ["id":user?.email,
+                          "recipeName": label7.text! as String,
+                          "recipeImage" :image7 as String,
+                          "link":Burl1 as String
+            ]
+            refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
+            
+        }else{
+            loginpage()
+        }
+        
+    }
+    @IBAction func Bookmark8(_ sender: Any){
+        let ref = Database.database().reference().child("Recipe")
+        ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
+            guard error == nil else {
+                print(error!.localizedDescription)
+                return;
+            }
+            var name=snapshot?.value as? String;
+
+            if(self.label8.text==name){
+                self.Bookmark.tintColor = .purple
+            }
+
+        });
+
+        refRecipe = Database.database().reference().child("Recipe");
+        
+        if user != nil {
+            
+            let key = refRecipe.childByAutoId().key
+            let recipe = ["id":user?.email,
+                          "recipeName": label8.text! as String,
+                          "recipeImage" :image8 as String,
+                          "link":Burl1 as String
+            ]
+            refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
+            
+        }else{
+            loginpage()
+        }
+    }
+    @IBAction func Bookmark9(_ sender: Any){
+        let ref = Database.database().reference().child("Recipe")
+        ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
+            guard error == nil else {
+                print(error!.localizedDescription)
+                return;
+            }
+            var name=snapshot?.value as? String;
+
+            if(self.label9.text==name){
+                self.Bookmark.tintColor = .purple
+            }
+
+        });
+
+        refRecipe = Database.database().reference().child("Recipe");
+        
+        if user != nil {
+            
+            let key = refRecipe.childByAutoId().key
+            let recipe = ["id":user?.email,
+                          "recipeName": label9.text! as String,
+                          "recipeImage" :image9 as String,
+                          "link":Burl1 as String
+            ]
+            refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
+            
+        }else{
+            loginpage()
+        }
+    }
+    @IBAction func Bookmark10(_ sender: Any){
+        let ref = Database.database().reference().child("Recipe")
+        ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
+            guard error == nil else {
+                print(error!.localizedDescription)
+                return;
+            }
+            var name=snapshot?.value as? String;
+
+            if(self.label10.text==name){
+                self.Bookmark.tintColor = .purple
+            }
+
+        });
+
+        refRecipe = Database.database().reference().child("Recipe");
+        
+        if user != nil {
+            
+            let key = refRecipe.childByAutoId().key
+            let recipe = ["id":user?.email,
+                          "recipeName": label10.text! as String,
+                          "recipeImage" :image10 as String,
+                          "link":Burl1 as String
+            ]
+            refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
             
         }else{
             loginpage()

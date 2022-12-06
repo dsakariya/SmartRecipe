@@ -958,6 +958,7 @@
                                                                                         <state key="normal" title="Button"/>
                                                                                         <buttonConfiguration key="configuration" style="filled" image="bookmark.fill" catalog="system" cornerStyle="medium"/>
                                                                                         <connections>
+                                                                                            <action selector="Bookmark1Tapped:" destination="Idy-ZZ-Y1n" eventType="touchUpInside" id="Ohq-Ip-gy7"/>
                                                                                             <action selector="Bookmark:" destination="kKM-nR-yzf" eventType="touchUpInside" id="imD-OC-SXI"/>
                                                                                         </connections>
                                                                                     </button>
@@ -1031,6 +1032,7 @@
                                                                                         <buttonConfiguration key="configuration" style="filled" image="bookmark.fill" catalog="system" cornerStyle="medium"/>
                                                                                         <connections>
                                                                                             <action selector="Bookmark2:" destination="kKM-nR-yzf" eventType="touchUpInside" id="wmr-q8-Smk"/>
+                                                                                            <action selector="Bookmark2Tapped:" destination="Idy-ZZ-Y1n" eventType="touchUpInside" id="M4o-8e-e9H"/>
                                                                                         </connections>
                                                                                     </button>
                                                                                 </subviews>
@@ -1102,6 +1104,9 @@
                                                                                         </constraints>
                                                                                         <state key="normal" title="Button"/>
                                                                                         <buttonConfiguration key="configuration" style="filled" image="bookmark.fill" catalog="system" cornerStyle="medium"/>
+                                                                                        <connections>
+                                                                                            <action selector="Bookmark3Tapped:" destination="Idy-ZZ-Y1n" eventType="touchUpInside" id="OWa-ca-pEu"/>
+                                                                                        </connections>
                                                                                     </button>
                                                                                 </subviews>
                                                                             </stackView>
@@ -1172,6 +1177,9 @@
                                                                                         </constraints>
                                                                                         <state key="normal" title="Button"/>
                                                                                         <buttonConfiguration key="configuration" style="filled" image="bookmark.fill" catalog="system" cornerStyle="medium"/>
+                                                                                        <connections>
+                                                                                            <action selector="Bookmark4Tapped:" destination="Idy-ZZ-Y1n" eventType="touchUpInside" id="i3l-tf-r3N"/>
+                                                                                        </connections>
                                                                                     </button>
                                                                                 </subviews>
                                                                             </stackView>
@@ -1241,6 +1249,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="udn-MA-hXn"/>
                     <size key="freeformSize" width="390" height="844"/>
+                    <connections>
+                        <outlet property="bookmark1" destination="StO-9v-sdr" id="0OS-Ir-qSj"/>
+                        <outlet property="bookmark2" destination="9Vh-H7-i0V" id="xa9-SO-QGM"/>
+                        <outlet property="bookmark3" destination="nia-NZ-hec" id="LhT-V1-aX4"/>
+                        <outlet property="bookmark4" destination="moy-5g-QlA" id="mkV-Dg-ht8"/>
+                        <outlet property="btn1" destination="qqF-64-M5s" id="1E8-51-ibC"/>
+                        <outlet property="dishImage1" destination="1ac-WM-bN8" id="pNL-nC-tRt"/>
+                        <outlet property="label1" destination="2HD-OH-ndM" id="u8j-cG-eNM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wf0-eH-38u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1258,7 +1275,7 @@
                                 <rect key="frame" x="0.0" y="47" width="390" height="624"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qWH-0p-0dl">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="1811.6666666666667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="1342"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ND5-M9-LQ6">
                                                 <rect key="frame" x="50" y="30.000000000000004" width="290" height="34.333333333333343"/>
@@ -1459,6 +1476,9 @@
                                                                                 </constraints>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" image="bookmark.fill" catalog="system" cornerStyle="medium"/>
+                                                                                <connections>
+                                                                                    <action selector="Bookmark3:" destination="kKM-nR-yzf" eventType="touchUpInside" id="7R6-jO-C9j"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                     </stackView>
@@ -1528,6 +1548,9 @@
                                                                                 </constraints>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" image="bookmark.fill" catalog="system" cornerStyle="medium"/>
+                                                                                <connections>
+                                                                                    <action selector="Bookmark4:" destination="kKM-nR-yzf" eventType="touchUpInside" id="7jo-Wj-r1h"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                     </stackView>
@@ -1597,6 +1620,9 @@
                                                                                 </constraints>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" image="bookmark.fill" catalog="system" cornerStyle="medium"/>
+                                                                                <connections>
+                                                                                    <action selector="Bookmark5:" destination="kKM-nR-yzf" eventType="touchUpInside" id="Bgn-Ih-Rlg"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                     </stackView>
@@ -1666,6 +1692,9 @@
                                                                                 </constraints>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" image="bookmark.fill" catalog="system" cornerStyle="medium"/>
+                                                                                <connections>
+                                                                                    <action selector="Bookmark6:" destination="kKM-nR-yzf" eventType="touchUpInside" id="FFc-EK-cMq"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                     </stackView>
@@ -1731,6 +1760,9 @@
                                                                                 </constraints>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" image="bookmark.fill" catalog="system" cornerStyle="medium"/>
+                                                                                <connections>
+                                                                                    <action selector="Bookmark7:" destination="kKM-nR-yzf" eventType="touchUpInside" id="52O-Ht-Bwb"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                     </stackView>
@@ -1800,6 +1832,9 @@
                                                                                 </constraints>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" image="bookmark.fill" catalog="system" cornerStyle="medium"/>
+                                                                                <connections>
+                                                                                    <action selector="Bookmark8:" destination="kKM-nR-yzf" eventType="touchUpInside" id="Pf1-Hg-jkp"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                     </stackView>
@@ -1869,6 +1904,9 @@
                                                                                 </constraints>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" image="bookmark.fill" catalog="system" cornerStyle="medium"/>
+                                                                                <connections>
+                                                                                    <action selector="Bookmark9:" destination="kKM-nR-yzf" eventType="touchUpInside" id="9H2-nN-rer"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                     </stackView>
@@ -1938,6 +1976,9 @@
                                                                                 </constraints>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" image="bookmark.fill" catalog="system" cornerStyle="medium"/>
+                                                                                <connections>
+                                                                                    <action selector="Bookmark10:" destination="kKM-nR-yzf" eventType="touchUpInside" id="xOJ-qn-ind"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                     </stackView>
@@ -1995,7 +2036,7 @@
                             <constraint firstItem="Vrt-Ie-7Rc" firstAttribute="trailing" secondItem="T62-5y-Iwg" secondAttribute="trailing" id="UAV-iY-Pv0"/>
                             <constraint firstItem="Vrt-Ie-7Rc" firstAttribute="leading" secondItem="T62-5y-Iwg" secondAttribute="leading" id="gzb-YL-NWG"/>
                             <constraint firstItem="Vrt-Ie-7Rc" firstAttribute="bottom" secondItem="T62-5y-Iwg" secondAttribute="bottom" id="hK0-yL-He2"/>
-                            <constraint firstItem="qWH-0p-0dl" firstAttribute="height" secondItem="PvN-dm-RV0" secondAttribute="height" multiplier="2.7" id="n4D-5Y-tkR"/>
+                            <constraint firstItem="qWH-0p-0dl" firstAttribute="height" secondItem="PvN-dm-RV0" secondAttribute="height" multiplier="2" id="n4D-5Y-tkR"/>
                             <constraint firstItem="qWH-0p-0dl" firstAttribute="width" secondItem="PvN-dm-RV0" secondAttribute="width" id="pvE-Hm-3BR"/>
                         </constraints>
                     </view>
@@ -2003,7 +2044,15 @@
                     <size key="freeformSize" width="390" height="728"/>
                     <connections>
                         <outlet property="Bookmark" destination="bY9-00-YzL" id="u6N-tT-ogF"/>
+                        <outlet property="Bookmark10" destination="IdB-GH-2BZ" id="Kce-HF-blX"/>
                         <outlet property="Bookmark2" destination="5RA-bK-xLv" id="LQR-2m-6JG"/>
+                        <outlet property="Bookmark3" destination="who-yJ-VbA" id="9OJ-MS-soS"/>
+                        <outlet property="Bookmark4" destination="YwC-st-jos" id="wuR-1C-VVx"/>
+                        <outlet property="Bookmark5" destination="oBg-EA-TKc" id="M4t-3K-6VE"/>
+                        <outlet property="Bookmark6" destination="SRm-Ig-YgB" id="iSy-vF-wZK"/>
+                        <outlet property="Bookmark7" destination="CNy-Ni-asN" id="2Rp-dW-zhl"/>
+                        <outlet property="Bookmark8" destination="sHB-Bf-qUn" id="5xI-5d-d5u"/>
+                        <outlet property="Bookmark9" destination="JeM-Np-JvQ" id="s6E-C3-8RQ"/>
                         <outlet property="ShowBookmark" destination="ND5-M9-LQ6" id="fSg-Wa-NNl"/>
                         <outlet property="btn1" destination="yH9-ih-O9F" id="q1I-bg-WAv"/>
                         <outlet property="btn10" destination="mSC-tD-70s" id="5b5-6B-d8k"/>
@@ -2292,14 +2341,14 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="350" height="100"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gLD-KB-esL">
-                                                            <rect key="frame" x="0.0" y="0.0" width="140" height="100"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="100" id="luU-gG-tQU"/>
                                                                 <constraint firstAttribute="height" constant="100" id="xgo-8E-KYa"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2T-m6-inX">
-                                                            <rect key="frame" x="150" y="40" width="200" height="20.333333333333329"/>
+                                                            <rect key="frame" x="110" y="40" width="240" height="20.333333333333329"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="200" id="Nk6-G2-IuH"/>
                                                             </constraints>
