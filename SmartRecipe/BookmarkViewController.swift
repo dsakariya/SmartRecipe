@@ -34,7 +34,24 @@ class BookmarkViewController: UIViewController, UITableViewDelegate, UITableView
         if let user = user {
             LblStatus.text = "You are logged in with email: \(user.email!)"
         }
-        
+        var refRecipe=Database.database().reference().child("Recipe")
+                ref = Database.database().reference().child("Recipe")
+                ref.queryOrdered(byChild:"id").queryEqual(toValue:user?.email).observe( DataEventType.value, with: { (snapshot) in
+                    if snapshot.childrenCount>0{
+                        self.table.removeAll()
+                        for child in snapshot.children.allObjects as! [DataSnapshot]{
+                            let Object = child.value as? [String: AnyObject]
+                            let id = Object?["id"]
+                            let Name = Object?["recipeName"]
+                            let btnUrl = Object?["link"]
+                            let imageUrl = Object?["recipeImage"]
+                            let rec = RecipeModel(id: id as? String, link: btnUrl as? String, recipeImage: imageUrl as? String, recipeName: Name as? String)
+         
+                            self.TableView.reloadData()
+                        }
+                    }
+                }
+                )                   self.table.append(rec)
         
     }
     
