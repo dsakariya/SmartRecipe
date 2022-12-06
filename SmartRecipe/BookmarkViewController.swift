@@ -58,5 +58,29 @@ class BookmarkViewController: UIViewController, UITableViewDelegate, UITableView
     @IBAction func OnSignoutTapped(_ sender: Any) {
         
     }
-    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return table.count
+
+        }
+
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+            let cell=TableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
+            let recipe:RecipeModel
+            
+            recipe=table[indexPath.row]
+            cell.Rname.text=recipe.recipeName
+            if let urlString = recipe.recipeImage, let url = URL(string: urlString) {
+                        if let data = try? Data(contentsOf: url) {
+                            cell.Rimage.image = UIImage(data: data)
+                        }
+                }
+           
+            return cell
+        }
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            let recipe: RecipeModel
+            recipe = table[indexPath.row]
+            UIApplication.shared.open(NSURL(string: recipe.link ?? "http://www.seriouseats.com/recipes/2011/12/chicken-vesuvio-recipe.html")! as URL)
+        }
  }
