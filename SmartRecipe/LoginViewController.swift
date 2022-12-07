@@ -36,18 +36,27 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
             let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alert.addAction(action)
             self.present(alert, animated: true, completion: nil)
+            
         }else{
             Auth.auth().signIn(withEmail: LoginEmail.text!, password: Loginpassword.text!){(user,error) in
+               
                 if error==nil{
+                    
+                    
                     let view = self.storyboard?.instantiateViewController(withIdentifier: "bookmark")
-                    self.present(view!, animated: true, completion: nil)
+//                    self.present(view!, animated: true, completion: nil)
+                    self.navigationController?.pushViewController(view!, animated: true)
+                    
                     self.LoginEmail.text=""
                     self.Loginpassword.text=""
+                    ViewController.user = Auth.auth().currentUser
                 }else{
+                    
                     let alert = UIAlertController(title: "Error", message: error?.localizedDescription , preferredStyle: .alert)
                     let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
                     alert.addAction(action)
                     self.present(alert, animated: true, completion: nil)
+                    
                 }
             }
         }

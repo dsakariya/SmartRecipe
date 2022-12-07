@@ -32,7 +32,7 @@ class SignupViewController: UIViewController,UITextFieldDelegate {
                 if error == nil {
                     let view=self.storyboard?.instantiateViewController(withIdentifier: "Login")
                     self.present(view!, animated: true,completion: nil)
-                    
+                    ViewController.user = Auth.auth().currentUser
                 }else{
                     let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                                         let action = UIAlertAction(title: "Ok", style: .default, handler: nil)

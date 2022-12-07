@@ -14,9 +14,7 @@ class ViewController: UIViewController {
     
     var refRecipe: DatabaseReference!
     
-    
-    
-    let user = Auth.auth().currentUser
+    static var user = Auth.auth().currentUser
     
     var image0=""
     var image1=""
@@ -224,14 +222,10 @@ class ViewController: UIViewController {
         
         let ref = Database.database().reference().child("Recipe")
         
-        
-        
-        
+     
         refRecipe = Database.database().reference().child("Recipe");
-        if user != nil {
-            
-            let key = refRecipe.childByAutoId().key
-            let recipe = ["id":user?.email,
+        if ViewController.user != nil {
+            let recipe = ["id":ViewController.user?.email,
                           "recipeName": label2.text! as String,
                           "recipeImage" :image1 as String,
                           "link":ViewController.url2
@@ -257,10 +251,8 @@ class ViewController: UIViewController {
 
         refRecipe = Database.database().reference().child("Recipe");
         
-        if user != nil {
-            
-            let key = refRecipe.childByAutoId().key
-            let recipe = ["id":user?.email,
+        if ViewController.user != nil {
+            let recipe = ["id":ViewController.user?.email,
                           "recipeName": label1.text! as String,
                           "recipeImage" :image0 as String,
                           "link":ViewController.url1
@@ -280,10 +272,8 @@ class ViewController: UIViewController {
         
         refRecipe = Database.database().reference().child("Recipe");
         
-        if user != nil {
-            
-            let key = refRecipe.childByAutoId().key
-            let recipe = ["id":user?.email,
+        if ViewController.user != nil {
+            let recipe = ["id":ViewController.user?.email,
                           "recipeName": label3.text! as String,
                           "recipeImage" :image2 as String,
                           "link":ViewController.url3
@@ -304,10 +294,8 @@ class ViewController: UIViewController {
         
         refRecipe = Database.database().reference().child("Recipe");
         
-        if user != nil {
-            
-            let key = refRecipe.childByAutoId().key
-            let recipe = ["id":user?.email,
+        if ViewController.user != nil {
+            let recipe = ["id":ViewController.user?.email,
                           "recipeName": label4.text! as String,
                           "recipeImage" :image3 as String,
                           "link":ViewController.url4
@@ -329,10 +317,8 @@ class ViewController: UIViewController {
 
         refRecipe = Database.database().reference().child("Recipe");
         
-        if user != nil {
-            
-            let key = refRecipe.childByAutoId().key
-            let recipe = ["id":user?.email,
+        if ViewController.user != nil {
+            let recipe = ["id":ViewController.user?.email,
                           "recipeName": label5.text! as String,
                           "recipeImage" :image4 as String,
                           "link":ViewController.url5
@@ -352,10 +338,8 @@ class ViewController: UIViewController {
         
         refRecipe = Database.database().reference().child("Recipe");
         
-        if user != nil {
-            
-            let key = refRecipe.childByAutoId().key
-            let recipe = ["id":user?.email,
+        if ViewController.user != nil {
+            let recipe = ["id":ViewController.user?.email,
                           "recipeName": label6.text! as String,
                           "recipeImage" :image5 as String,
                           "link":ViewController.url6
@@ -375,10 +359,8 @@ class ViewController: UIViewController {
         
         refRecipe = Database.database().reference().child("Recipe");
         
-        if user != nil {
-            
-            let key = refRecipe.childByAutoId().key
-            let recipe = ["id":user?.email,
+        if ViewController.user != nil {
+            let recipe = ["id":ViewController.user?.email,
                           "recipeName": label7.text! as String,
                           "recipeImage" :image6 as String,
                           "link":ViewController.url7
@@ -398,10 +380,8 @@ class ViewController: UIViewController {
 
         refRecipe = Database.database().reference().child("Recipe");
         
-        if user != nil {
-            
-            let key = refRecipe.childByAutoId().key
-            let recipe = ["id":user?.email,
+        if ViewController.user != nil {
+            let recipe = ["id":ViewController.user?.email,
                           "recipeName": label8.text! as String,
                           "recipeImage" :image7 as String,
                           "link":ViewController.url8
@@ -417,31 +397,19 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func Bookmark9(_ sender: Any){
-        let ref = Database.database().reference().child("Recipe")
-        ref.child("Recipe").child(user?.uid ?? "Guest").child("recipeName").getData(completion: {error, snapshot in
-            guard error == nil else {
-                print(error!.localizedDescription)
-                return;
-            }
-            var name=snapshot?.value as? String;
-
-            if(self.label9.text==name){
-                self.Bookmark.tintColor = .purple
-            }
-
-        });
-
         refRecipe = Database.database().reference().child("Recipe");
         
-        if user != nil {
-            
-            let key = refRecipe.childByAutoId().key
-            let recipe = ["id":user?.email,
+        if ViewController.user != nil {
+            let recipe = ["id":ViewController.user?.email,
                           "recipeName": label9.text! as String,
                           "recipeImage" :image8 as String,
                           "link":ViewController.url9
             ]
             refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
+            
+            let alert = UIAlertController(title: "Bookmark", message: "You Recipe saved in Bookmark Tab", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             
         }else{
             loginpage()
@@ -451,14 +419,11 @@ class ViewController: UIViewController {
         
         refRecipe = Database.database().reference().child("Recipe");
         
-        if user != nil {
-            
-            let key = refRecipe.childByAutoId().key
-            let recipe = ["id":user?.email,
+        if ViewController.user != nil {
+            let recipe = ["id":ViewController.user?.email,
                           "recipeName": label10.text! as String,
                           "recipeImage" :image9 as String,
-                          "link":ViewController.url10
-            ]
+                          "link":ViewController.url10]
             refRecipe.child("abc\(Int.random(in: 0..<1000))").setValue(recipe)
             
             let alert = UIAlertController(title: "Bookmark", message: "You Recipe saved in Bookmark Tab", preferredStyle: .alert)
@@ -485,11 +450,17 @@ class ViewController: UIViewController {
     
     
     @IBAction func showBookmarkTapped(_ sender: Any) {
-        if user != nil {
-            let view = self.storyboard?.instantiateViewController(withIdentifier: "bookmark")
-            self.present(view!, animated: true, completion: nil)
+        
+        
+        if ViewController.user != nil {
+//            let view = self.storyboard?.instantiateViewController(withIdentifier: "bookmark")
+//            self.present(view!, animated: true, completion: nil)
+            let storyboard=UIStoryboard(name: "Main", bundle: nil)
+            let vc=storyboard.instantiateViewController(withIdentifier: "bookmark")
+            navigationController?.pushViewController(vc, animated: true)
 
         }else{
+            
             loginpage()
         }
         

@@ -35,7 +35,6 @@ class BookmarkViewController: UIViewController, UITableViewDelegate, UITableView
             LblStatus.text = "You are logged in with email: \(user.email!)"
         }
         
-        var refRecipe=Database.database().reference().child("Recipe")
                 ref = Database.database().reference().child("Recipe")
                 ref.queryOrdered(byChild:"id").queryEqual(toValue:user?.email).observe( DataEventType.value, with: { (snapshot) in
                     if snapshot.childrenCount>0{
@@ -57,12 +56,20 @@ class BookmarkViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     @IBAction func OnSignoutTapped(_ sender: Any) {
+        
         let auth=Auth.auth()
             do{
                 try auth.signOut()
-                self.dismiss(animated: true,completion: nil)
+//                self.dismiss(animated: true,completion: nil)
+                let storyboard=UIStoryboard(name: "Main", bundle: nil)
+                let vc=storyboard.instantiateViewController(withIdentifier: "menu")
+                navigationController?.pushViewController(vc, animated: true)
+//                performSegue(withIdentifier: "BacktoHome", sender: nil)
+                
+                ViewController.user = nil
             }catch let SignoutError{
-            }
+                print("Signout Error: \(SignoutError)")
+        }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return table.count

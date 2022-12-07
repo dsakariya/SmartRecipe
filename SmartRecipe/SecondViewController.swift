@@ -10,8 +10,11 @@ import CoreData
 import Firebase
 import FirebaseAuth
 
-class SecondViewController: UIViewController {
 
+
+class SecondViewController: UIViewController {
+    
+//    ViewController.user = Auth.auth().currentUser
     @IBOutlet weak var dishImage1: UIImageView!
     @IBOutlet weak var dishImage2: UIImageView!
     @IBOutlet weak var dishImage3: UIImageView!
@@ -92,8 +95,6 @@ class SecondViewController: UIViewController {
         refRecipe = Database.database().reference().child("Recipe");
         
         if user != nil {
-            
-            let key = refRecipe.childByAutoId().key
             let recipe = ["id":user?.email,
                           "recipeName": label1.text! as String,
                           "recipeImage" :image1 as String,
@@ -115,8 +116,6 @@ class SecondViewController: UIViewController {
         refRecipe = Database.database().reference().child("Recipe");
         
         if user != nil {
-            
-            let key = refRecipe.childByAutoId().key
             let recipe = ["id":user?.email,
                           "recipeName": label2.text! as String,
                           "recipeImage" :image2 as String,
@@ -140,8 +139,6 @@ class SecondViewController: UIViewController {
         refRecipe = Database.database().reference().child("Recipe");
         
         if user != nil {
-            
-            let key = refRecipe.childByAutoId().key
             let recipe = ["id":user?.email,
                           "recipeName": label3.text! as String,
                           "recipeImage" :image3 as String,
@@ -163,8 +160,6 @@ class SecondViewController: UIViewController {
         refRecipe = Database.database().reference().child("Recipe");
         
         if user != nil {
-            
-            let key = refRecipe.childByAutoId().key
             let recipe = ["id":user?.email,
                           "recipeName": label4.text! as String,
                           "recipeImage" :image4 as String,
@@ -186,8 +181,6 @@ class SecondViewController: UIViewController {
         refRecipe = Database.database().reference().child("Recipe");
         
         if user != nil {
-            
-            let key = refRecipe.childByAutoId().key
             let recipe = ["id":user?.email,
                           "recipeName": label5.text! as String,
                           "recipeImage" :image5 as String,
@@ -208,8 +201,6 @@ class SecondViewController: UIViewController {
         refRecipe = Database.database().reference().child("Recipe");
         
         if user != nil {
-            
-            let key = refRecipe.childByAutoId().key
             let recipe = ["id":user?.email,
                           "recipeName": label6.text! as String,
                           "recipeImage" :image6 as String,
@@ -230,8 +221,6 @@ class SecondViewController: UIViewController {
         refRecipe = Database.database().reference().child("Recipe");
         
         if user != nil {
-            
-            let key = refRecipe.childByAutoId().key
             let recipe = ["id":user?.email,
                           "recipeName": label7.text! as String,
                           "recipeImage" :image7 as String,
@@ -252,8 +241,6 @@ class SecondViewController: UIViewController {
         refRecipe = Database.database().reference().child("Recipe");
         
         if user != nil {
-            
-            let key = refRecipe.childByAutoId().key
             let recipe = ["id":user?.email,
                           "recipeName": label8.text! as String,
                           "recipeImage" :image8 as String,
@@ -274,8 +261,6 @@ class SecondViewController: UIViewController {
         refRecipe = Database.database().reference().child("Recipe");
         
         if user != nil {
-            
-            let key = refRecipe.childByAutoId().key
             let recipe = ["id":user?.email,
                           "recipeName": label9.text! as String,
                           "recipeImage" :image9 as String,
@@ -297,8 +282,6 @@ class SecondViewController: UIViewController {
         refRecipe = Database.database().reference().child("Recipe");
         
         if user != nil {
-            
-            let key = refRecipe.childByAutoId().key
             let recipe = ["id":user?.email,
                           "recipeName": label10.text! as String,
                           "recipeImage" :image10 as String,
@@ -350,7 +333,8 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
             super.viewDidLoad()
 
-        
+        ViewController.user = Auth.auth().currentUser
+
             // Do any additional setup after loading the view.
             struct RecipeResponse: Decodable{
                 let hits : [Hits]
@@ -424,6 +408,7 @@ class SecondViewController: UIViewController {
                                             }
                                         }
                                         let img1 = result.hits[1].recipe.image
+                                        image2 = img1
                                         let url1 = URL(string: img1)!
                                         DispatchQueue.global().async {
                                             // Fetch Image Data
@@ -435,6 +420,7 @@ class SecondViewController: UIViewController {
                                             }
                                         }
                                         let img2 = result.hits[2].recipe.image
+                                        image3 = img2
                                         let url2 = URL(string: img2)!
                                         DispatchQueue.global().async {
                                             // Fetch Image Data
@@ -447,6 +433,7 @@ class SecondViewController: UIViewController {
                                         }
                                         
                                         let img3 = result.hits[3].recipe.image
+                                        image4 = img3
                                         let url3 = URL(string: img3)!
                                         DispatchQueue.global().async {
                                             // Fetch Image Data
@@ -459,6 +446,7 @@ class SecondViewController: UIViewController {
                                         }
                                         
                                         let img4 = result.hits[4].recipe.image
+                                        image5 = img4
                                         let url4 = URL(string: img4)!
                                         DispatchQueue.global().async {
                                             // Fetch Image Data
@@ -471,6 +459,7 @@ class SecondViewController: UIViewController {
                                         }
                                         
                                         let img5 = result.hits[5].recipe.image
+                                        image6 = img5
                                         let url5 = URL(string: img5)!
                                         DispatchQueue.global().async {
                                             // Fetch Image Data
@@ -485,6 +474,7 @@ class SecondViewController: UIViewController {
                                         
                                         
                                         let img6 = result.hits[6].recipe.image
+                                        image7 = img6
                                         let url6 = URL(string: img6)!
                                         DispatchQueue.global().async {
                                             // Fetch Image Data
@@ -497,6 +487,7 @@ class SecondViewController: UIViewController {
                                         }
 
                                         let img7 = result.hits[7].recipe.image
+                                        image8 = img7
                                         let url7 = URL(string: img7)!
                                         DispatchQueue.global().async {
                                             // Fetch Image Data
@@ -509,6 +500,7 @@ class SecondViewController: UIViewController {
                                         }
 
                                         let img8 = result.hits[8].recipe.image
+                                        image9 = img8
                                         let url8 = URL(string: img8)!
                                         DispatchQueue.global().async {
                                             // Fetch Image Data
@@ -521,6 +513,7 @@ class SecondViewController: UIViewController {
                                         }
 
                                         let img9 = result.hits[9].recipe.image
+                                        image10 = img9
                                         let url9 = URL(string: img9)!
                                         DispatchQueue.global().async {
                                             // Fetch Image Data
